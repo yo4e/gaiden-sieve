@@ -1,0 +1,9 @@
+profile: ai-gaiden
+positive_label: relevant
+precision_gate: 0.95
+recall_gate: 0.80
+relevant_threshold: 0.80
+not_relevant_threshold: 0.40
+text_fields:
+  - title
+  - summary
