@@ -39,6 +39,7 @@ _REQUIRED_FIELDS = {
 }
 _ALLOWED_LABELS = {"relevant", "not_relevant"}
 _ALLOWED_LABEL_SOURCES = {"llm", "human", "rule", "imported"}
+_ALLOWED_TEXT_FIELDS = {"title", "summary"}
 
 
 def _required_string(record: dict[str, Any], field: str, *, allow_empty: bool = False) -> str:
@@ -138,18 +139,37 @@ def load_labeled_jsonl(path: str | Path) -> list[LabeledItem]:
     return items
 
 
-def build_text(item: LabeledItem, text_fields: Iterable[str]) -> str:
-    """Build the future model input from profile-approved text fields only."""
+def build_input_text(
+    *, title: str, summary: str, text_fields: Iterable[str]
+) -> str:
+    """Build model input from profile-approved text fields only."""
 
+    values = {"title": title, "summary": summary}
     fields = tuple(text_fields)
     if not fields:
         raise DataValidationError("text_fields must not be empty")
 
     parts: list[str] = []
     for field in fields:
-        if field not in {"title", "summary"}:
+        if field not in _ALLOWED_TEXT_FIELDS:
             raise DataValidationError(f"unsupported text field: {field}")
-        parts.append(getattr(item, field).strip())
+        value = values[field]
+        if not isinstance(value, str):
+            raise DataValidationError(f"{field} must be a string")
+        parts.append(value.strip())
+
+    text = "\n\n".join(part for part in parts if part)
+    if not text:
+        raise DataValidationError("title and summary must not both be empty")
+    return text
+
+
+def build_text(item: LabeledItem, text_fields: Iterable[str]) -> str:
+    """Build training input without leaking labels or labeling metadata."""
 
     # 教師ラベルや理由文をここへ入れないこと自体が、data leakage 防止の境界になる。
-    return "\n\n".join(part for part in parts if part)
+    return build_input_text(
+        title=item.title,
+        summary=item.summary,
+        text_fields=text_fields,
+    )

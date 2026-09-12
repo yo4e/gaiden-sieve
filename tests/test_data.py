@@ -2,7 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from gaiden_sieve.data import DataValidationError, build_text, load_labeled_jsonl
+from gaiden_sieve.data import (
+    DataValidationError,
+    build_input_text,
+    build_text,
+    load_labeled_jsonl,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_fixture_loads_with_binary_labels() -> None:
     items = load_labeled_jsonl(ROOT / "profiles" / "ai-gaiden" / "labeled.jsonl")
 
-    assert len(items) == 4
+    assert len(items) == 20
     assert {item.label for item in items} == {"relevant", "not_relevant"}
 
 
@@ -26,6 +31,11 @@ def test_build_text_uses_only_profile_text_fields() -> None:
     assert item.summary in model_input
     assert item.label not in model_input
     assert item.label_reason not in model_input
+
+
+def test_build_input_text_rejects_empty_input() -> None:
+    with pytest.raises(DataValidationError, match="must not both be empty"):
+        build_input_text(title="", summary="", text_fields=("title", "summary"))
 
 
 def test_duplicate_id_is_rejected(tmp_path: Path) -> None:
