@@ -1,4 +1,4 @@
-"""Probability-based classification for the Phase 1 model."""
+"""Probability-based classification for a trained GAIDEN SIEVE model."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from gaiden_sieve.profile import ProfileConfig
 
 @dataclass(frozen=True, slots=True)
 class Prediction:
-    """One local classification result."""
+    """One classification result."""
 
     probability_relevant: float
     classification: str
