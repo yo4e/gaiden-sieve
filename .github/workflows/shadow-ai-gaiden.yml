@@ -69,7 +69,7 @@ jobs:
 
       - name: Export current AI外電 inputs
         env:
-          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python -m gaiden_sieve.ai_gaiden_shadow \
             --ai-gaiden-root .shadow/AI-gaiden \
