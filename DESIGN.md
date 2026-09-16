@@ -811,6 +811,10 @@ title + summary
 
 shadow mode とは、分類結果を実際の公開判断には使わず、裏側で予測だけ出して現在の運用と比較する方法。
 
+Phase 4A の初期接続では、AI外電の本番 workflow は変更しない。GAIDEN SIEVE 側の手動 workflow から AI外電を read-only checkout し、既存の SourceReader / admission を使って同じ候補を観察する。candidate は current quality gate を通過していることを確認するが、production には promote せず shadow 専用に分類する。比較結果・drift・uncertain queue は Actions artifact としてのみ保存する。
+
+この方式なら、SIEVE や接続コードに不具合があっても AI外電の収集・翻訳・公開経路を止めない。十分な観察データがたまるまで、SIEVE の結果を publication decision へ接続しない。
+
 ### Phase 5 — Model upgrade experiments
 
 必要になった場合のみ:
