@@ -1,0 +1,101 @@
+name: AI外電 SIEVE shadow experiment
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out GAIDEN SIEVE
+        uses: actions/checkout@v7
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install GAIDEN SIEVE
+        run: python -m pip install -e '.[dev]'
+
+      - name: Train and verify candidate
+        shell: bash
+        run: |
+          mkdir -p .shadow/artifacts reports/ai-gaiden-shadow
+          python -m gaiden_sieve train \
+            --profile ai-gaiden \
+            --artifacts-dir .shadow/artifacts \
+            > reports/ai-gaiden-shadow/train.json
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          payload = json.loads(Path("reports/ai-gaiden-shadow/train.json").read_text())
+          if not payload["quality_gate"]["passed"]:
+              raise SystemExit("candidate failed quality gate")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
+              env.write(f"SHADOW_MODEL_VERSION={payload['model_version']}\n")
+          PY
+
+      - name: Verify candidate lineage
+        shell: bash
+        run: |
+          python -m gaiden_sieve verify \
+            --profile ai-gaiden \
+            --artifacts-dir .shadow/artifacts \
+            --candidate "$SHADOW_MODEL_VERSION" \
+            > reports/ai-gaiden-shadow/reproducibility.json
+
+      - name: Check out AI外電 read-only
+        uses: actions/checkout@v7
+        with:
+          repository: yo4e/AI-gaiden
+          path: .shadow/AI-gaiden
+          fetch-depth: 1
+
+      - name: Install AI外電 read-only ingestion dependencies
+        run: |
+          python -m pip install \
+            feedparser==6.0.12 \
+            requests==2.32.5 \
+            beautifulsoup4==4.14.3 \
+            python-dateutil==2.9.0.post0
+
+      - name: Export current AI外電 inputs
+        env:
+          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m gaiden_sieve.ai_gaiden_shadow \
+            --ai-gaiden-root .shadow/AI-gaiden \
+            --cache .shadow/ai-gaiden-source-state.json \
+            --output reports/ai-gaiden-shadow/incoming.jsonl \
+            > reports/ai-gaiden-shadow/source-observation.json
+
+      - name: Run candidate-only shadow comparison
+        shell: bash
+        run: |
+          python -m gaiden_sieve shadow \
+            --profile ai-gaiden \
+            --artifacts-dir .shadow/artifacts \
+            --candidate "$SHADOW_MODEL_VERSION" \
+            --input reports/ai-gaiden-shadow/incoming.jsonl \
+            --comparison-output reports/ai-gaiden-shadow/comparison.json \
+            --classified-output reports/ai-gaiden-shadow/classified.jsonl \
+            --drift-output reports/ai-gaiden-shadow/drift.json \
+            --uncertain-output reports/ai-gaiden-shadow/uncertain.jsonl \
+            > reports/ai-gaiden-shadow/run.json
+
+      - name: Upload shadow reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-gaiden-sieve-shadow
+          path: reports/ai-gaiden-shadow/
+          if-no-files-found: warn
+          retention-days: 30
