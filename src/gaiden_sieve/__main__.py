@@ -23,6 +23,7 @@ from gaiden_sieve.drift import build_drift_report, write_drift_report
 from gaiden_sieve.profile import load_profile
 from gaiden_sieve.promote import promote_candidate
 from gaiden_sieve.reproducibility import verify_candidate_reproducibility
+from gaiden_sieve.shadow import run_shadow_candidate
 from gaiden_sieve.train import evaluate_candidate, train_candidate
 
 
@@ -44,7 +45,8 @@ def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m gaiden_sieve")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    for command in ("train", "evaluate", "verify", "promote", "classify", "drift"):
+    commands = ("train", "evaluate", "verify", "promote", "classify", "drift", "shadow")
+    for command in commands:
         subparser = subparsers.add_parser(command)
         _add_common_arguments(subparser)
 
@@ -88,6 +90,22 @@ def _build_parser() -> argparse.ArgumentParser:
         "--reports-dir",
         default="reports",
         help="base directory for default drift outputs (default: reports)",
+    )
+
+    shadow = subparsers.choices["shadow"]
+    shadow.add_argument("--input", required=True, help="AI外電 shadow input JSONL")
+    shadow.add_argument(
+        "--candidate",
+        help="gate-passing candidate model_version; default: newest candidate metadata",
+    )
+    shadow.add_argument("--comparison-output")
+    shadow.add_argument("--classified-output")
+    shadow.add_argument("--drift-output")
+    shadow.add_argument("--uncertain-output")
+    shadow.add_argument(
+        "--reports-dir",
+        default="reports",
+        help="base directory for default shadow outputs (default: reports)",
     )
     return parser
 
@@ -199,7 +217,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 "production_model_version": metadata["model_version"],
                 "prediction": asdict(prediction),
             }
-    else:
+    elif args.command == "drift":
         model, metadata, items, rows, generated_at = _production_batch(args, profile)
         report = build_drift_report(
             model,
@@ -228,6 +246,42 @@ def main(argv: Sequence[str] | None = None) -> int:
             "uncertain_count": len(uncertain_rows(rows)),
             "uncertain_queue_path": str(queue_path),
         }
+
+    else:
+        model_version = args.candidate or latest_candidate_version(
+            artifacts_dir=args.artifacts_dir,
+            profile=profile.profile,
+        )
+        generated_at = datetime.now(timezone.utc)
+        stamp = generated_at.strftime("%Y%m%dT%H%M%SZ")
+        report_dir = Path(args.reports_dir) / profile.profile
+        payload = run_shadow_candidate(
+            profile=profile,
+            artifacts_dir=args.artifacts_dir,
+            model_version=model_version,
+            input_path=args.input,
+            comparison_output=(
+                Path(args.comparison_output)
+                if args.comparison_output
+                else report_dir / f"shadow-comparison-{stamp}.json"
+            ),
+            classified_output=(
+                Path(args.classified_output)
+                if args.classified_output
+                else report_dir / f"shadow-classified-{stamp}.jsonl"
+            ),
+            drift_output=(
+                Path(args.drift_output)
+                if args.drift_output
+                else report_dir / f"shadow-drift-{stamp}.json"
+            ),
+            uncertain_output=(
+                Path(args.uncertain_output)
+                if args.uncertain_output
+                else report_dir / f"shadow-uncertain-{stamp}.jsonl"
+            ),
+            generated_at=generated_at,
+        )
 
     print(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True))
     return exit_code

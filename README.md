@@ -4,7 +4,7 @@ GAIDEN SIEVE は、RSS/Atom の記事を媒体ごとの編集方針に照らし�
 
 このリポジトリの主目的は、分類精度だけを追うことではありません。教師データ、学習コード、モデル、評価、promotion、監視までを一つの運用として扱う **MLOps の最小ループ**を、実物を追いながら学べる形で作ります。設計の正本は [`DESIGN.md`](DESIGN.md) です。
 
-## 現在の実装範囲: Phase 3
+## 現在の実装範囲: Phase 4A
 
 Phase 3 では、Phase 2 の **追跡・評価・明示昇格できる model lifecycle** を土台に、CI、再現性チェック、JSONL batch classification、簡単な drift report、uncertain queue までをつなぎます。production promotion は引き続き人間が明示的に行います。
 
@@ -38,7 +38,9 @@ quality gate
 - `gaiden_sieve.batch`: unlabeled JSONL の batch classification と uncertain queue
 - `gaiden_sieve.drift`: 平均予測確率、uncertain率、source別分布、OOV feature率の観測
 - `gaiden_sieve.reproducibility`: data / code / config / dependency / metrics の追跡確認
-- `python -m gaiden_sieve`: train / evaluate / verify / promote / classify / drift CLI
+- `gaiden_sieve.shadow`: gate を通った candidate を promotion せず実入力で比較観測
+- `gaiden_sieve.ai_gaiden_shadow`: AI外電の既存取得・admissionを read-only で再利用する接続アダプタ
+- `python -m gaiden_sieve`: train / evaluate / verify / promote / classify / drift / shadow CLI
 
 `uncertain` は第三の学習クラスではありません。`not_relevant_threshold <= P(relevant) < relevant_threshold` の中間帯を、運用上 `uncertain` と呼びます。
 
@@ -107,6 +109,38 @@ GitHub Actions は pull request / push ごとに小さい fixture で `pytest �
 drift report は異常判定器ではありません。平均 `P(relevant)`、uncertain率、source別の分類分布、TF-IDF vocabulary にない feature の割合を、**最近の入力が以前と変わってきたか気づくための観測値**として保存します。
 
 `uncertain.jsonl` は active learning の入口です。各行に `id / source / title / summary / probability / classified_at / model_version` を残し、将来 human review や LLM review へ渡せるようにします。Phase 3 ではレビュー自動化や scheduled retraining は行いません。
+
+### Phase 4A: AI外電 shadow mode
+
+Phase 4A では、AI外電の本番更新フローへ SIEVE を差し込まない。代わりに、GAIDEN SIEVE 側の手動 GitHub Actions workflow `.github/workflows/shadow-ai-gaiden.yml` が AI外電を read-only checkout し、現在の公式RSS / GitHub Releases と admission 設定を使って独立した比較実験を行う。
+
+```text
+AI外電 current feeds + admission
+          ↓
+read-only shadow export
+          ├─ existing admission: all / ai_terms_v1
+          ↓
+gate-passing candidate (no promotion)
+          ↓
+relevant / uncertain / not_relevant
+          ↓
+comparison + drift + uncertain queue
+```
+
+ここでは candidate を production に promote しない。shadow 実行時に現在の quality gate を再確認し、gate を満たした candidate だけを観察に使う。結果は Actions artifact `ai-gaiden-sieve-shadow` に保存し、AI外電の記事、`seen.json`、daily-news workflow、公開判断には一切反映しない。
+
+主な出力は次の通り。
+
+- `source-observation.json`: AI外電の取得成功 / 失敗と既存 admission 件数
+- `incoming.jsonl`: admission 前の実記事 + 既存 admission 判定
+- `classified.jsonl`: SIEVE の分類結果
+- `comparison.json`: ai_terms_v1 / all と SIEVE の一致・不一致、source別分布
+- `drift.json`: 平均予測確率、uncertain率、OOV傾向など
+- `uncertain.jsonl`: 後で人間が確認する候補
+
+`comparison.json` の disagreement は「どちらかが間違い」という判定ではない。まだ gold label がないため、**差分を見つけるための観測値**として扱う。
+
+手動実行は GitHub Actions の **AI外電 SIEVE shadow experiment** から行う。scheduled retraining、LLM review、自動掲載にはまだ接続しない。
 
 ## セットアップ
 
