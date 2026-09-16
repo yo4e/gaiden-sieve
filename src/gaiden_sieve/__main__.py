@@ -45,7 +45,8 @@ def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m gaiden_sieve")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    for command in ("train", "evaluate", "verify", "promote", "classify", "drift", "shadow"):
+    commands = ("train", "evaluate", "verify", "promote", "classify", "drift", "shadow")
+    for command in commands:
         subparser = subparsers.add_parser(command)
         _add_common_arguments(subparser)
 
@@ -281,7 +282,6 @@ def main(argv: Sequence[str] | None = None) -> int:
             ),
             generated_at=generated_at,
         )
-
 
     print(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True))
     return exit_code
