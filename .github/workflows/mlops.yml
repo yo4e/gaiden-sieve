@@ -1,0 +1,81 @@
+name: MLOps
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  test-train-evaluate-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: python -m pip install -e '.[dev]'
+
+      - name: Test
+        run: pytest
+
+      - name: Train candidate
+        run: |
+          mkdir -p reports/ci
+          python -m gaiden_sieve train \
+            --profile ai-gaiden \
+            --artifacts-dir .ci-artifacts \
+            > reports/ci/train.json
+
+      - name: Evaluate, verify reproducibility, and build CI report
+        run: |
+          MODEL_VERSION="$(python -c 'import json; print(json.load(open("reports/ci/train.json"))["model_version"])')"
+          python -m gaiden_sieve evaluate \
+            --profile ai-gaiden \
+            --artifacts-dir .ci-artifacts \
+            --candidate "$MODEL_VERSION" \
+            > reports/ci/evaluate.json
+          python -m gaiden_sieve verify \
+            --profile ai-gaiden \
+            --artifacts-dir .ci-artifacts \
+            --candidate "$MODEL_VERSION" \
+            > reports/ci/reproducibility.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          train = json.loads(Path("reports/ci/train.json").read_text())
+          evaluate = json.loads(Path("reports/ci/evaluate.json").read_text())
+          reproducibility = json.loads(Path("reports/ci/reproducibility.json").read_text())
+
+          assert evaluate["quality_gate"]["passed"] is True
+          assert reproducibility["passed"] is True
+          assert not Path(".ci-artifacts/ai-gaiden/production/model.joblib").exists()
+
+          report = {
+              "model_version": train["model_version"],
+              "training_data_hash": train["training_data_hash"],
+              "code_commit": train["code_commit"],
+              "metrics": evaluate["metrics"],
+              "quality_gate": evaluate["quality_gate"],
+              "reproducibility": reproducibility["checks"],
+              "production_promoted": False,
+          }
+          Path("reports/ci/report.json").write_text(
+              json.dumps(report, indent=2, sort_keys=True) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Upload MLOps report
+        uses: actions/upload-artifact@v4
+        with:
+          name: gaiden-sieve-mlops-report
+          path: reports/ci/*.json
