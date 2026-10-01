@@ -29,6 +29,8 @@ jobs:
           mkdir -p .shadow/artifacts reports/ai-gaiden-shadow
           python -m gaiden_sieve train \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .shadow/artifacts \
             > reports/ai-gaiden-shadow/train.json
           python - <<'PY'
@@ -48,6 +50,8 @@ jobs:
         run: |
           python -m gaiden_sieve verify \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .shadow/artifacts \
             --candidate "$SHADOW_MODEL_VERSION" \
             > reports/ai-gaiden-shadow/reproducibility.json
