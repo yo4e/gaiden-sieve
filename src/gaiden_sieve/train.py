@@ -26,7 +26,12 @@ from gaiden_sieve.artifacts import (
     sha256_file,
     verify_candidate_integrity,
 )
-from gaiden_sieve.data import (\n    LabeledItem,\n    build_text,\n    labeled_dataset_hash,\n    load_labeled_jsonl,\n)
+from gaiden_sieve.data import (
+    LabeledItem,
+    build_text,
+    labeled_dataset_hash,
+    load_labeled_jsonl,
+)
 from gaiden_sieve.evaluate import Metrics, calculate_metrics, evaluate_quality_gate
 from gaiden_sieve.profile import ProfileConfig
 
