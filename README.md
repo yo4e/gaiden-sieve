@@ -138,7 +138,7 @@ comparison + drift + uncertain queue
 - `drift.json`: 平均予測確率、uncertain率、OOV傾向など
 - `uncertain.jsonl`: 後で人間が確認する候補
 
-`comparison.json` の disagreement は「どちらかが間違い」という判定ではない。まだ gold label がないため、**差分を見つけるための観測値**として扱う。
+`comparison.json` の disagreement は、それだけで「どちらかが間違い」という判定ではない。human gold は10件の確認済み境界例だけなので、gold に含まれない current RSS については引き続き **差分を見つけるための観測値**として扱う。
 
 手動実行は GitHub Actions の **AI外電 SIEVE shadow experiment** から行う。scheduled retraining、LLM review、自動掲載にはまだ接続しない。
 
@@ -147,17 +147,17 @@ comparison + drift + uncertain queue
 
 Phase 4A の最初の shadow artifact では、20件の手作り fixture だけで学習した candidate が実RSS 100件をすべて `uncertain` にし、OOV feature rate は約 0.924 だった。Phase 4B.1 では TF-IDF + Logistic Regression としきい値をそのままにし、まず教師データを実入力へ寄せる。
 
-現在の実RSSデータは次の3層に分ける。
+現在の実RSSデータは次の4層に分ける。
 
 - `profiles/ai-gaiden/bootstrap/`: 36件（relevant 24 / not_relevant 12）。`label_source=llm` の bootstrap 教師データ。
 - `profiles/ai-gaiden/real-holdout/`: 10件（relevant 6 / not_relevant 4）。bootstrap と id が重ならない明示holdout。
-- `profiles/ai-gaiden/gold-review.jsonl`: 10件の人間確認待ち候補。まだ gold label ではなく、`proposed_label` と `review_status=pending_human` だけを持つため学習・評価には使わない。
+- `profiles/ai-gaiden/gold-review.jsonl`: 10件のレビュー履歴。assistant の `proposed_label` と人間の `human_label` を併記し、`review_status=confirmed_human` で確認済みを追跡する。\n- `profiles/ai-gaiden/gold.jsonl`: 上記10件を人間が確定した gold set（relevant 4 / not_relevant 6、`label_source=human`）。学習には使わず、candidate の編集判断への整合を見る監査評価に使う。
 
 元データは AI外電 shadow run `36220686078` の実RSS artifact に由来する。長大な release note 等はモデル入力を一部データだけが支配しないよう summary を先頭500文字まで保存し、切り詰めた行には元文字数と `summary_truncated_at_chars` を残す。
 
-Phase 4B.1 の candidate は bootstrap 全件で fit し、別ファイルの real holdout だけで quality gate を測る。metadata には training / evaluation dataset の hash と `evaluation_mode=external_holdout` を記録する。既存20件の `labeled.jsonl` は lifecycle テスト用 fixture として残す。
+Phase 4B.1 の candidate は bootstrap 全件で fit し、別ファイルの real holdout で既存 quality gate を測る。metadata には training / evaluation dataset の hash と `evaluation_mode=external_holdout` を記録する。human gold は小さく意図的に境界例へ寄せた10件なので gate にはせず、CI / shadow で独立した監査 metrics として記録する。既存20件の `labeled.jsonl` は lifecycle テスト用 fixture として残す。
 
-保存済み historical 100件を同じ TF-IDF + Logistic Regression で再生した観測は `reports/ai-gaiden/phase4b1-historical-replay.json` にある。baseline の `uncertain=100/100` に対し historical replay は `relevant=80 / uncertain=0 / not_relevant=20`、OOV feature rate は約 0.777 だった。ただし bootstrap の not_relevant が Sourcegraph の汎用releaseへ偏っているため、このきれいな分離を「汎化性能が十分」と解釈しない。人間goldと新しいlive shadowで確認するまで観測値として扱う。
+保存済み historical 100件を同じ TF-IDF + Logistic Regression で再生した観測は `reports/ai-gaiden/phase4b1-historical-replay.json` にある。baseline の `uncertain=100/100` に対し historical replay は `relevant=80 / uncertain=0 / not_relevant=20`、OOV feature rate は約 0.777 だった。ただし bootstrap の not_relevant が Sourcegraph の汎用releaseへ偏っているため、このきれいな分離を「汎化性能が十分」と解釈しない。確定済み human gold と新しい live shadow の両方を見て判断する。
 
 ここでも production promotion は行わず、Phase 4C / AI外電の公開判断への接続には進まない。
 
@@ -281,4 +281,4 @@ python -m gaiden_sieve drift \
 また、TF-IDF と Logistic Regression は引き続き1本の `Pipeline` として保存するため、学習時と production 推論時で同じ前処理を使います。`label`、`label_reason`、`label_source` は特徴量へ入りません。
 
 > [!NOTE]
-> 既存20件の `labeled.jsonl` は lifecycle と MLOps loop の回帰確認用 fixture として残しています。実RSSの Phase 4B.1 データは `bootstrap/` と `real-holdout/` に分離し、人間gold候補は `gold-review.jsonl` で別管理します。
+> 既存20件の `labeled.jsonl` は lifecycle と MLOps loop の回帰確認用 fixture として残しています。実RSSの Phase 4B.1 データは `bootstrap/` と `real-holdout/` に分離し、人間レビュー履歴は `gold-review.jsonl`、確定済み human gold は `gold.jsonl` で別管理します。
