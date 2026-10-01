@@ -4,7 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from gaiden_sieve.artifacts import verify_candidate_integrity\nfrom gaiden_sieve.data import labeled_dataset_hash
+from gaiden_sieve.artifacts import verify_candidate_integrity
+from gaiden_sieve.data import labeled_dataset_hash
 from gaiden_sieve.profile import ProfileConfig
 from gaiden_sieve.train import evaluate_candidate
 
