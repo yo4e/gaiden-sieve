@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from gaiden_sieve.artifacts import sha256_file, verify_candidate_integrity
+from gaiden_sieve.artifacts import verify_candidate_integrity\nfrom gaiden_sieve.data import labeled_dataset_hash
 from gaiden_sieve.profile import ProfileConfig
 from gaiden_sieve.train import evaluate_candidate
 
@@ -27,7 +27,7 @@ def verify_candidate_reproducibility(
     evaluation_mode = str(metadata.get("evaluation_mode") or "random_holdout")
     checks: dict[str, bool] = {
         "training_data_hash_matches": metadata.get("training_data_hash")
-        == sha256_file(data_path),
+        == labeled_dataset_hash(data_path),
         "code_commit_recorded": isinstance(metadata.get("code_commit"), str)
         and bool(metadata.get("code_commit")),
         "random_seed_recorded": isinstance(metadata.get("random_seed"), int),
@@ -45,7 +45,7 @@ def verify_candidate_reproducibility(
         checks["evaluation_data_hash_matches"] = (
             evaluation_data_path is not None
             and metadata.get("evaluation_data_hash")
-            == sha256_file(evaluation_data_path)
+            == labeled_dataset_hash(evaluation_data_path)
         )
         checks["test_size_recorded"] = metadata.get("test_size") is None
     else:
