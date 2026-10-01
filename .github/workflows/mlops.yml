@@ -31,6 +31,8 @@ jobs:
           mkdir -p reports/ci
           python -m gaiden_sieve train \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .ci-artifacts \
             > reports/ci/train.json
 
@@ -39,11 +41,15 @@ jobs:
           MODEL_VERSION="$(python -c 'import json; print(json.load(open("reports/ci/train.json"))["model_version"])')"
           python -m gaiden_sieve evaluate \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .ci-artifacts \
             --candidate "$MODEL_VERSION" \
             > reports/ci/evaluate.json
           python -m gaiden_sieve verify \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .ci-artifacts \
             --candidate "$MODEL_VERSION" \
             > reports/ci/reproducibility.json
@@ -62,6 +68,8 @@ jobs:
           report = {
               "model_version": train["model_version"],
               "training_data_hash": train["training_data_hash"],
+              "evaluation_mode": train["evaluation_mode"],
+              "evaluation_data_hash": train["evaluation_data_hash"],
               "code_commit": train["code_commit"],
               "metrics": evaluate["metrics"],
               "quality_gate": evaluate["quality_gate"],
