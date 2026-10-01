@@ -26,7 +26,7 @@ from gaiden_sieve.artifacts import (
     sha256_file,
     verify_candidate_integrity,
 )
-from gaiden_sieve.data import LabeledItem, build_text, load_labeled_jsonl
+from gaiden_sieve.data import (\n    LabeledItem,\n    build_text,\n    labeled_dataset_hash,\n    load_labeled_jsonl,\n)
 from gaiden_sieve.evaluate import Metrics, calculate_metrics, evaluate_quality_gate
 from gaiden_sieve.profile import ProfileConfig
 
@@ -281,7 +281,7 @@ def train_candidate(
             "evaluation_items and evaluation_data_path must be provided together"
         )
 
-    data_hash = sha256_file(data_path)
+    data_hash = labeled_dataset_hash(data_path)
     timestamp = _created_at(created_at)
     version = _model_version(timestamp, data_hash)
 
@@ -299,7 +299,7 @@ def train_candidate(
             random_seed=random_seed,
         )
         evaluation_mode = "external_holdout"
-        evaluation_hash = sha256_file(evaluation_data_path)
+        evaluation_hash = labeled_dataset_hash(evaluation_data_path)
         recorded_test_size: float | None = None
     else:
         result = train_and_evaluate(
@@ -383,7 +383,7 @@ def evaluate_candidate(
         profile=profile.profile,
         model_version=model_version,
     )
-    current_hash = sha256_file(data_path)
+    current_hash = labeled_dataset_hash(data_path)
     if metadata.get("training_data_hash") != current_hash:
         raise ArtifactError(
             "training data hash changed; this candidate cannot be re-evaluated against a different dataset"
@@ -401,7 +401,7 @@ def evaluate_candidate(
             raise ArtifactError(
                 "external-holdout candidate requires evaluation_data_path"
             )
-        current_evaluation_hash = sha256_file(evaluation_data_path)
+        current_evaluation_hash = labeled_dataset_hash(evaluation_data_path)
         if metadata.get("evaluation_data_hash") != current_evaluation_hash:
             raise ArtifactError(
                 "evaluation data hash changed; this candidate cannot be re-evaluated against a different holdout"
