@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from dataclasses import dataclass
 from datetime import datetime
@@ -98,41 +99,74 @@ def validate_labeled_item(record: dict[str, Any]) -> LabeledItem:
     )
 
 
+def _dataset_files(path: str | Path) -> list[Path]:
+    data_path = Path(path)
+    if data_path.is_file():
+        return [data_path]
+    if data_path.is_dir():
+        files = sorted(p for p in data_path.glob("*.jsonl") if p.is_file())
+        if files:
+            return files
+        raise DataValidationError(f"{data_path}: no JSONL shards found")
+    raise DataValidationError(f"{data_path}: labeled data path does not exist")
+
+
+def labeled_dataset_hash(path: str | Path) -> str:
+    """Hash one JSONL file or a deterministically ordered directory of shards."""
+
+    files = _dataset_files(path)
+    if len(files) == 1 and files[0] == Path(path):
+        digest = hashlib.sha256(files[0].read_bytes()).hexdigest()
+        return f"sha256:{digest}"
+
+    root = Path(path)
+    digest = hashlib.sha256()
+    for file_path in files:
+        relative = file_path.relative_to(root).as_posix().encode("utf-8")
+        digest.update(len(relative).to_bytes(4, "big"))
+        digest.update(relative)
+        content = file_path.read_bytes()
+        digest.update(len(content).to_bytes(8, "big"))
+        digest.update(content)
+    return f"sha256:{digest.hexdigest()}"
+
+
 def load_labeled_jsonl(path: str | Path) -> list[LabeledItem]:
-    """Load a JSONL training fixture and validate every row."""
+    """Load one JSONL file or a directory of JSONL shards and validate every row."""
 
     data_path = Path(path)
     items: list[LabeledItem] = []
     seen_ids: set[str] = set()
 
-    with data_path.open("r", encoding="utf-8") as stream:
-        for line_number, line in enumerate(stream, start=1):
-            if not line.strip():
-                continue
-            try:
-                raw = json.loads(line)
-            except json.JSONDecodeError as exc:
-                raise DataValidationError(
-                    f"{data_path}:{line_number}: invalid JSON: {exc.msg}"
-                ) from exc
-            if not isinstance(raw, dict):
-                raise DataValidationError(
-                    f"{data_path}:{line_number}: each JSONL row must be an object"
-                )
-            try:
-                item = validate_labeled_item(raw)
-            except DataValidationError as exc:
-                raise DataValidationError(
-                    f"{data_path}:{line_number}: {exc}"
-                ) from exc
+    for file_path in _dataset_files(data_path):
+        with file_path.open("r", encoding="utf-8") as stream:
+            for line_number, line in enumerate(stream, start=1):
+                if not line.strip():
+                    continue
+                try:
+                    raw = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    raise DataValidationError(
+                        f"{file_path}:{line_number}: invalid JSON: {exc.msg}"
+                    ) from exc
+                if not isinstance(raw, dict):
+                    raise DataValidationError(
+                        f"{file_path}:{line_number}: each JSONL row must be an object"
+                    )
+                try:
+                    item = validate_labeled_item(raw)
+                except DataValidationError as exc:
+                    raise DataValidationError(
+                        f"{file_path}:{line_number}: {exc}"
+                    ) from exc
 
-            # 同一 id の重複は、後の train/test 分割で同じ記事が両側へ漏れる原因になるため早めに止める。
-            if item.id in seen_ids:
-                raise DataValidationError(
-                    f"{data_path}:{line_number}: duplicate id: {item.id}"
-                )
-            seen_ids.add(item.id)
-            items.append(item)
+                # 同一 id の重複は train/evaluation 間の漏洩や shard 重複の原因になるため早めに止める。
+                if item.id in seen_ids:
+                    raise DataValidationError(
+                        f"{file_path}:{line_number}: duplicate id: {item.id}"
+                    )
+                seen_ids.add(item.id)
+                items.append(item)
 
     if not items:
         raise DataValidationError(f"{data_path}: no labeled items found")
