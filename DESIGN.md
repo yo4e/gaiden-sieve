@@ -815,6 +815,21 @@ Phase 4A の初期接続では、AI外電の本番 workflow は変更しない�
 
 この方式なら、SIEVE や接続コードに不具合があっても AI外電の収集・翻訳・公開経路を止めない。十分な観察データがたまるまで、SIEVE の結果を publication decision へ接続しない。
 
+
+#### Phase 4B.1 — 実RSS bootstrap + 明示holdout
+
+Phase 4A の最初の live shadow では、20件の手作り fixture だけで学習した candidate が実RSS 100件をすべて `uncertain` にし、OOV feature rate も高かった。Phase 4B.1 では classifier や threshold を変える前に、入力分布へ教師データを寄せる。
+
+- `profiles/ai-gaiden/bootstrap/`: 実RSS由来の bootstrap 教師データ。複数 JSONL shard を決定的な順序で読む。
+- `profiles/ai-gaiden/real-holdout/`: bootstrap と id が重ならない明示的な実RSS holdout。
+- `profiles/ai-gaiden/gold-review.jsonl`: assistant の提案と人間判断を並べて残すレビュー履歴。確認後は `human_label` と `review_status=confirmed_human` を持つ。\n- `profiles/ai-gaiden/gold.jsonl`: 人間が最終判断した10件の確定 gold set。`label_source=human` とし、train から除外する。小さく境界例へ寄せた集合なので既存 quality gate の代替にはせず、CI / shadow の監査 metrics として別記録する。
+- 実RSSへの assistant/LLM ラベルは `label_source=llm` とし、人間ラベルに偽装しない。
+- candidate metadata には training dataset hash に加えて `evaluation_mode` と external holdout hash を保存し、再評価・reproducibility check でも同じデータ境界を使う。
+- external holdout を使う場合、モデルは bootstrap 全件で fit し、holdout は評価だけに使う。同一 id が両側へ入ったら停止する。human gold も bootstrap / external holdout と id を分離し、学習へ混ぜない。
+- TF-IDF + Logistic Regression、profile threshold、promotion policy は変えない。
+
+Phase 4B.1 はまだ production 接続ではない。historical shadow replay や新しい live shadow の結果を見ても、自動 promotion や AI外電の公開判断への接続は Phase 4C 以降の別判断とする。
+
 ### Phase 5 — Model upgrade experiments
 
 必要になった場合のみ:

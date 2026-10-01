@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 
 from gaiden_sieve.artifacts import load_candidate_model, sha256_file
-from gaiden_sieve.data import load_labeled_jsonl
+from gaiden_sieve.data import labeled_dataset_hash, load_labeled_jsonl
 from gaiden_sieve.profile import load_profile
 from gaiden_sieve.train import (
     RANDOM_SEED,
@@ -76,6 +76,67 @@ def test_train_candidate_rejects_items_that_do_not_match_hashed_data(tmp_path: P
         train_candidate(
             items=items[:-1],
             data_path=data_path,
+            profile=profile,
+            artifacts_dir=tmp_path,
+        )
+
+
+def test_real_bootstrap_uses_explicit_disjoint_holdout(tmp_path: Path) -> None:
+    profile = load_profile(ROOT / "profiles" / "ai-gaiden" / "config.yml")
+    training_path = ROOT / "profiles" / "ai-gaiden" / "bootstrap"
+    evaluation_path = ROOT / "profiles" / "ai-gaiden" / "real-holdout"
+    training_items = load_labeled_jsonl(training_path)
+    evaluation_items = load_labeled_jsonl(evaluation_path)
+
+    metadata = train_candidate(
+        items=training_items,
+        data_path=training_path,
+        evaluation_items=evaluation_items,
+        evaluation_data_path=evaluation_path,
+        profile=profile,
+        artifacts_dir=tmp_path,
+        code_commit="phase4b1-test",
+        created_at=datetime(2026, 10, 1, 6, 0, tzinfo=timezone.utc),
+    )
+
+    assert len(training_items) == 36
+    assert len(evaluation_items) == 10
+    assert {item.id for item in training_items}.isdisjoint(
+        {item.id for item in evaluation_items}
+    )
+    assert metadata["evaluation_mode"] == "external_holdout"
+    assert metadata["training_data_hash"] == labeled_dataset_hash(training_path)
+    assert metadata["evaluation_data_hash"] == labeled_dataset_hash(evaluation_path)
+    assert metadata["train_size"] == 36
+    assert metadata["holdout_size"] == 10
+    assert metadata["test_size"] is None
+    assert metadata["hyperparameters"]["classifier"]["name"] == "LogisticRegression"
+    assert metadata["quality_gate"]["passed"] is True
+
+    metrics, evaluation = evaluate_candidate(
+        data_path=training_path,
+        evaluation_data_path=evaluation_path,
+        profile=profile,
+        artifacts_dir=tmp_path,
+        model_version=str(metadata["model_version"]),
+    )
+    assert evaluation["evaluation_mode"] == "external_holdout"
+    assert evaluation["metrics"] == metadata["metrics"]
+    assert metrics.precision >= profile.precision_gate
+    assert metrics.recall >= profile.recall_gate
+
+
+def test_external_holdout_rejects_training_overlap(tmp_path: Path) -> None:
+    profile = load_profile(ROOT / "profiles" / "ai-gaiden" / "config.yml")
+    data_path = ROOT / "profiles" / "ai-gaiden" / "labeled.jsonl"
+    items = load_labeled_jsonl(data_path)
+
+    with pytest.raises(TrainingError, match="must be disjoint"):
+        train_candidate(
+            items=items,
+            data_path=data_path,
+            evaluation_items=items,
+            evaluation_data_path=data_path,
             profile=profile,
             artifacts_dir=tmp_path,
         )

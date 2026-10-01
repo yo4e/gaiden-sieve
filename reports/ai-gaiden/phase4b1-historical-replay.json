@@ -1,0 +1,295 @@
+{
+  "baseline": {
+    "classification_distribution": {
+      "not_relevant": 0,
+      "relevant": 0,
+      "uncertain": 100
+    },
+    "mean_probability_relevant": 0.5159057732785035,
+    "oov_feature_rate": 0.9235850368516201,
+    "uncertain_rate": 1.0
+  },
+  "dataset": {
+    "bootstrap_count": 36,
+    "bootstrap_labels": {
+      "not_relevant": 12,
+      "relevant": 24
+    },
+    "label_source": "llm",
+    "pending_human_gold_review_count": 10,
+    "real_holdout_count": 10,
+    "real_holdout_labels": {
+      "not_relevant": 4,
+      "relevant": 6
+    },
+    "summary_truncation_chars": 500
+  },
+  "historical_replay": {
+    "classification_distribution": {
+      "not_relevant": 20,
+      "relevant": 80,
+      "uncertain": 0
+    },
+    "confident_comparison": {
+      "agreement": 95,
+      "agreement_rate": 0.95,
+      "compared": 100,
+      "disagreement": 5
+    },
+    "disagreements": [
+      {
+        "admission_accepted": false,
+        "id": "microsoft-cloud:url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41",
+        "probability_relevant": 0.8621732081374954,
+        "sieve_classification": "relevant",
+        "source": "microsoft-cloud",
+        "title": "Accelerating Frontier Transformation: Enrich employee experience"
+      },
+      {
+        "admission_accepted": false,
+        "id": "microsoft-cloud:url:b4e8bc639f2fd6ef562e02aea2f8290be8281da14885a9a9063e9a00f1777b20",
+        "probability_relevant": 0.8707162401413157,
+        "sieve_classification": "relevant",
+        "source": "microsoft-cloud",
+        "title": "What’s the Tea? Lessons from leaders navigating AI transformation"
+      },
+      {
+        "admission_accepted": false,
+        "id": "microsoft-cloud:url:725b173772a1bcee9e29d2dd8f76f21dba4b1c1cb7f1cc9af12cd1856b6d557a",
+        "probability_relevant": 0.8659441149676532,
+        "sieve_classification": "relevant",
+        "source": "microsoft-cloud",
+        "title": "Looking back on Microsoft’s FY26: From AI experimentation to Frontier Transformation"
+      },
+      {
+        "admission_accepted": false,
+        "id": "microsoft-cloud:url:a2ae9bea5eb13d3afd7777f07c125a6e5892aadeecd69fdfb8d99fc0edf8c4aa",
+        "probability_relevant": 0.8650818407753442,
+        "sieve_classification": "relevant",
+        "source": "microsoft-cloud",
+        "title": "Inside nonprofits using AI to extend their impact"
+      },
+      {
+        "admission_accepted": false,
+        "id": "microsoft-cloud:url:8a136f766dc2aca701fd8dd6eabc658f8923848d50726eb9546e65cc052d1718",
+        "probability_relevant": 0.8727360242996723,
+        "sieve_classification": "relevant",
+        "source": "microsoft-cloud",
+        "title": "The AI Strategy Roadmap: Five drivers of successful AI transformation"
+      }
+    ],
+    "mean_probability_relevant": 0.743023403201352,
+    "oov_feature_rate": 0.7771751726695406,
+    "source_distribution": {
+      "apple-ml-research": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8614913110511768
+      },
+      "aws-machine-learning": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8571554492656123
+      },
+      "github-ai-ml": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8619073216501706
+      },
+      "google-ai": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8569605932099457
+      },
+      "google-deepmind": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8560148647002667
+      },
+      "hugging-face": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8555090324959185
+      },
+      "langchain-releases": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8547497709319396
+      },
+      "microsoft-ai": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8710457635944886
+      },
+      "microsoft-cloud": {
+        "admission_accepted": 5,
+        "admission_rejected": 5,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 10,
+          "uncertain": 0
+        },
+        "count": 10,
+        "mean_probability_relevant": 0.8691880246293924
+      },
+      "mistral-ai": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8580109920783127
+      },
+      "mlcommons": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8633801006706154
+      },
+      "nvidia-deep-learning": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8615701402346408
+      },
+      "ollama-releases": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8490540221617291
+      },
+      "openai-news": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8611492309766995
+      },
+      "sourcegraph-changelog": {
+        "admission_accepted": 0,
+        "admission_rejected": 20,
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 0,
+          "uncertain": 0
+        },
+        "count": 20,
+        "mean_probability_relevant": 0.27572354964580337
+      },
+      "vllm-releases": {
+        "admission_accepted": 5,
+        "admission_rejected": 0,
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 5,
+          "uncertain": 0
+        },
+        "count": 5,
+        "mean_probability_relevant": 0.8511992231635241
+      }
+    },
+    "uncertain_rate": 0.0
+  },
+  "interpretation": [
+    "The historical 100-item shadow batch no longer collapses into the uncertain band.",
+    "OOV decreases but remains high, so the real-RSS vocabulary is still sparse.",
+    "All bootstrap not_relevant examples come from Sourcegraph generic releases, so the clean 80/20 split may partly reflect source/domain shortcuts rather than robust editorial understanding.",
+    "The 10-item gold-review set remains pending human confirmation and is intentionally excluded from training and evaluation.",
+    "No production promotion or Phase 4C connection is performed."
+  ],
+  "kind": "phase4b1-historical-shadow-replay",
+  "model": {
+    "classifier": "LogisticRegression",
+    "random_seed": 42,
+    "tfidf_ngram_range": [
+      1,
+      2
+    ],
+    "thresholds": {
+      "not_relevant": 0.4,
+      "relevant": 0.8
+    }
+  },
+  "real_holdout_metrics": {
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "schema_version": 1,
+  "scope": {
+    "ai_gaiden_commit": "36503f4f36f23d7acf7e31664cf8ba5751ae8645",
+    "input_count": 100,
+    "note": "Historical artifact replay only; this is not a new live RSS fetch.",
+    "shadow_run_id": 36220686078
+  }
+}

@@ -31,6 +31,8 @@ jobs:
           mkdir -p reports/ci
           python -m gaiden_sieve train \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .ci-artifacts \
             > reports/ci/train.json
 
@@ -39,14 +41,52 @@ jobs:
           MODEL_VERSION="$(python -c 'import json; print(json.load(open("reports/ci/train.json"))["model_version"])')"
           python -m gaiden_sieve evaluate \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .ci-artifacts \
             --candidate "$MODEL_VERSION" \
             > reports/ci/evaluate.json
           python -m gaiden_sieve verify \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .ci-artifacts \
             --candidate "$MODEL_VERSION" \
             > reports/ci/reproducibility.json
+          MODEL_VERSION="$MODEL_VERSION" python - <<'PY'
+          import json
+          import os
+          from dataclasses import asdict
+          from pathlib import Path
+
+          from gaiden_sieve.artifacts import load_candidate_model
+          from gaiden_sieve.data import load_labeled_jsonl
+          from gaiden_sieve.profile import load_profile
+          from gaiden_sieve.train import evaluate_labeled_items
+
+          profile = load_profile(Path("profiles/ai-gaiden/config.yml"))
+          model = load_candidate_model(
+              artifacts_dir=".ci-artifacts",
+              profile=profile.profile,
+              model_version=os.environ["MODEL_VERSION"],
+          )
+          gold_items = load_labeled_jsonl(Path("profiles/ai-gaiden/gold.jsonl"))
+          metrics = evaluate_labeled_items(model, gold_items, profile)
+          Path("reports/ci/human-gold.json").write_text(
+              json.dumps(
+                  {
+                      "profile": profile.profile,
+                      "model_version": os.environ["MODEL_VERSION"],
+                      "item_count": len(gold_items),
+                      "metrics": asdict(metrics),
+                      "quality_gate_applied": False,
+                  },
+                  indent=2,
+                  sort_keys=True,
+              ) + "\n",
+              encoding="utf-8",
+          )
+          PY
           python - <<'PY'
           import json
           from pathlib import Path
@@ -54,6 +94,7 @@ jobs:
           train = json.loads(Path("reports/ci/train.json").read_text())
           evaluate = json.loads(Path("reports/ci/evaluate.json").read_text())
           reproducibility = json.loads(Path("reports/ci/reproducibility.json").read_text())
+          human_gold = json.loads(Path("reports/ci/human-gold.json").read_text())
 
           assert evaluate["quality_gate"]["passed"] is True
           assert reproducibility["passed"] is True
@@ -62,10 +103,13 @@ jobs:
           report = {
               "model_version": train["model_version"],
               "training_data_hash": train["training_data_hash"],
+              "evaluation_mode": train["evaluation_mode"],
+              "evaluation_data_hash": train["evaluation_data_hash"],
               "code_commit": train["code_commit"],
               "metrics": evaluate["metrics"],
               "quality_gate": evaluate["quality_gate"],
               "reproducibility": reproducibility["checks"],
+              "human_gold": human_gold,
               "production_promoted": False,
           }
           Path("reports/ci/report.json").write_text(

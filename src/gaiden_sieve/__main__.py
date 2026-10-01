@@ -41,6 +41,19 @@ def _add_common_arguments(subparser: argparse.ArgumentParser) -> None:
     )
 
 
+def _add_training_data_arguments(subparser: argparse.ArgumentParser) -> None:
+    subparser.add_argument(
+        "--training-data",
+        type=Path,
+        help="labeled JSONL used for training; default: profiles/<profile>/labeled.jsonl",
+    )
+    subparser.add_argument(
+        "--evaluation-data",
+        type=Path,
+        help="optional explicit labeled holdout JSONL kept disjoint from training",
+    )
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m gaiden_sieve")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -50,13 +63,18 @@ def _build_parser() -> argparse.ArgumentParser:
         subparser = subparsers.add_parser(command)
         _add_common_arguments(subparser)
 
+    train = subparsers.choices["train"]
+    _add_training_data_arguments(train)
+
     evaluate = subparsers.choices["evaluate"]
+    _add_training_data_arguments(evaluate)
     evaluate.add_argument(
         "--candidate",
         help="candidate model_version; default: newest candidate metadata",
     )
 
     verify = subparsers.choices["verify"]
+    _add_training_data_arguments(verify)
     verify.add_argument(
         "--candidate",
         help="candidate model_version; default: newest candidate metadata",
@@ -110,14 +128,19 @@ def _build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _load_profile_inputs(profile_name: str, profiles_dir: str | Path):
+def _load_profile_inputs(
+    profile_name: str,
+    profiles_dir: str | Path,
+    training_data: str | Path | None = None,
+):
     profile_dir = Path(profiles_dir) / profile_name
     profile = load_profile(profile_dir / "config.yml")
     if profile.profile != profile_name:
         raise ValueError(
             f"profile directory '{profile_name}' contains config for '{profile.profile}'"
         )
-    return profile, profile_dir / "labeled.jsonl"
+    data_path = Path(training_data) if training_data else profile_dir / "labeled.jsonl"
+    return profile, data_path
 
 
 def _production_batch(args, profile):
@@ -139,14 +162,26 @@ def _production_batch(args, profile):
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = _build_parser().parse_args(argv)
-    profile, data_path = _load_profile_inputs(args.profile, args.profiles_dir)
+    profile, data_path = _load_profile_inputs(
+        args.profile,
+        args.profiles_dir,
+        getattr(args, "training_data", None),
+    )
+    evaluation_data_path = getattr(args, "evaluation_data", None)
     exit_code = 0
 
     if args.command == "train":
         items = load_labeled_jsonl(data_path)
+        evaluation_items = (
+            load_labeled_jsonl(evaluation_data_path)
+            if evaluation_data_path is not None
+            else None
+        )
         payload = train_candidate(
             items=items,
             data_path=data_path,
+            evaluation_items=evaluation_items,
+            evaluation_data_path=evaluation_data_path,
             profile=profile,
             artifacts_dir=args.artifacts_dir,
         )
@@ -157,6 +192,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         )
         _, payload = evaluate_candidate(
             data_path=data_path,
+            evaluation_data_path=evaluation_data_path,
             profile=profile,
             artifacts_dir=args.artifacts_dir,
             model_version=model_version,
@@ -168,6 +204,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         )
         payload = verify_candidate_reproducibility(
             data_path=data_path,
+            evaluation_data_path=evaluation_data_path,
             profile=profile,
             artifacts_dir=args.artifacts_dir,
             model_version=model_version,

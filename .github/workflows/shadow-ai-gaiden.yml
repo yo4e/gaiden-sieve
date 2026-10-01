@@ -29,6 +29,8 @@ jobs:
           mkdir -p .shadow/artifacts reports/ai-gaiden-shadow
           python -m gaiden_sieve train \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .shadow/artifacts \
             > reports/ai-gaiden-shadow/train.json
           python - <<'PY'
@@ -48,9 +50,49 @@ jobs:
         run: |
           python -m gaiden_sieve verify \
             --profile ai-gaiden \
+            --training-data profiles/ai-gaiden/bootstrap \
+            --evaluation-data profiles/ai-gaiden/real-holdout \
             --artifacts-dir .shadow/artifacts \
             --candidate "$SHADOW_MODEL_VERSION" \
             > reports/ai-gaiden-shadow/reproducibility.json
+
+      - name: Score human gold set
+        shell: bash
+        run: |
+          MODEL_VERSION="$SHADOW_MODEL_VERSION" python - <<'PY'
+          import json
+          import os
+          from dataclasses import asdict
+          from pathlib import Path
+
+          from gaiden_sieve.artifacts import load_candidate_model
+          from gaiden_sieve.data import load_labeled_jsonl
+          from gaiden_sieve.profile import load_profile
+          from gaiden_sieve.train import evaluate_labeled_items
+
+          profile = load_profile(Path("profiles/ai-gaiden/config.yml"))
+          model = load_candidate_model(
+              artifacts_dir=".shadow/artifacts",
+              profile=profile.profile,
+              model_version=os.environ["MODEL_VERSION"],
+          )
+          gold_items = load_labeled_jsonl(Path("profiles/ai-gaiden/gold.jsonl"))
+          metrics = evaluate_labeled_items(model, gold_items, profile)
+          Path("reports/ai-gaiden-shadow/human-gold.json").write_text(
+              json.dumps(
+                  {
+                      "profile": profile.profile,
+                      "model_version": os.environ["MODEL_VERSION"],
+                      "item_count": len(gold_items),
+                      "metrics": asdict(metrics),
+                      "quality_gate_applied": False,
+                  },
+                  indent=2,
+                  sort_keys=True,
+              ) + "\n",
+              encoding="utf-8",
+          )
+          PY
 
       - name: Check out AI外電 read-only
         uses: actions/checkout@v7
