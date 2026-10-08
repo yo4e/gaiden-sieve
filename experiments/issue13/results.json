@@ -1,0 +1,2571 @@
+{
+  "baseline": {
+    "candidate_metadata": {
+      "code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+      "created_at": "2026-10-08T20:35:36.266305Z",
+      "dependencies": {
+        "joblib": "1.6.0",
+        "python": "3.12.13",
+        "scikit_learn": "1.9.1"
+      },
+      "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+      "evaluation_mode": "external_holdout",
+      "holdout_size": 10,
+      "hyperparameters": {
+        "classifier": {
+          "C": 1.0,
+          "max_iter": 1000,
+          "name": "LogisticRegression"
+        },
+        "tfidf": {
+          "max_features": null,
+          "ngram_range": [
+            1,
+            2
+          ]
+        }
+      },
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "model_artifact_hash": "sha256:023b45f97a0c2906cb6b4be8a8db29ead79e013050b70c29c018fb64dbda56e1",
+      "model_version": "20261008T203536266305Z-1248e386",
+      "profile": "ai-gaiden",
+      "quality_gate": {
+        "passed": true,
+        "precision_gate": 0.95,
+        "recall_gate": 0.8
+      },
+      "random_seed": 42,
+      "schema_version": 2,
+      "stage": "candidate",
+      "test_size": null,
+      "train_size": 36,
+      "training_data_hash": "sha256:1248e3868eabc6f16f118033bec391df0a56b180d24dbb37bd5ceb68f226fe22"
+    },
+    "gold": {
+      "binary_confusion": {
+        "not_relevant -> not_relevant": 4,
+        "not_relevant -> relevant": 2,
+        "relevant -> relevant": 4
+      },
+      "binary_metrics": {
+        "f1": 0.8,
+        "precision": 0.6666666666666666,
+        "recall": 1.0
+      },
+      "count": 10,
+      "label_source": "human",
+      "operational_metrics": {
+        "distribution": {
+          "not_relevant": 4,
+          "relevant": 6
+        },
+        "precision": 0.6666666666666666,
+        "recall": 1.0
+      },
+      "quality_gate_applied": false
+    },
+    "holdout_metrics": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "llm_audit": {
+      "binary_confusion": {
+        "not_relevant -> relevant": 2,
+        "relevant -> relevant": 6
+      },
+      "binary_metrics": {
+        "f1": 0.8571428571428571,
+        "precision": 0.75,
+        "recall": 1.0
+      },
+      "count": 8,
+      "label_source": "llm",
+      "operational_metrics": {
+        "distribution": {
+          "relevant": 8
+        },
+        "precision": 0.75,
+        "recall": 1.0
+      },
+      "quality_gate_applied": false
+    },
+    "quality_gate": {
+      "passed": true,
+      "precision_gate": 0.95,
+      "recall_gate": 0.8
+    },
+    "shadow": {
+      "full": {
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 80,
+          "uncertain": 0
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 100,
+        "mean_probability_relevant": 0.7412281500654083,
+        "model_version": "20261008T203536266305Z-1248e386",
+        "oov_feature_rate": 0.8081652633640102,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8542207880805142
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8501654876785094
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8602146665884606
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8583891756428403
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8503431675462242
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8492188351348267
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8516763915430605
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8700401231677237
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 10,
+              "uncertain": 0
+            },
+            "count": 10,
+            "mean_probability_relevant": 0.868957459822812
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8566764607012841
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8641307396325978
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8615701402346408
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8471428280623842
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8578299601238776
+          },
+          "sourcegraph-changelog": {
+            "classification_distribution": {
+              "not_relevant": 20,
+              "relevant": 0,
+              "uncertain": 0
+            },
+            "count": 20,
+            "mean_probability_relevant": 0.2757235496458033
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8521351189423857
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.0
+      },
+      "live": {
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 80,
+          "uncertain": 0
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 100,
+        "mean_probability_relevant": 0.7412097334586494,
+        "model_version": "20261008T203536266305Z-1248e386",
+        "oov_feature_rate": 0.8084289639566834,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8542207880805142
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8501654876785094
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8602146665884606
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8583891756428403
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8503431675462242
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8482594523968782
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8522674421458305
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8700401231677237
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 10,
+              "uncertain": 0
+            },
+            "count": 10,
+            "mean_probability_relevant": 0.868957459822812
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8566764607012841
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8641307396325978
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8615701402346408
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8471428280623842
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8578299601238776
+          },
+          "sourcegraph-changelog": {
+            "classification_distribution": {
+              "not_relevant": 20,
+              "relevant": 0,
+              "uncertain": 0
+            },
+            "count": 20,
+            "mean_probability_relevant": 0.2757235496458033
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8521351189423857
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.0
+      },
+      "unseen": {
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 67,
+          "uncertain": 0
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 67,
+        "mean_probability_relevant": 0.8572534027111481,
+        "model_version": "20261008T203536266305Z-1248e386",
+        "oov_feature_rate": 0.8250742409244257,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8542207880805142
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8501654876785094
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8647739586546005
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 3,
+              "uncertain": 0
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.8596409438233534
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.84809840702883
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8492188351348267
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8516763915430605
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8700401231677237
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 6,
+              "uncertain": 0
+            },
+            "count": 6,
+            "mean_probability_relevant": 0.8709431990343851
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8546481840998859
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8635746090296916
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 3,
+              "uncertain": 0
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.8590887897202614
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8471428280623842
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8578299601238776
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8570692206508156
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.0
+      },
+      "unseen-unique-url": {
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 62,
+          "uncertain": 0
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 62,
+        "mean_probability_relevant": 0.8562222155775534,
+        "model_version": "20261008T203536266305Z-1248e386",
+        "oov_feature_rate": 0.826365379124689,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8542207880805142
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8501654876785094
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8647739586546005
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 3,
+              "uncertain": 0
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.8596409438233534
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.84809840702883
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8492188351348267
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8516763915430605
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8700401231677237
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 1,
+              "uncertain": 0
+            },
+            "count": 1,
+            "mean_probability_relevant": 0.8754585783676921
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8546481840998859
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8635746090296916
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 3,
+              "uncertain": 0
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.8590887897202614
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8471428280623842
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 5,
+              "uncertain": 0
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.8578299601238776
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 4,
+              "uncertain": 0
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.8570692206508156
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.0
+      }
+    },
+    "training_count": 36,
+    "verification": {
+      "checks": {
+        "code_commit_recorded": true,
+        "dependencies_recorded": true,
+        "evaluation_data_hash_matches": true,
+        "evaluation_metrics_match": true,
+        "evaluation_mode_recorded": true,
+        "hyperparameters_recorded": true,
+        "metrics_recorded": true,
+        "random_seed_recorded": true,
+        "test_size_recorded": true,
+        "training_data_hash_matches": true
+      },
+      "evaluation": {
+        "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+        "evaluation_mode": "external_holdout",
+        "metrics": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "model_version": "20261008T203536266305Z-1248e386",
+        "profile": "ai-gaiden",
+        "quality_gate": {
+          "passed": true,
+          "precision_gate": 0.95,
+          "recall_gate": 0.8
+        }
+      },
+      "lineage": {
+        "code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+        "dependencies": {
+          "joblib": "1.6.0",
+          "python": "3.12.13",
+          "scikit_learn": "1.9.1"
+        },
+        "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+        "evaluation_mode": "external_holdout",
+        "hyperparameters": {
+          "classifier": {
+            "C": 1.0,
+            "max_iter": 1000,
+            "name": "LogisticRegression"
+          },
+          "tfidf": {
+            "max_features": null,
+            "ngram_range": [
+              1,
+              2
+            ]
+          }
+        },
+        "metrics": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "random_seed": 42,
+        "test_size": null,
+        "training_data_hash": "sha256:1248e3868eabc6f16f118033bec391df0a56b180d24dbb37bd5ceb68f226fe22"
+      },
+      "model_version": "20261008T203536266305Z-1248e386",
+      "passed": true,
+      "profile": "ai-gaiden"
+    }
+  },
+  "interpretation": {
+    "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+    "core_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+    "decision": "no_improvement_stop_same_small_data_addition_loop_no_phase4c",
+    "frozen_input_sha256": "sha256:2cc74060b679b3d57f2ce8232dd452f12f48d65b4db8865722f440cfce5c538c",
+    "iteration1_data_audit": {
+      "boundary_overlap_checks": {
+        "augmented-bootstrap vs gold": [],
+        "augmented-bootstrap vs real-holdout": [],
+        "bootstrap vs gold": [],
+        "bootstrap vs real-holdout": [],
+        "real-holdout vs gold": []
+      },
+      "current_count": 100,
+      "limitations": [
+        "No eligible Microsoft negative in fetched feed; no forced labels",
+        "RSS-only provisional labels need editorial review",
+        "Existing bootstrap labels unchanged; not all historical labels content-audited"
+      ],
+      "new_training_current_overlap": 0,
+      "not_relevant": 7,
+      "rejected": [],
+      "relevant": 8,
+      "selected_count": 15,
+      "selection_basis": "RSS title + summary only; no model/gold score-based selection; one candidate iteration",
+      "selection_locked_at": "2026-10-08T20:37:40.659729+00:00",
+      "unseen_count": 67,
+      "unseen_unique_url_count": 62
+    },
+    "iteration2_data_audit": {
+      "audit_count": 8,
+      "audit_labels": {
+        "not_relevant": 2,
+        "relevant": 6
+      },
+      "by_source": {
+        "apple-ml-research": {
+          "relevant": 2
+        },
+        "aws-machine-learning": {
+          "not_relevant": 1,
+          "relevant": 5
+        },
+        "github-ai-ml": {
+          "not_relevant": 2,
+          "relevant": 5
+        },
+        "google-ai": {
+          "not_relevant": 1,
+          "relevant": 6
+        },
+        "google-deepmind": {
+          "relevant": 2
+        },
+        "hugging-face": {
+          "relevant": 2
+        },
+        "langchain-releases": {
+          "relevant": 2
+        },
+        "microsoft-cloud": {
+          "not_relevant": 5,
+          "relevant": 5
+        },
+        "mistral-ai": {
+          "relevant": 2
+        },
+        "mlcommons": {
+          "relevant": 2
+        },
+        "nvidia-deep-learning": {
+          "relevant": 2
+        },
+        "ollama-releases": {
+          "relevant": 1
+        },
+        "openai-news": {
+          "relevant": 1
+        },
+        "sourcegraph-changelog": {
+          "not_relevant": 12
+        },
+        "vllm-releases": {
+          "relevant": 1
+        }
+      },
+      "fresh_labels": {
+        "not_relevant": 6,
+        "relevant": 7
+      },
+      "fresh_training_count": 13,
+      "limitations": [
+        "All added labels remain provisional LLM labels; auxiliary audit is not human gold",
+        "Sourcegraph patch templates remain in existing train/holdout; no historical labels rewritten",
+        "URLs and title/text duplicate-free do not prove semantic independence; carbon audit shares topic with some training examples"
+      ],
+      "new_training_current_overlap": 0,
+      "original_count": 36,
+      "overlap_checks": {
+        "holdout": [],
+        "human_gold": [],
+        "new_llm_audit": []
+      },
+      "quarantined_count": 5,
+      "rejected": [],
+      "retained_from_iteration1": 10,
+      "selection_locked_at": "2026-10-08T23:11:25.178412+00:00",
+      "selection_policy": "single pre-evaluation fixed dataset; labels from supplied RSS title+summary and documented content criteria; no source-only labels; no post-score edits",
+      "training_count": 59,
+      "training_labels": {
+        "not_relevant": 21,
+        "relevant": 38
+      }
+    },
+    "latest_delta": {
+      "added_ids": [
+        "hugging-face:url:ffd2818196374b7e8d985c5ba0d85a7cf6f6fd71833912309c34424b62f62e05",
+        "langchain-releases:url:9503050a530eab40c78f684c757f2618c1e700461a6c0cfbefe5276d9cfbe49b"
+      ],
+      "changed_texts": [],
+      "earlier_count": 100,
+      "live_count": 100,
+      "removed_ids": [
+        "langchain-releases:url:7b8542d687a9973af788f7d23eaeedbc3812dd354c5667f2199115561ee2eaac",
+        "hugging-face:url:e81b1dea7ce0fb42c97855621c52f6a49d0893d2f06b0ac1c6c329bdc3da8830"
+      ],
+      "same_id_sets": false
+    },
+    "latest_input_sha256": "sha256:e122d3556914e65e6ae37f20c77f26bc273be3cded8cc803deb4cccb220a74e6",
+    "metric_definition": "binary: model.predict; operational relevant: P(relevant)>=0.80; uncertain: 0.40<=P<0.80",
+    "tests": "26 passed on unchanged core; candidate verify and iteration2 refit max difference=0",
+    "work_times_jst": {
+      "iteration1": "2026-10-09 approx 05:32–05:42 (~10 min), supplementary clarification ~05:43–05:45",
+      "iteration2": "2026-10-09 08:08:20–08:17:47 (~9.5 min; report generated 08:17:17)"
+    }
+  },
+  "iteration1": {
+    "candidate_metadata": {
+      "code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+      "created_at": "2026-10-08T20:37:49.777135Z",
+      "dependencies": {
+        "joblib": "1.6.0",
+        "python": "3.12.13",
+        "scikit_learn": "1.9.1"
+      },
+      "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+      "evaluation_mode": "external_holdout",
+      "holdout_size": 10,
+      "hyperparameters": {
+        "classifier": {
+          "C": 1.0,
+          "max_iter": 1000,
+          "name": "LogisticRegression"
+        },
+        "tfidf": {
+          "max_features": null,
+          "ngram_range": [
+            1,
+            2
+          ]
+        }
+      },
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "model_artifact_hash": "sha256:83da70e1e1aa47eeaecbddf8cbbad2e5cb7c18c738e1a56a8425d55401944d12",
+      "model_version": "20261008T203749777135Z-9d4e4b23",
+      "profile": "ai-gaiden",
+      "quality_gate": {
+        "passed": true,
+        "precision_gate": 0.95,
+        "recall_gate": 0.8
+      },
+      "random_seed": 42,
+      "schema_version": 2,
+      "stage": "candidate",
+      "test_size": null,
+      "train_size": 51,
+      "training_data_hash": "sha256:9d4e4b235e60c55cce854cb3ba06a3d539754d68f7c51ae62939d891e0c33525"
+    },
+    "gold": {
+      "binary_confusion": {
+        "not_relevant -> not_relevant": 4,
+        "not_relevant -> relevant": 2,
+        "relevant -> relevant": 4
+      },
+      "binary_metrics": {
+        "f1": 0.8,
+        "precision": 0.6666666666666666,
+        "recall": 1.0
+      },
+      "count": 10,
+      "label_source": "human",
+      "operational_metrics": {
+        "distribution": {
+          "not_relevant": 4,
+          "uncertain": 6
+        },
+        "precision": null,
+        "recall": 0.0
+      },
+      "quality_gate_applied": false
+    },
+    "holdout_metrics": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "llm_audit": {
+      "binary_confusion": {
+        "not_relevant -> relevant": 2,
+        "relevant -> relevant": 6
+      },
+      "binary_metrics": {
+        "f1": 0.8571428571428571,
+        "precision": 0.75,
+        "recall": 1.0
+      },
+      "count": 8,
+      "label_source": "llm",
+      "operational_metrics": {
+        "distribution": {
+          "uncertain": 8
+        },
+        "precision": null,
+        "recall": 0.0
+      },
+      "quality_gate_applied": false
+    },
+    "quality_gate": {
+      "passed": true,
+      "precision_gate": 0.95,
+      "recall_gate": 0.8
+    },
+    "shadow": {
+      "full": {
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 0,
+          "uncertain": 80
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 100,
+        "mean_probability_relevant": 0.6551533096949926,
+        "model_version": "20261008T203749777135Z-9d4e4b23",
+        "oov_feature_rate": 0.7900724495790092,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.742265814761565
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7389294962520572
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.759322672837383
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7654830433978863
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7530837382046851
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7565583144119983
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7534852795214222
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7788306109561638
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 10
+            },
+            "count": 10,
+            "mean_probability_relevant": 0.7780511750263865
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7584815867734317
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7692074368363709
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7788086155141206
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7501097897105445
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7602588303196681
+          },
+          "sourcegraph-changelog": {
+            "classification_distribution": {
+              "not_relevant": 20,
+              "relevant": 0,
+              "uncertain": 0
+            },
+            "count": 20,
+            "mean_probability_relevant": 0.2318511335680343
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7547340800776448
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.8
+      },
+      "live": {
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 0,
+          "uncertain": 80
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 100,
+        "mean_probability_relevant": 0.6550253205388671,
+        "model_version": "20261008T203749777135Z-9d4e4b23",
+        "oov_feature_rate": 0.7897607887506061,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.742265814761565
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7389294962520572
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.759322672837383
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7654830433978863
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7530837382046851
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7516827495828892
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7558010612280227
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7788306109561638
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 10
+            },
+            "count": 10,
+            "mean_probability_relevant": 0.7780511750263865
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7584815867734317
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7692074368363709
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7788086155141206
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7501097897105445
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7602588303196681
+          },
+          "sourcegraph-changelog": {
+            "classification_distribution": {
+              "not_relevant": 20,
+              "relevant": 0,
+              "uncertain": 0
+            },
+            "count": 20,
+            "mean_probability_relevant": 0.2318511335680343
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7547340800776448
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.8
+      },
+      "unseen": {
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 0,
+          "uncertain": 67
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 67,
+        "mean_probability_relevant": 0.7585765418284285,
+        "model_version": "20261008T203749777135Z-9d4e4b23",
+        "oov_feature_rate": 0.8067715803721137,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.742265814761565
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7389294962520572
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.766607050603737
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.7621906656622022
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7459351886407755
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7565583144119983
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7534852795214222
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7788306109561638
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 6
+            },
+            "count": 6,
+            "mean_probability_relevant": 0.7796153541793358
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7522767978692051
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7647527058321565
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.770972991691397
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7501097897105445
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7602588303196681
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7567418884793261
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 1.0
+      },
+      "unseen-unique-url": {
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 0,
+          "uncertain": 62
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 62,
+        "mean_probability_relevant": 0.7569431491568369,
+        "model_version": "20261008T203749777135Z-9d4e4b23",
+        "oov_feature_rate": 0.8084390422971816,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.742265814761565
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7389294962520572
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.766607050603737
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.7621906656622022
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7459351886407755
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7565583144119983
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7534852795214222
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7788306109561638
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 1
+            },
+            "count": 1,
+            "mean_probability_relevant": 0.7835390702951953
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7522767978692051
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7647527058321565
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.770972991691397
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7501097897105445
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7602588303196681
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7567418884793261
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 1.0
+      }
+    },
+    "training_count": 51,
+    "verification": {
+      "checks": {
+        "code_commit_recorded": true,
+        "dependencies_recorded": true,
+        "evaluation_data_hash_matches": true,
+        "evaluation_metrics_match": true,
+        "evaluation_mode_recorded": true,
+        "hyperparameters_recorded": true,
+        "metrics_recorded": true,
+        "random_seed_recorded": true,
+        "test_size_recorded": true,
+        "training_data_hash_matches": true
+      },
+      "evaluation": {
+        "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+        "evaluation_mode": "external_holdout",
+        "metrics": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "model_version": "20261008T203749777135Z-9d4e4b23",
+        "profile": "ai-gaiden",
+        "quality_gate": {
+          "passed": true,
+          "precision_gate": 0.95,
+          "recall_gate": 0.8
+        }
+      },
+      "lineage": {
+        "code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+        "dependencies": {
+          "joblib": "1.6.0",
+          "python": "3.12.13",
+          "scikit_learn": "1.9.1"
+        },
+        "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+        "evaluation_mode": "external_holdout",
+        "hyperparameters": {
+          "classifier": {
+            "C": 1.0,
+            "max_iter": 1000,
+            "name": "LogisticRegression"
+          },
+          "tfidf": {
+            "max_features": null,
+            "ngram_range": [
+              1,
+              2
+            ]
+          }
+        },
+        "metrics": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "random_seed": 42,
+        "test_size": null,
+        "training_data_hash": "sha256:9d4e4b235e60c55cce854cb3ba06a3d539754d68f7c51ae62939d891e0c33525"
+      },
+      "model_version": "20261008T203749777135Z-9d4e4b23",
+      "passed": true,
+      "profile": "ai-gaiden"
+    }
+  },
+  "iteration2": {
+    "candidate_metadata": {
+      "code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+      "created_at": "2026-10-08T23:11:48.972272Z",
+      "dependencies": {
+        "joblib": "1.6.0",
+        "python": "3.12.13",
+        "scikit_learn": "1.9.1"
+      },
+      "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+      "evaluation_mode": "external_holdout",
+      "holdout_size": 10,
+      "hyperparameters": {
+        "classifier": {
+          "C": 1.0,
+          "max_iter": 1000,
+          "name": "LogisticRegression"
+        },
+        "tfidf": {
+          "max_features": null,
+          "ngram_range": [
+            1,
+            2
+          ]
+        }
+      },
+      "metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "model_artifact_hash": "sha256:44610aa8ab69d035fcd4da8ebff7ece0dbe5708409691a3fc9f9cab28ecae701",
+      "model_version": "20261008T231148972272Z-291d65aa",
+      "profile": "ai-gaiden",
+      "quality_gate": {
+        "passed": true,
+        "precision_gate": 0.95,
+        "recall_gate": 0.8
+      },
+      "random_seed": 42,
+      "schema_version": 2,
+      "stage": "candidate",
+      "test_size": null,
+      "train_size": 59,
+      "training_data_hash": "sha256:291d65aa8fac6aaf53812e4ac584b448fe8d2c258a9ef646c2f5b2acc76e2b18"
+    },
+    "gold": {
+      "binary_confusion": {
+        "not_relevant -> not_relevant": 4,
+        "not_relevant -> relevant": 2,
+        "relevant -> relevant": 4
+      },
+      "binary_metrics": {
+        "f1": 0.8,
+        "precision": 0.6666666666666666,
+        "recall": 1.0
+      },
+      "count": 10,
+      "label_source": "human",
+      "operational_metrics": {
+        "distribution": {
+          "not_relevant": 4,
+          "uncertain": 6
+        },
+        "precision": null,
+        "recall": 0.0
+      },
+      "quality_gate_applied": false
+    },
+    "holdout_metrics": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "llm_audit": {
+      "binary_confusion": {
+        "not_relevant -> relevant": 2,
+        "relevant -> relevant": 6
+      },
+      "binary_metrics": {
+        "f1": 0.8571428571428571,
+        "precision": 0.75,
+        "recall": 1.0
+      },
+      "count": 8,
+      "label_source": "llm",
+      "operational_metrics": {
+        "distribution": {
+          "uncertain": 8
+        },
+        "precision": null,
+        "recall": 0.0
+      },
+      "quality_gate_applied": false
+    },
+    "quality_gate": {
+      "passed": true,
+      "precision_gate": 0.95,
+      "recall_gate": 0.8
+    },
+    "shadow": {
+      "full": {
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 0,
+          "uncertain": 80
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 100,
+        "mean_probability_relevant": 0.6489950304644142,
+        "model_version": "20261008T231148972272Z-291d65aa",
+        "oov_feature_rate": 0.7909340121401998,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.744516703302909
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7526132032627352
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7303362098826713
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7603534227932426
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.763186246817326
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7558734346397185
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7554272466732559
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7393451046712279
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 10
+            },
+            "count": 10,
+            "mean_probability_relevant": 0.7363530147252649
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.769063174271353
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7630386136009044
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7687185249328474
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7491575209161185
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7657025565148576
+          },
+          "sourcegraph-changelog": {
+            "classification_distribution": {
+              "not_relevant": 20,
+              "relevant": 0,
+              "uncertain": 0
+            },
+            "count": 20,
+            "mean_probability_relevant": 0.23334620160051292
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7564778111565366
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.8
+      },
+      "live": {
+        "classification_distribution": {
+          "not_relevant": 20,
+          "relevant": 0,
+          "uncertain": 80
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 100,
+        "mean_probability_relevant": 0.648707285580255,
+        "model_version": "20261008T231148972272Z-291d65aa",
+        "oov_feature_rate": 0.7906901567803459,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.744516703302909
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7526132032627352
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7303362098826713
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7603534227932426
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.763186246817326
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.752101332958887
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7534444506709044
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7393451046712279
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 10
+            },
+            "count": 10,
+            "mean_probability_relevant": 0.7363530147252649
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.769063174271353
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7630386136009044
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7687185249328474
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7491575209161185
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7657025565148576
+          },
+          "sourcegraph-changelog": {
+            "classification_distribution": {
+              "not_relevant": 20,
+              "relevant": 0,
+              "uncertain": 0
+            },
+            "count": 20,
+            "mean_probability_relevant": 0.23334620160051292
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7564778111565366
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 0.8
+      },
+      "unseen": {
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 0,
+          "uncertain": 67
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 67,
+        "mean_probability_relevant": 0.7525197468313514,
+        "model_version": "20261008T231148972272Z-291d65aa",
+        "oov_feature_rate": 0.8087513383568009,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.744516703302909
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7526132032627352
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7475257991735342
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.7499399020654529
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7568527337605462
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7558734346397185
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7554272466732559
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7393451046712279
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 6
+            },
+            "count": 6,
+            "mean_probability_relevant": 0.7434638364443539
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7652875112265183
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7573277611295777
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.7517448232996018
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7491575209161185
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7657025565148576
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7579579429686094
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 1.0
+      },
+      "unseen-unique-url": {
+        "classification_distribution": {
+          "not_relevant": 0,
+          "relevant": 0,
+          "uncertain": 62
+        },
+        "generated_at": "2026-10-08T23:14:38.897758Z",
+        "input_count": 62,
+        "mean_probability_relevant": 0.7535822179732968,
+        "model_version": "20261008T231148972272Z-291d65aa",
+        "oov_feature_rate": 0.811661296243423,
+        "profile": "ai-gaiden",
+        "schema_version": 1,
+        "source_distribution": {
+          "apple-ml-research": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.744516703302909
+          },
+          "aws-machine-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7526132032627352
+          },
+          "github-ai-ml": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7475257991735342
+          },
+          "google-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.7499399020654529
+          },
+          "google-deepmind": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7568527337605462
+          },
+          "hugging-face": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7558734346397185
+          },
+          "langchain-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7554272466732559
+          },
+          "microsoft-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7393451046712279
+          },
+          "microsoft-cloud": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 1
+            },
+            "count": 1,
+            "mean_probability_relevant": 0.7640574953099837
+          },
+          "mistral-ai": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7652875112265183
+          },
+          "mlcommons": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7573277611295777
+          },
+          "nvidia-deep-learning": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 3
+            },
+            "count": 3,
+            "mean_probability_relevant": 0.7517448232996018
+          },
+          "ollama-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7491575209161185
+          },
+          "openai-news": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 5
+            },
+            "count": 5,
+            "mean_probability_relevant": 0.7657025565148576
+          },
+          "vllm-releases": {
+            "classification_distribution": {
+              "not_relevant": 0,
+              "relevant": 0,
+              "uncertain": 4
+            },
+            "count": 4,
+            "mean_probability_relevant": 0.7579579429686094
+          }
+        },
+        "thresholds": {
+          "not_relevant": 0.4,
+          "relevant": 0.8
+        },
+        "uncertain_rate": 1.0
+      }
+    },
+    "training_count": 59,
+    "verification": {
+      "checks": {
+        "code_commit_recorded": true,
+        "dependencies_recorded": true,
+        "evaluation_data_hash_matches": true,
+        "evaluation_metrics_match": true,
+        "evaluation_mode_recorded": true,
+        "hyperparameters_recorded": true,
+        "metrics_recorded": true,
+        "random_seed_recorded": true,
+        "test_size_recorded": true,
+        "training_data_hash_matches": true
+      },
+      "evaluation": {
+        "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+        "evaluation_mode": "external_holdout",
+        "metrics": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "model_version": "20261008T231148972272Z-291d65aa",
+        "profile": "ai-gaiden",
+        "quality_gate": {
+          "passed": true,
+          "precision_gate": 0.95,
+          "recall_gate": 0.8
+        }
+      },
+      "lineage": {
+        "code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+        "dependencies": {
+          "joblib": "1.6.0",
+          "python": "3.12.13",
+          "scikit_learn": "1.9.1"
+        },
+        "evaluation_data_hash": "sha256:d5d005d426df45eef7e47c430cf74ad7678f512e8bc20e7708fa14b2112b21b3",
+        "evaluation_mode": "external_holdout",
+        "hyperparameters": {
+          "classifier": {
+            "C": 1.0,
+            "max_iter": 1000,
+            "name": "LogisticRegression"
+          },
+          "tfidf": {
+            "max_features": null,
+            "ngram_range": [
+              1,
+              2
+            ]
+          }
+        },
+        "metrics": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "random_seed": 42,
+        "test_size": null,
+        "training_data_hash": "sha256:291d65aa8fac6aaf53812e4ac584b448fe8d2c258a9ef646c2f5b2acc76e2b18"
+      },
+      "model_version": "20261008T231148972272Z-291d65aa",
+      "passed": true,
+      "profile": "ai-gaiden"
+    }
+  }
+}
