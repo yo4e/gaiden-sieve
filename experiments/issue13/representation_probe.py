@@ -24,6 +24,18 @@ CONDITIONS={'word12_c1':dict(analyzer='word',ngram_range=(1,2)),'charwb35_c1':di
 def build_model(name):
     return Pipeline([('tfidf',TfidfVectorizer(**CONDITIONS[name])),('classifier',LogisticRegression(C=1,max_iter=1000,random_state=42))])
 
+def grouping_rows(items,raw_rows):
+    # URLは記事同一性の検査metadataとして保持し、モデル特徴には渡さない。
+    metadata={r['id']:r for r in raw_rows}
+    if len(metadata)!=len(raw_rows):raise ValueError('duplicate IDs in grouping metadata')
+    rows=[]
+    for item in items:
+        raw=metadata.get(item.id)
+        if raw is None or not isinstance(raw.get('source_url'),str) or not raw['source_url'].strip():
+            raise ValueError('source_url missing in grouping metadata: '+item.id)
+        rows.append(dict(id=item.id,source=item.source,title=item.title,summary=item.summary,label=item.label,source_url=raw['source_url']))
+    return rows
+
 def grouped_splits(rows):
     ids,edges=groups(rows);keys=[ids[r['id']] for r in rows];labels=[r['label'] for r in rows]
     folds=list(StratifiedGroupKFold(n_splits=3,shuffle=True,random_state=42).split(np.zeros(len(rows)),labels,keys))
@@ -55,7 +67,7 @@ def main():
     group_ids,_=groups(protected+new_probe);protected_ids={group_ids[r['id']] for r in protected}
     if any(group_ids[r['id']] in protected_ids for r in new_probe):raise ValueError('new probe overlaps protected group')
     profile=load_profile(REPO/'profiles/ai-gaiden/config.yml');items=load_labeled_jsonl(training_path);texts=[build_text(i,profile.text_fields) for i in items];labels=[i.label for i in items]
-    ordered=[dict(id=i.id,source=i.source,title=i.title,summary=i.summary,label=i.label) for i in items];folds,keys,edges=grouped_splits(ordered)
+    ordered=grouping_rows(items,training);folds,keys,edges=grouped_splits(ordered)
     unseen=[];seen=set()
     for r in rss:
         url=canonical_url(r)
