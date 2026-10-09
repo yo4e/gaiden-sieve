@@ -1,0 +1,182 @@
+{
+  "ai_gaiden_ingestion_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+  "count": 6,
+  "file_sha256": "sha256:69c92dbf1424b966588c4bd2f230101c1c14a1651d3f1ead2b22a7974196df70",
+  "labels_locked_before_scoring_at_utc": "2026-10-09T02:09:34.373550+00:00",
+  "limitations": [
+    "assistant RSS-only labels, not human gold",
+    "historical articles, not future time holdout",
+    "direct mechanism absence is provisional editorial interpretation, not factual proof article contains no AI",
+    "small deliberately balanced probe, not prevalence estimate"
+  ],
+  "protected_group_overlap": 0,
+  "rows": [
+    {
+      "group_id": "sha256:65bf3baa2d2187a098769517bf60059f1124adac67f1d86b568b5ffa22626388",
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "new_unscored_provisional_representation_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=16",
+        "id": "microsoft-cloud:url:19c0aa2d7437a61375800958e4f4178208fb5d35ed8833d243bf7808480ead4d",
+        "label": "not_relevant",
+        "label_reason": "\u30c7\u30fc\u30bf\u30bb\u30f3\u30bf\u30fc\u51b7\u5374\u306e\u6c34\u4f7f\u7528\u524a\u6e1b\u3002RSS\u5165\u529b\u3067\u306fAI\u306e\u4f7f\u3044\u65b9\u3092\u8aac\u660e\u3057\u306a\u3044\u3002",
+        "label_source": "llm",
+        "page": 16,
+        "published_at": "2024-12-09T16:00:00Z",
+        "raw_feed_sha256": "3d3235c9b8771b85ff36736e69e8dec5c81b22bc7412022d0b7f07f1ea8f2866",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T02:07:50.345998+00:00",
+        "review_id": "NEW_MS01",
+        "review_status": "provisional_assistant_rss_only",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling"
+      },
+      "summary_sha256": "sha256:59808026de6ba327290f422be7658fdc6418fa01b15601d18293e7238cd8c162",
+      "title_sha256": "sha256:3357d0b8dac4f7bbbd47365f65fc54189f2f70c9e60fd2319a69fdddfa6c2f25"
+    },
+    {
+      "group_id": "sha256:a49aa0fcb0f8a66c8545ed0bbcc8fe5d9575c4e8ba048a20798caa38c779b8e1",
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "new_unscored_provisional_representation_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=16",
+        "id": "microsoft-cloud:url:cd9f63366433c94acab435377c0f4028af426b3238e1c17beadf7a7437152d5d",
+        "label": "relevant",
+        "label_reason": "\u4f01\u696d\u306eAI\u5909\u9769\u306b\u3088\u308b\u696d\u52d9\u6210\u679c\u3092title\u3068summary\u3067\u660e\u793a\u3002",
+        "label_source": "llm",
+        "page": 16,
+        "published_at": "2024-12-11T17:00:00Z",
+        "raw_feed_sha256": "3d3235c9b8771b85ff36736e69e8dec5c81b22bc7412022d0b7f07f1ea8f2866",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T02:07:50.345998+00:00",
+        "review_id": "NEW_MS02",
+        "review_status": "provisional_assistant_rss_only",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver"
+      },
+      "summary_sha256": "sha256:77ad6429c910991fa494c611757c5b4da6e8d1c173c2a345f967948d3ed1e881",
+      "title_sha256": "sha256:428d3a0a1a4cf4e427285579a7791c3df03eb0348a7c87c6f2af12bb648582bc"
+    },
+    {
+      "group_id": "sha256:29ab4ea94e1653478884b09e747760ee53b787a397006b85770bbc55fb42fa7f",
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "new_unscored_provisional_representation_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=8",
+        "id": "microsoft-cloud:url:2d7e72106a28c43067edab29f42abd1e1fa51f9a20575f041ee1bafb119c6f15",
+        "label": "not_relevant",
+        "label_reason": "\u4e00\u822c\u306e\u30b5\u30a4\u30d0\u30fc\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u5553\u767a\u6708\u9593\u3068\u8cc7\u6599\u6848\u5185\u3002AI\u7528\u9014\u306e\u8aac\u660e\u306a\u3057\u3002",
+        "label_source": "llm",
+        "page": 8,
+        "published_at": "2025-10-01T16:00:00Z",
+        "raw_feed_sha256": "8c1489e2b06655f1ba13bc88e93bbfeaa0b825bf4f6e9cd6da5b4d12eb295423",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-08T23:09:39.826898+00:00",
+        "review_id": "NEW_MS03",
+        "review_status": "provisional_assistant_rss_only",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/security/blog/2025/10/01/cybersecurity-awareness-month-security-starts-with-you"
+      },
+      "summary_sha256": "sha256:82aa7e49a8d9260d54a57db6c1ddd9f23edb732d59317ef38cf597e1dd843e2e",
+      "title_sha256": "sha256:1cf71f1cd3c86dec6a42107542618243ade1962f3743a7ff011fcb4ffb8ade2a"
+    },
+    {
+      "group_id": "sha256:fbe00e14fc75111db1773629ce27cfdd2d5d77757c89d7d4b2fb82ab10c2457e",
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "new_unscored_provisional_representation_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=8",
+        "id": "microsoft-cloud:url:2e98a67c1028e0dc69d539c2d371efb7d408a5a5a037d3d9c140945f420b7591",
+        "label": "relevant",
+        "label_reason": "\u4f01\u696d\u306eAI\u63a1\u7528\u3068\u5909\u9769\u306e\u4e8b\u4f8b\u3092summary\u3067\u660e\u793a\u3002",
+        "label_source": "llm",
+        "page": 8,
+        "published_at": "2025-09-29T15:00:00Z",
+        "raw_feed_sha256": "8c1489e2b06655f1ba13bc88e93bbfeaa0b825bf4f6e9cd6da5b4d12eb295423",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-08T23:09:39.826898+00:00",
+        "review_id": "NEW_MS04",
+        "review_status": "provisional_assistant_rss_only",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/09/29/frontier-firms-in-action-lessons-from-the-ai-adoption-surge"
+      },
+      "summary_sha256": "sha256:200033026bf11a7ff00971c8703eca12ea74f99fada3652879452a2ab2baf56e",
+      "title_sha256": "sha256:0e83872c90165a6d8afc45ee84b3221ffd241db390f8dc17ebbb06db7e14459d"
+    },
+    {
+      "group_id": "sha256:80fd4b0f6723a96f237d564b54de19e518eff8b03083f30726a85b932dc5072f",
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "new_unscored_provisional_representation_probe",
+        "feed_url": "https://github.blog/ai-and-ml/feed/?paged=14",
+        "id": "github-ai-ml:url:812c12f758654415b24aa1e31472d995022f4bf6ae66e0f7d6d52914f112aa79",
+        "label": "not_relevant",
+        "label_reason": "\u4e00\u822c\u306e\u5275\u4f5c\u30cf\u30c3\u30ab\u30bd\u30f3\u6848\u5185\u3002RSS\u5165\u529b\u306bAI\u5229\u7528\u306e\u8aac\u660e\u306a\u3057\u3002",
+        "label_source": "llm",
+        "page": 14,
+        "published_at": "2025-07-16T15:00:00Z",
+        "raw_feed_sha256": "87198cf30a01c33627a8cb33b34ec62574c811c22673e053f71cab5d094c768a",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T02:07:54.409642+00:00",
+        "review_id": "NEW_GH01",
+        "review_status": "provisional_assistant_rss_only",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/open-source/for-the-love-of-code-2025"
+      },
+      "summary_sha256": "sha256:dfe3982798713a7b5af218dfa869be831f3d59c4a9bfc0baab09fe48d5132a33",
+      "title_sha256": "sha256:f74b446f0a6c5af829d2f341ffb7c2a3c729da98d8946a06edd7f72c00a120a1"
+    },
+    {
+      "group_id": "sha256:eb5012335d478f778d217f19560c666abd6dce50412c866c24bda8565e557e22",
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "new_unscored_provisional_representation_probe",
+        "feed_url": "https://github.blog/ai-and-ml/feed/?paged=14",
+        "id": "github-ai-ml:url:310fac5667bd1c03607b85ca7e7a87f915208728834639c71ec071923adb43cc",
+        "label": "relevant",
+        "label_reason": "Copilot coding agent\u306e\u6307\u793a\u3068\u74b0\u5883\u8a2d\u5b9a\u3092\u8aac\u660e\u3002",
+        "label_source": "llm",
+        "page": 14,
+        "published_at": "2025-07-15T16:00:00Z",
+        "raw_feed_sha256": "87198cf30a01c33627a8cb33b34ec62574c811c22673e053f71cab5d094c768a",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T02:07:54.409642+00:00",
+        "review_id": "NEW_GH02",
+        "review_status": "provisional_assistant_rss_only",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/ai-and-ml/github-copilot/from-chaos-to-clarity-using-github-copilot-agents-to-improve-developer-workflows"
+      },
+      "summary_sha256": "sha256:5005d20e60dd06fec502e92593fe5af22938370119756225e5db0f1d1e68df5c",
+      "title_sha256": "sha256:98941422e5bdcfe616e37eff4841bb6e605e27c2f26aac7d54011c251a9a76f7"
+    }
+  ],
+  "source_label_counts": {
+    "github-ai-ml": {
+      "not_relevant": 1,
+      "relevant": 1
+    },
+    "microsoft-cloud": {
+      "not_relevant": 2,
+      "relevant": 2
+    }
+  },
+  "target_shortfall": "GitHub second independent clear N not found in bounded RSS pool; kept one paired R/N instead of forcing label"
+}

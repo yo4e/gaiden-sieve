@@ -1,0 +1,76 @@
+{
+  "approved_ms4_excluded": true,
+  "count": 6,
+  "human_review_performed": false,
+  "limitations": [
+    "known teacher/quarantine/probe examples; not unseen test or independent accuracy",
+    "source/brand names remain in original text; not source-blind",
+    "previous exposure cannot be undone by hiding labels now",
+    "initial decision and after-policy decision must remain separate"
+  ],
+  "model_scores_shown": false,
+  "model_scoring_performed": false,
+  "model_training_performed": false,
+  "original_text_hashes_verified": true,
+  "pairs_shown": false,
+  "policy_boundaries": 3,
+  "policy_decided_by_assistant": false,
+  "private_visible_json_sha256": "sha256:a774a8ff5a963c1322ab92fb7842a31c27420afaeb747bf6a1155f0d8a1642c6",
+  "proposal_labels_shown": false,
+  "rows": [
+    {
+      "id": "github-ai-ml:url:e2848dc72d29965e601562e05f91204c5223a12fff8f631cbaf71d8c6fd8db97",
+      "source": "github-ai-ml",
+      "source_url": "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner",
+      "summary_chars": 306,
+      "summary_sha256": "sha256:6e557ad800a6c9752456681506ceed94a589a0f5d934339d5287997a7641b1c6",
+      "title_chars": 92,
+      "title_sha256": "sha256:5c3373acfb9a50d7a42d5cb58d41238d6924e9984d867bc5283ae8056502a328"
+    },
+    {
+      "id": "github-ai-ml:url:310fac5667bd1c03607b85ca7e7a87f915208728834639c71ec071923adb43cc",
+      "source": "github-ai-ml",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/from-chaos-to-clarity-using-github-copilot-agents-to-improve-developer-workflows",
+      "summary_chars": 235,
+      "summary_sha256": "sha256:5005d20e60dd06fec502e92593fe5af22938370119756225e5db0f1d1e68df5c",
+      "title_chars": 81,
+      "title_sha256": "sha256:98941422e5bdcfe616e37eff4841bb6e605e27c2f26aac7d54011c251a9a76f7"
+    },
+    {
+      "id": "aws-machine-learning:url:f56c96610a01b244677105c36d999b3b1f7611a076548205ac8eefd42c1503e1",
+      "source": "aws-machine-learning",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-amazon-sagemaker-hyperpod-administration-and-governance",
+      "summary_chars": 345,
+      "summary_sha256": "sha256:b9303a2fa9357aee0e641d75a9a93544ae35a0d82ffef8652b7aed4e58cf0d6f",
+      "title_chars": 74,
+      "title_sha256": "sha256:aee4f71400bbee70f3d1d9bb75ac8b50bf7beb6df4baaa6292453a3eecbcf267"
+    },
+    {
+      "id": "aws-machine-learning:url:95f314d9972fcd384b1f5504b60da9ec16098cd7e2786cba33337dfe9c55d3d4",
+      "source": "aws-machine-learning",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput",
+      "summary_chars": 320,
+      "summary_sha256": "sha256:0f93937e4ec29a62ad518748d3ac994f8c1b9b6285f00b0c4902fb2d9dd1bfbc",
+      "title_chars": 93,
+      "title_sha256": "sha256:eaa753082066f07d66d757e58277dc6fa64261837714f9db04ab2970bd31786c"
+    },
+    {
+      "id": "microsoft-cloud:url:19c0aa2d7437a61375800958e4f4178208fb5d35ed8833d243bf7808480ead4d",
+      "source": "microsoft-cloud",
+      "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling",
+      "summary_chars": 294,
+      "summary_sha256": "sha256:59808026de6ba327290f422be7658fdc6418fa01b15601d18293e7238cd8c162",
+      "title_chars": 81,
+      "title_sha256": "sha256:3357d0b8dac4f7bbbd47365f65fc54189f2f70c9e60fd2319a69fdddfa6c2f25"
+    },
+    {
+      "id": "microsoft-cloud:url:cd9f63366433c94acab435377c0f4028af426b3238e1c17beadf7a7437152d5d",
+      "source": "microsoft-cloud",
+      "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver",
+      "summary_chars": 293,
+      "summary_sha256": "sha256:77ad6429c910991fa494c611757c5b4da6e8d1c173c2a345f967948d3ed1e881",
+      "title_chars": 90,
+      "title_sha256": "sha256:428d3a0a1a4cf4e427285579a7791c3df03eb0348a7c87c6f2af12bb648582bc"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "blind_human_evaluation": false,
+  "exact_repeat": true,
+  "frozen_model_sha256_verified": true,
+  "locked_input_sha256_verified": true,
+  "model_refit": false,
+  "protected_files_unchanged": true,
+  "quality_gate_evaluated": false,
+  "tests_passed": 57
+}

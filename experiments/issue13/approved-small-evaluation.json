@@ -1,0 +1,130 @@
+{
+  "approval": {
+    "approved_at": "2026-10-09T10:45:00+09:00",
+    "blind_review": false,
+    "input_independently_read": false,
+    "model_predictions_shown_before_approval": false,
+    "provenance": "Owner approval relayed by authorized task instruction; private message text is not republished",
+    "reference_origin": "assistant_proposal_with_owner_policy_approval",
+    "review_method": "owner_approval_of_assistant_summaries_and_proposed_editorial_labels"
+  },
+  "approved_reference_labels": {
+    "not_relevant": 2,
+    "relevant": 2
+  },
+  "binary_confusion": {
+    "fn": 0,
+    "fp": 2,
+    "tn": 0,
+    "tp": 2
+  },
+  "binary_metrics": {
+    "f1": 0.6666666666666666,
+    "precision": 0.5,
+    "recall": 1.0
+  },
+  "count": 4,
+  "dependencies": {
+    "joblib": "1.6.0",
+    "python": "3.12.13",
+    "scikit_learn": "1.9.1"
+  },
+  "evaluation_role": "small_policy_approved_nonblind_probe",
+  "gold_modified": false,
+  "limitations": [
+    "owner approved assistant descriptions and proposals; not blind independent input annotation",
+    "single source Microsoft n4 and historical article dates",
+    "cannot prove independent human accuracy, calibration, source shortcut removal or future generalization",
+    "not used for fitting, parameter selection, quality gate or promotion"
+  ],
+  "model_artifact_hash": "sha256:44610aa8ab69d035fcd4da8ebff7ece0dbe5708409691a3fc9f9cab28ecae701",
+  "model_code_commit": "6e1da50285a753c5ffef4ca6d3bfe43fafcfd1f5",
+  "model_refit": false,
+  "model_version": "20261008T231148972272Z-291d65aa",
+  "oov_feature_rate": 0.5900383141762452,
+  "operational": {
+    "distribution": {
+      "uncertain": 4
+    },
+    "precision": null,
+    "recall": 0.0,
+    "retained_for_review_recall": 1.0
+  },
+  "pair_score_gaps": {
+    "MS01_MS02": 0.04843213960155224,
+    "MS03_MS04": 0.04819315564001525
+  },
+  "quality_gate_evaluated": false,
+  "review_input_sha256": "sha256:6553200ad02927a06b3be3d42b956dbf5a4b0ff1c3cbc1d43901bdc515f94f8b",
+  "roc_auc": 1.0,
+  "rows": [
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:f12890ed3690dc0bd209561400986bcf0ce62451b984f49fb474728c999aac0c",
+      "oov_features": 76,
+      "probability_relevant": 0.7017094225753593,
+      "reference_basis": "assistant_proposal_with_owner_policy_approval",
+      "reference_label": "not_relevant",
+      "review_id": "MS01",
+      "source": "microsoft-cloud",
+      "summary_sha256": "sha256:4d3303a3717d5b8f4d5fdddefb0613969430f06565ec5b91a32439a9aea4f934",
+      "title_sha256": "sha256:0ebee0d3dfdd43ccb4c67c40c34acbf5311501fafabd26ff2424caa576160e11",
+      "total_features": 117
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:9f4d5a19c7a3ea5ba895fc4f1aefba41113d12aec01c41c39177b8b7c825bb66",
+      "oov_features": 88,
+      "probability_relevant": 0.7501415621769115,
+      "reference_basis": "assistant_proposal_with_owner_policy_approval",
+      "reference_label": "relevant",
+      "review_id": "MS02",
+      "source": "microsoft-cloud",
+      "summary_sha256": "sha256:5b613a43336ea5c03c684c9f5c0578f300e1fff5c2e69b19a579f5b0ed41391d",
+      "title_sha256": "sha256:c55bc3db583ded3917d8e1839ca2dfd153cf6b2d907f120cca41e50986fa7366",
+      "total_features": 151
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:3e877cf315c851507efa53f4de6989d8d82127cb94239a06e1222f3a21348b30",
+      "oov_features": 53,
+      "probability_relevant": 0.6964905392462379,
+      "reference_basis": "assistant_proposal_with_owner_policy_approval",
+      "reference_label": "not_relevant",
+      "review_id": "MS03",
+      "source": "microsoft-cloud",
+      "summary_sha256": "sha256:132375923b3d505207d037ffd82887f47ec42a7f6f6f0c2cf9aca4b489c98b79",
+      "title_sha256": "sha256:3e2993e7451038d12c9a5931d36bcca42dfe0dd5a4f33ad4a2346b71d901e7c9",
+      "total_features": 115
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:9005340f408d993997b3d67a486f38c1c235f1f063f4bf9f7da507dd9355711e",
+      "oov_features": 91,
+      "probability_relevant": 0.7446836948862532,
+      "reference_basis": "assistant_proposal_with_owner_policy_approval",
+      "reference_label": "relevant",
+      "review_id": "MS04",
+      "source": "microsoft-cloud",
+      "summary_sha256": "sha256:4d1fbf2ab14cf86e80d16d1e108c0bff5295b869f68a914fc7565924934e4eed",
+      "title_sha256": "sha256:721e863f28ba5f0eb43e2d9f9c79cd9ad2989c1244e2bfa7558c2bb85d1a360d",
+      "total_features": 139
+    }
+  ],
+  "source_count": 1,
+  "source_only_all_relevant_baseline": {
+    "f1": 0.6666666666666666,
+    "precision": 0.5,
+    "recall": 1,
+    "roc_auc": 0.5
+  },
+  "thresholds": {
+    "not_relevant": 0.4,
+    "relevant": 0.8
+  },
+  "training_data_hash": "sha256:291d65aa8fac6aaf53812e4ac584b448fe8d2c258a9ef646c2f5b2acc76e2b18"
+}

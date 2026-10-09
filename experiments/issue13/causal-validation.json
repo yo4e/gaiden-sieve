@@ -1,0 +1,12 @@
+{
+  "exact_repeat_results": true,
+  "joblib": "1.6.0",
+  "numpy": "2.5.3",
+  "protected_files_unchanged": true,
+  "public_artifact_text_safety_check": true,
+  "python": "3.12.13",
+  "saved_results_sha256": "sha256:9a69f16db6cdfef791d0aae9980b5b4ba7c7c8a315c648a836540376f15c8976",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "tests_passed": 48
+}

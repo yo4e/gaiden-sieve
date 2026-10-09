@@ -1,0 +1,19 @@
+{
+  "artifact_bytes_repeat_identical": {
+    "charwb35_c1": true,
+    "word12_c1": false
+  },
+  "coefficient_intercept_idf_repeat_max_delta": {
+    "charwb35_c1": 0.0,
+    "word12_c1": 0.0
+  },
+  "group_oof_fold_overlap": 0,
+  "locked_new_probe_hash": true,
+  "model_artifacts_public": false,
+  "models_promoted": false,
+  "new_probe_protected_group_overlap": 0,
+  "numeric_result_repeat_exact": true,
+  "original_word_parity_max_delta": 0.0,
+  "protected_files_unchanged": true,
+  "tests_passed": 61
+}

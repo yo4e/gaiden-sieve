@@ -1,0 +1,1607 @@
+{
+  "file_sha256": "sha256:e122d3556914e65e6ae37f20c77f26bc273be3cded8cc803deb4cccb220a74e6",
+  "filename": "live-incoming.jsonl",
+  "kind": "text-free-shadow-input-manifest",
+  "rows": [
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "openai-news:url:db7b9e6fe248e3146f87743abb423de6e3dc46759771b422f1331a63b0725822",
+        "published_at": "2026-10-08T16:00:00Z",
+        "source": "openai-news",
+        "source_url": "https://openai.com/index/oracle"
+      },
+      "summary_chars": 142,
+      "summary_sha256": "sha256:fc2fed5c6a1e07a24f916ab4fa8d1f4d60fb73d96e3dad3fa3012f743c058b3e",
+      "title_chars": 65,
+      "title_sha256": "sha256:8d1aa5c6eda4be722abedf9181fef2f710a2923614d7ec9ad86373eab1098737"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "openai-news:url:855092fba1df7e8a668bec1b409ac85f8b110a1f64384b826a3381f6d67156e4",
+        "published_at": "2026-10-08T12:00:00Z",
+        "source": "openai-news",
+        "source_url": "https://openai.com/index/pollo-ai"
+      },
+      "summary_chars": 131,
+      "summary_sha256": "sha256:ab7c4914332df1d16fac5827f6e61dc697a1c891f5ec6cafcfc8af95c63edec3",
+      "title_chars": 56,
+      "title_sha256": "sha256:eb751f1d5a6d23b269080a98e3b473f0f9105c53580d23d56cf8146843686faa"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "openai-news:url:d9e485b409fe8517ac6e3a5ba39a5770caf1a72ddba21f80f7ddf66c5e1760f2",
+        "published_at": "2026-10-08T00:00:00Z",
+        "source": "openai-news",
+        "source_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+      },
+      "summary_chars": 137,
+      "summary_sha256": "sha256:439ed7efcb86b685d35383cc69408f36ecbf0409b3e4f15703aeda1d1cfb3d7a",
+      "title_chars": 46,
+      "title_sha256": "sha256:4efa9cc3fcdd87d9221a418b927656422ae30d507de0c34816da6b4381c1c51c"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "openai-news:url:661f64ddb5f472a2675ed75a0fb09828b0ce7323472abe119ea9528dee004ac6",
+        "published_at": "2026-10-07T12:00:00Z",
+        "source": "openai-news",
+        "source_url": "https://openai.com/index/teens-learn-and-plan"
+      },
+      "summary_chars": 150,
+      "summary_sha256": "sha256:d4e053651431703f8108110f9eb4a3b41411c1c7c37d95da0ba56441c133c1f9",
+      "title_chars": 53,
+      "title_sha256": "sha256:a51bd611b8fdcf21a99ad25d25e2232804ce75b4c058b94adf5305425972a537"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "openai-news:url:4e324623ab7ca6fee0e142410ae1fff634372bb9b83078fd1d25f73483da7134",
+        "published_at": "2026-10-07T07:00:00Z",
+        "source": "openai-news",
+        "source_url": "https://openai.com/index/radisson"
+      },
+      "summary_chars": 161,
+      "summary_sha256": "sha256:dee80c49e93f809b6ef57db8e6ae7cfe22b5d61967ee02cc27372ff573a16112",
+      "title_chars": 56,
+      "title_sha256": "sha256:ebae1467c35a0f6207bbfb5dff1585cfc4214b455b16c6f5406b1e80d954109e"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-ai:url:e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa",
+        "published_at": "2026-10-07T12:00:00Z",
+        "source": "google-ai",
+        "source_url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform"
+      },
+      "summary_chars": 22,
+      "summary_sha256": "sha256:5a5fc0250b8572d3efb89a9360cc597e2b5464e701496e43afc507850d867363",
+      "title_chars": 52,
+      "title_sha256": "sha256:29c27ba98c2ff3ef6df86cf8f7d7e0930878d51bf8b4978e4f261531ed531030"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-ai:url:aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da",
+        "published_at": "2026-10-02T15:00:00Z",
+        "source": "google-ai",
+        "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026"
+      },
+      "summary_chars": 40,
+      "summary_sha256": "sha256:5401e34114e1aa83feafb30fcac5e682adbfa55e4d3235b7595b981399cf5693",
+      "title_chars": 49,
+      "title_sha256": "sha256:fefef2f9c6cb957b5221b921c3badca06fd84e051a98a825eeb0b021df5e269a"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-ai:url:7ba7170e114ec367c0aea60b2aad34063147c275e6f3d6808f9994c5791df5e3",
+        "published_at": "2026-09-28T19:00:00Z",
+        "source": "google-ai",
+        "source_url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize"
+      },
+      "summary_chars": 68,
+      "summary_sha256": "sha256:4f32c94e810121bc9513bea53fa49d9084ba38475718ad859586e988790e3c2a",
+      "title_chars": 68,
+      "title_sha256": "sha256:4f32c94e810121bc9513bea53fa49d9084ba38475718ad859586e988790e3c2a"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-ai:url:8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500",
+        "published_at": "2026-09-23T18:00:00Z",
+        "source": "google-ai",
+        "source_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion"
+      },
+      "summary_chars": 33,
+      "summary_sha256": "sha256:3fcfcab3b37f278bae35b321271c8433d20ccb4a90ea192d01c6b1fca6351a4c",
+      "title_chars": 61,
+      "title_sha256": "sha256:717d7c74d523f08880c6debd0c96fd95df98d3dc819bc737dfe437c4fbb9740e"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-ai:url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0",
+        "published_at": "2026-09-18T14:00:00Z",
+        "source": "google-ai",
+        "source_url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench"
+      },
+      "summary_chars": 120,
+      "summary_sha256": "sha256:f32dec4588f1c882240fd4def75497c785c70d7d68711576c03109a56dc4dbd6",
+      "title_chars": 43,
+      "title_sha256": "sha256:3070dbe5b762a2c7bccc64982a243b8c8e2b90ab54483f191808bb12d5ff3f25"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-deepmind:url:2ee55c894d54d6ef378cd7d1845a6619020ac025413730085d4544511aa3cd8a",
+        "published_at": "2026-10-06T19:57:04Z",
+        "source": "google-deepmind",
+        "source_url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 65,
+      "title_sha256": "sha256:d14ee6cd03d918b3daafe9798495dbf79a524851d975e5cccfaff06f9e2abe87"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-deepmind:url:b49099cde7e97e60f531fdab0739ace017515f672d5de4fd5e17e7dadf65f19d",
+        "published_at": "2026-09-30T20:01:45Z",
+        "source": "google-deepmind",
+        "source_url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 53,
+      "title_sha256": "sha256:81c0514443d15d43cf9e620e996a61c51ef5a017bd310aca28d5ff4381b8f8fd"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-deepmind:url:08aa8115cb5d9c8920990d12b97d16085506bd37a1c5f14f480292bcdf0b5484",
+        "published_at": "2026-09-30T15:03:07Z",
+        "source": "google-deepmind",
+        "source_url": "https://deepmind.google/blog/introducing-synthid-bio"
+      },
+      "summary_chars": 93,
+      "summary_sha256": "sha256:4034d77731c80a0edb3fb4b056577435878c38844da638bcb55acd3ea6cab8a3",
+      "title_chars": 23,
+      "title_sha256": "sha256:335ef24c82542d3bd36a76b40c6a6f49d1a1400199156ec6640e2479ebd307cc"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-deepmind:url:6add3dd62456569f19427e4518304eb7a3c8cee0553623d704af2a296d149679",
+        "published_at": "2026-09-24T16:20:39Z",
+        "source": "google-deepmind",
+        "source_url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 44,
+      "title_sha256": "sha256:39afd3b78512f5a15bc4a50da07b675d6ac10b29f017ffe0e0e82a4516aa07b1"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "google-deepmind:url:1043d9fe80283e6f409b90e0f5f76b98d960cc337ee42f5d79ea8cfadd9a93c0",
+        "published_at": "2026-09-23T16:00:57Z",
+        "source": "google-deepmind",
+        "source_url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
+      },
+      "summary_chars": 78,
+      "summary_sha256": "sha256:8963bd0106749f79fef896e16f59c09421e8fe6971c1de245d58ef61ba1c6a13",
+      "title_chars": 60,
+      "title_sha256": "sha256:87fa4a69b4d6fc49cf3a22c377caa57192ccc4bc4fbf2df19e932f9731f3c8aa"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "hugging-face:url:ffd2818196374b7e8d985c5ba0d85a7cf6f6fd71833912309c34424b62f62e05",
+        "published_at": "2026-10-08T00:00:00Z",
+        "source": "hugging-face",
+        "source_url": "https://huggingface.co/blog/building-with-ml-intern"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 52,
+      "title_sha256": "sha256:e045052320dfa323a710ad49047614866aec6bc452d3e858d9e226e67d09b4f4"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "hugging-face:url:88e871d5a8d26738db20168d7fe4b9e05a7b8640818c7b2a626052e0332f27b0",
+        "published_at": "2026-10-07T16:54:33Z",
+        "source": "hugging-face",
+        "source_url": "https://huggingface.co/blog/LiquidAI/open-d1"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 47,
+      "title_sha256": "sha256:97eea1702b70bd9fd77dbfe44de1214be712691953335ee45acdd4c033df9582"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "hugging-face:url:16b7810afb00bdc03cf91abd83f9b804b576e5ff42133c9ae8d1a12944f61774",
+        "published_at": "2026-10-07T13:21:03Z",
+        "source": "hugging-face",
+        "source_url": "https://huggingface.co/blog/tiiuae/falcon-asr"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 22,
+      "title_sha256": "sha256:7f7789b55984e97bee5e4084e309510c155470306707369b479ac55fc490bb91"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "hugging-face:url:67f5f61696a2949df2730f40424ad824b9d13bbf8b547c153b8cdb7135436103",
+        "published_at": "2026-10-07T12:45:31Z",
+        "source": "hugging-face",
+        "source_url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 78,
+      "title_sha256": "sha256:045d481c406a7d5cf8553cc061359dfa326807c98dc2abb346139d0d49ec899d"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "hugging-face:url:bd1136d0fcfd6f1357de280adaee84cea07cc88c30626783f53af728070f9fc3",
+        "published_at": "2026-10-03T22:56:48Z",
+        "source": "hugging-face",
+        "source_url": "https://huggingface.co/blog/microsoft/thinkingbox"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 51,
+      "title_sha256": "sha256:f7dc4d94c899dec0e05600bf23955af0029eb2ea265729875c755c9ba95cfac2"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-ai:url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a",
+        "published_at": "2026-10-05T13:00:00Z",
+        "source": "microsoft-ai",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/general/2026/10/05/sovereign-ai-accelerate-innovation-with-control-and-choice"
+      },
+      "summary_chars": 309,
+      "summary_sha256": "sha256:9a04dc843e9a576d3aa8745b49409c2970d7c01564b8ad8ece0f879c2e105320",
+      "title_chars": 59,
+      "title_sha256": "sha256:178b4dc5c2cca600ade0db4a9cdb8f8258ff249a37ab80b230d8d7781c110b33"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-ai:url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e",
+        "published_at": "2026-09-16T22:36:04Z",
+        "source": "microsoft-ai",
+        "source_url": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education"
+      },
+      "summary_chars": 248,
+      "summary_sha256": "sha256:a929a573f2efb1d419f861224473db2560d1d5f5dc850177d747e039be677ca2",
+      "title_chars": 42,
+      "title_sha256": "sha256:36edfd1a1e1b11a47de651958f13961fcd94812e43faa6599732a5eac144ea27"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-ai:url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3",
+        "published_at": "2026-09-01T17:11:44Z",
+        "source": "microsoft-ai",
+        "source_url": "https://blogs.microsoft.com/on-the-issues/2026/09/01/responsible-ai-in-2026-how-we-are-adapting-for-whats-ahead"
+      },
+      "summary_chars": 340,
+      "summary_sha256": "sha256:e0902103e962a4798faa31c669fa91ae02fdd01f2c29259d93cc9c7bfd8bf69a",
+      "title_chars": 60,
+      "title_sha256": "sha256:698e952bc8005c6b814d807dad3e3c485ff91e3b259aacc3ca29fea558ccb8c8"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-ai:url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69",
+        "published_at": "2026-08-26T15:00:00Z",
+        "source": "microsoft-ai",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/26/accelerating-frontier-transformation-reinvent-customer-engagement"
+      },
+      "summary_chars": 257,
+      "summary_sha256": "sha256:dc9e8201cea19b74f57c035ccb1525acd2b20ed06495d7d2588cd05d025a4da0",
+      "title_chars": 66,
+      "title_sha256": "sha256:9ef5235c81898c3fa4e40dee3da9b01cc978c3d1f22686d0c252a14edaf53dad"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-ai:url:0dc30518000b5c15a76c8337555d49451c2258bf3eee6ed393902edd48354624",
+        "published_at": "2026-08-25T15:00:00Z",
+        "source": "microsoft-ai",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/25/accelerating-ai-adoption-with-intelligent-discovery-in-microsoft-marketplace"
+      },
+      "summary_chars": 273,
+      "summary_sha256": "sha256:e2b33e97c71f3c7593225516bdd5b1a8c6d8aa4f52698f25a575bc04887f517b",
+      "title_chars": 76,
+      "title_sha256": "sha256:4e1271ea7b9755e99838cae764a8519db2e2b3bb77eca5319bb1ac7e682aabe8"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a",
+        "published_at": "2026-10-05T13:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/general/2026/10/05/sovereign-ai-accelerate-innovation-with-control-and-choice"
+      },
+      "summary_chars": 309,
+      "summary_sha256": "sha256:9a04dc843e9a576d3aa8745b49409c2970d7c01564b8ad8ece0f879c2e105320",
+      "title_chars": 59,
+      "title_sha256": "sha256:178b4dc5c2cca600ade0db4a9cdb8f8258ff249a37ab80b230d8d7781c110b33"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e",
+        "published_at": "2026-09-16T22:36:04Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education"
+      },
+      "summary_chars": 248,
+      "summary_sha256": "sha256:a929a573f2efb1d419f861224473db2560d1d5f5dc850177d747e039be677ca2",
+      "title_chars": 42,
+      "title_sha256": "sha256:36edfd1a1e1b11a47de651958f13961fcd94812e43faa6599732a5eac144ea27"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3",
+        "published_at": "2026-09-01T17:11:44Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://blogs.microsoft.com/on-the-issues/2026/09/01/responsible-ai-in-2026-how-we-are-adapting-for-whats-ahead"
+      },
+      "summary_chars": 340,
+      "summary_sha256": "sha256:e0902103e962a4798faa31c669fa91ae02fdd01f2c29259d93cc9c7bfd8bf69a",
+      "title_chars": 60,
+      "title_sha256": "sha256:698e952bc8005c6b814d807dad3e3c485ff91e3b259aacc3ca29fea558ccb8c8"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69",
+        "published_at": "2026-08-26T15:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/26/accelerating-frontier-transformation-reinvent-customer-engagement"
+      },
+      "summary_chars": 257,
+      "summary_sha256": "sha256:dc9e8201cea19b74f57c035ccb1525acd2b20ed06495d7d2588cd05d025a4da0",
+      "title_chars": 66,
+      "title_sha256": "sha256:9ef5235c81898c3fa4e40dee3da9b01cc978c3d1f22686d0c252a14edaf53dad"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:0dc30518000b5c15a76c8337555d49451c2258bf3eee6ed393902edd48354624",
+        "published_at": "2026-08-25T15:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/25/accelerating-ai-adoption-with-intelligent-discovery-in-microsoft-marketplace"
+      },
+      "summary_chars": 273,
+      "summary_sha256": "sha256:e2b33e97c71f3c7593225516bdd5b1a8c6d8aa4f52698f25a575bc04887f517b",
+      "title_chars": 76,
+      "title_sha256": "sha256:4e1271ea7b9755e99838cae764a8519db2e2b3bb77eca5319bb1ac7e682aabe8"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:9407fd3b8ce4e82b2a5ca407f7f2040ebd426d249e83ab636ababda41a35ed2b",
+        "published_at": "2026-08-24T16:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/24/5-signals-of-trusted-ai-how-organizations-scale-ai-with-security-governance-and-observability"
+      },
+      "summary_chars": 311,
+      "summary_sha256": "sha256:22c02ee355c5aede3080504cf586ab009a7a868c7932400196ebb6add978de05",
+      "title_chars": 96,
+      "title_sha256": "sha256:056f3e600a4be76384ee6a76b26139ef4dd212e7d2387556ec5ebfbbad10a6eb"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41",
+        "published_at": "2026-08-04T15:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/04/accelerating-frontier-transformation-enrich-employee-experience"
+      },
+      "summary_chars": 251,
+      "summary_sha256": "sha256:8ec1ddb7b3e41e4cb2f0c0cec9f566247f27ee394f43c657d9ec637bc514b7c7",
+      "title_chars": 64,
+      "title_sha256": "sha256:8e5151f061eb58449511c5f988748afb4826dd80cf57a53f230581480663983e"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:b4e8bc639f2fd6ef562e02aea2f8290be8281da14885a9a9063e9a00f1777b20",
+        "published_at": "2026-07-30T16:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/07/30/whats-the-tea-lessons-from-leaders-navigating-ai-transformation"
+      },
+      "summary_chars": 565,
+      "summary_sha256": "sha256:4c210cf6d16c22bca1d89113342b3dd90a6dedb7192132aeea18bd76172dd9a9",
+      "title_chars": 65,
+      "title_sha256": "sha256:5b68950e45f8255ed4a6cc25f3783fe9b07357a36e430e97b678d3488d4aaaa7"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:725b173772a1bcee9e29d2dd8f76f21dba4b1c1cb7f1cc9af12cd1856b6d557a",
+        "published_at": "2026-07-29T15:21:32Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://blogs.microsoft.com/blog/2026/07/28/looking-back-on-microsofts-fy26-from-ai-experimentation-to-frontier-transformation"
+      },
+      "summary_chars": 363,
+      "summary_sha256": "sha256:2ae3a689c480bb6164ecbf60304f66b7ab3615fd27974935012c364d7b8313bb",
+      "title_chars": 84,
+      "title_sha256": "sha256:3aa1f8b8f8c42981adf15624b68643d02894cd6c67ab992e0b72b28dd11c8676"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "microsoft-cloud:url:a2ae9bea5eb13d3afd7777f07c125a6e5892aadeecd69fdfb8d99fc0edf8c4aa",
+        "published_at": "2026-07-23T15:00:00Z",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/07/23/ai-appreciation-day-impact-through-action"
+      },
+      "summary_chars": 234,
+      "summary_sha256": "sha256:24f3a0a4130eecd980045de66103ea73d17312b9b7c041c9c5d6642b209efe2d",
+      "title_chars": 49,
+      "title_sha256": "sha256:41e92b468df90d388cc8c16f661f78457c56419f0b845c5521807e035a8c3804"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mistral-ai:url:6f131bbed5e7925d040e498e9f355192a661ee34bb8a5418a070e852a4c72a41",
+        "published_at": "2026-10-06T12:00:27Z",
+        "source": "mistral-ai",
+        "source_url": "https://mistral.ai/news/mistral-large-4"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 27,
+      "title_sha256": "sha256:09fd73368caed58bf88ab28e3b57e0566fe57df45d9587234e4d9b97c27660dd"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mistral-ai:url:ee4dc087c20018324226a16e2a13651b155ce78c88fcc91e4606b45fe6d0efda",
+        "published_at": "2026-09-28T15:57:59Z",
+        "source": "mistral-ai",
+        "source_url": "https://mistral.ai/news/hallo-deutschland"
+      },
+      "summary_chars": 102,
+      "summary_sha256": "sha256:b01fee902c217b11cc95dc0e5c5d38bb9d8e06aa9f5334c393de5ba9088b9de1",
+      "title_chars": 19,
+      "title_sha256": "sha256:8811f36ff8c2904f0cac13e3b2e4ae9f6e4f4ae2cc9ac950f8d935bee11d306c"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mistral-ai:url:70a5d3bd151a623147cfe7820f1bf2c669b232359783b71d5d7de7388a0229da",
+        "published_at": "2026-09-16T12:00:00Z",
+        "source": "mistral-ai",
+        "source_url": "https://mistral.ai/news/mistral-x-mozilla"
+      },
+      "summary_chars": 150,
+      "summary_sha256": "sha256:ff5071c36aa825d637ef706d0512037a6346b55c567b1c754c0cee30ef44476f",
+      "title_chars": 86,
+      "title_sha256": "sha256:b1b45f16c72bc9179d1e93f10d1c10c884884016e3ca5898988a6f9373785831"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mistral-ai:url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e",
+        "published_at": "2026-09-10T10:42:55Z",
+        "source": "mistral-ai",
+        "source_url": "https://mistral.ai/news/mistral-x-cloudera"
+      },
+      "summary_chars": 158,
+      "summary_sha256": "sha256:fcc29c73435aed294a80e1de33388bebfbfcf4fbe4f2a12b8f407bfbfe4a8a64",
+      "title_chars": 92,
+      "title_sha256": "sha256:4c0dce565fa6ca927bbcefe4a00bce7e9b6b85c1a7b905c8fe1d22a913a78617"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mistral-ai:url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f",
+        "published_at": "2026-09-09T12:00:46Z",
+        "source": "mistral-ai",
+        "source_url": "https://mistral.ai/news/legacy-code-modernization"
+      },
+      "summary_chars": 141,
+      "summary_sha256": "sha256:0e1d74e61895e746143a043d67c6af51e37cd29b96d65ee356cf4e2291cc51a5",
+      "title_chars": 47,
+      "title_sha256": "sha256:1da608d277ae117ff87f322089e39e787953f973abd2af1ac6566d317e11744f"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "github-ai-ml:url:daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1",
+        "published_at": "2026-10-07T17:45:34Z",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software"
+      },
+      "summary_chars": 259,
+      "summary_sha256": "sha256:60ca5133074cf5b716cd8571a446f82ecb9428f9de3cf29e354065c78e02faed",
+      "title_chars": 42,
+      "title_sha256": "sha256:4e4fe38095063c3b47e5765be1ed16c23257b74c380c8566decc04dec53f3fe2"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "github-ai-ml:url:d8885d98544ba54844d4d88a982939683be9bd5fe47c375a58e9133fb3bd611a",
+        "published_at": "2026-10-05T15:59:40Z",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review"
+      },
+      "summary_chars": 286,
+      "summary_sha256": "sha256:dbde9526efd4dc35dfed232d722016f517b4c2de06d1e67e8d4d4c85f8c7e873",
+      "title_chars": 49,
+      "title_sha256": "sha256:2a8ac4db741d2fbb394bcc6ae98e52d3e3a58fc61267fbd6a4e9606e73136ace"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "github-ai-ml:url:3adf82e6716a48e97371c4978181d9427e807e6dc914088dee634342ea7570ad",
+        "published_at": "2026-10-02T15:00:00Z",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out"
+      },
+      "summary_chars": 231,
+      "summary_sha256": "sha256:ae6df79d654646986b94dc5ca877a1f8781c367fceb0f68069bf92614108e44f",
+      "title_chars": 67,
+      "title_sha256": "sha256:218b7700c079d7e43d110addfb7a1aab1fea9eb8945883fad1428777c89e4eb4"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "github-ai-ml:url:7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b",
+        "published_at": "2026-09-25T18:00:00Z",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases"
+      },
+      "summary_chars": 314,
+      "summary_sha256": "sha256:a866cfd9392a6bc68a99ab4cecef94b184411da655cbfd1d3e069033d2ee25a4",
+      "title_chars": 77,
+      "title_sha256": "sha256:02148c26d25f1759cb17488d5c2ef06c6e5fb30af177f7e65a1fae78d8e02aaa"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "github-ai-ml:url:4135fa3a00799524e73b45e5e8a18ea8c11a9949e9197f51bf60e5f284bf0180",
+        "published_at": "2026-09-24T20:00:00Z",
+        "source": "github-ai-ml",
+        "source_url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui"
+      },
+      "summary_chars": 168,
+      "summary_sha256": "sha256:fd28f3400fbfc634de1ec7458b6903022e4caa55d09d26832e517aaead0f3576",
+      "title_chars": 25,
+      "title_sha256": "sha256:0f4dabf42968fd2fdc85447a638622eb871a99bf71c6b70d22c2cb40ece85af8"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "apple-ml-research:url:a9f660862b14122b754b81c8b73ed12b4ae45c1ac84de6206c010c00eb55daad",
+        "published_at": "2026-10-08T00:00:00Z",
+        "source": "apple-ml-research",
+        "source_url": "https://machinelearning.apple.com/research/normalizing-trajectory-models"
+      },
+      "summary_chars": 592,
+      "summary_sha256": "sha256:c5b0245fbabfb26d771667cc56392f240c2f9f966a0d6162e138c7128088b946",
+      "title_chars": 29,
+      "title_sha256": "sha256:2dfa467bb7a3d7fd3f6509a9d5d42d8a01d94fb4c9e2618423e337d5c45b426f"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "apple-ml-research:url:9855b0d96c10185bbf388a1e6db9fbd389aad75ec863da6015dd1cea41a15001",
+        "published_at": "2026-10-06T00:00:00Z",
+        "source": "apple-ml-research",
+        "source_url": "https://machinelearning.apple.com/research/rised-multi-environment-selection"
+      },
+      "summary_chars": 596,
+      "summary_sha256": "sha256:7e342c00126b99245005327935196422b5f055b8ad878a8ea71df6a14007f62a",
+      "title_chars": 76,
+      "title_sha256": "sha256:f0e17080c92e3126e47092c3372ffa4945752ef04a76294ad9889026461df17b"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "apple-ml-research:url:031c3906bd6f632eb5d29a6482ef98bf21b5ad43a5a9984cdf4c228b3f1aa7cd",
+        "published_at": "2026-10-05T00:00:00Z",
+        "source": "apple-ml-research",
+        "source_url": "https://machinelearning.apple.com/research/ontological-boundary-negotiation"
+      },
+      "summary_chars": 597,
+      "summary_sha256": "sha256:087c459d95fc2890089de139cf32754a346ba43e9227e4526a19fab31ac3d736",
+      "title_chars": 76,
+      "title_sha256": "sha256:c031ea9ab54e79208ca0719c44f041476111fc7cef61bcf18eb6639755b4346e"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "apple-ml-research:url:bd7fa85e5bd0311f32d40a6179bd30f377e2b8a9ef9e065c98055aeabfcd1d5c",
+        "published_at": "2026-10-02T00:00:00Z",
+        "source": "apple-ml-research",
+        "source_url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning"
+      },
+      "summary_chars": 599,
+      "summary_sha256": "sha256:11d0c004bb5cdcd49197885d8824c44ac043cbe49bd3a8c7daf59365dc11e602",
+      "title_chars": 82,
+      "title_sha256": "sha256:ec00b150f7962f52868484726fbcf4b6cedf8eb941ad4072f7ceedbbfff66394"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "apple-ml-research:url:cc3d0ac48231448ce58666765641670f54b8dd433c8df85dffcc57804ac94ee3",
+        "published_at": "2026-10-02T00:00:00Z",
+        "source": "apple-ml-research",
+        "source_url": "https://machinelearning.apple.com/research/limits-confidence-diffusion"
+      },
+      "summary_chars": 592,
+      "summary_sha256": "sha256:8eb06570a566f8e05373cdaac3eec4440044f9a75f6aa1afcfdf7d9666f60ef2",
+      "title_chars": 33,
+      "title_sha256": "sha256:9f917d5ec38da7986dea3d4d88bbecdb9d18fab57e6fc4b197475d249f0832b0"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "aws-machine-learning:url:aa69c76b276e52af31d3d754674d0fab328ff6d0b755232eb954e469fe5b2918",
+        "published_at": "2026-10-08T18:33:29Z",
+        "source": "aws-machine-learning",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments"
+      },
+      "summary_chars": 307,
+      "summary_sha256": "sha256:d9d79f12301c739a597bc37ccec1cb7618075f9801c5422f8dd6fb2b626a9461",
+      "title_chars": 95,
+      "title_sha256": "sha256:d0d1d0a8b7901a4a8f3bf782fd648a00ac75d6b1f426008444d2f3a47ba74b29"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "aws-machine-learning:url:575f2b8d33878f21ab301c9aaec61383a00be6912d89fa55822346091922b1c9",
+        "published_at": "2026-10-08T16:20:04Z",
+        "source": "aws-machine-learning",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod"
+      },
+      "summary_chars": 319,
+      "summary_sha256": "sha256:fc0a6cab3d1e5d12e12c2657de1e2fb82238329ca1d899d9797bc8ee216075d6",
+      "title_chars": 91,
+      "title_sha256": "sha256:ee451e18c5faca0e7d6e886b30a8d087e34c59a4b211319ea708b3935fdea770"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "aws-machine-learning:url:8303b0c207ffaa69706b939d2f979d73e542dedfbeeafc4fb817dbbeb3dd1f59",
+        "published_at": "2026-10-07T18:52:10Z",
+        "source": "aws-machine-learning",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws"
+      },
+      "summary_chars": 349,
+      "summary_sha256": "sha256:5de43140f0097505434ad505afa3534183fe80d578b3acac0a5410bdd54b817b",
+      "title_chars": 35,
+      "title_sha256": "sha256:929127683abfa59918cd1da355b7af3012fec5b8e27dcdae588013d267fbb31c"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "aws-machine-learning:url:28e7ba2670cd654fe2e58384083f22febe6c57823bcfd8c2be70dd69b7d617a8",
+        "published_at": "2026-10-07T18:34:44Z",
+        "source": "aws-machine-learning",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock"
+      },
+      "summary_chars": 330,
+      "summary_sha256": "sha256:de9dc24139ff466e536fa432551d584a71c6af82f3da58c32baaaa2860e53157",
+      "title_chars": 70,
+      "title_sha256": "sha256:73c77cf4e8e7be253c932f22d5c9d5bd53b02101f4ba7de7bcbfd3fa2542e5c2"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "aws-machine-learning:url:e8f53962f1d3b68d467146e9954df24ab4a6a71e94213243284a1bafed483184",
+        "published_at": "2026-10-07T15:50:00Z",
+        "source": "aws-machine-learning",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/beyond-hours-saved-building-the-business-case-for-agentic-automation"
+      },
+      "summary_chars": 306,
+      "summary_sha256": "sha256:da6a819c12259a03e3bf3fbe67116e35afa48c02eec1a7b8702602c7264e3fde",
+      "title_chars": 69,
+      "title_sha256": "sha256:a0714946c98cced51b569278db4fff8bccadac5ca4e0850d67415dca30a4bb87"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "nvidia-deep-learning:url:d950eaa58be54c935865c6384d9e610d543992aee137a1bdb729226dc018f350",
+        "published_at": "2026-07-08T15:00:27Z",
+        "source": "nvidia-deep-learning",
+        "source_url": "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack"
+      },
+      "summary_chars": 357,
+      "summary_sha256": "sha256:08b02586a57bc53046ec59a36235d8b85a4060da0d04f9155439af3a78e04b5b",
+      "title_chars": 89,
+      "title_sha256": "sha256:3da7f01c42cd2475b4b4d9eec2b732b56af1250af91d76a9d63f581dd5139308"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "nvidia-deep-learning:url:72401a2f0f4aeac5ed3874e4e67ed35af3fc390bd819598b09a849f52b40b5c8",
+        "published_at": "2026-01-05T23:30:18Z",
+        "source": "nvidia-deep-learning",
+        "source_url": "https://blogs.nvidia.com/blog/2026-ces-special-presentation"
+      },
+      "summary_chars": 318,
+      "summary_sha256": "sha256:cfdc3e016ee5f529c849205bc9ed15671b348cb14a506c10f820e8ab6bfa63d9",
+      "title_chars": 103,
+      "title_sha256": "sha256:160b33de75b843717c64f826e94313a5d52155977abe7a5e5ee0fc6a16db73a7"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "nvidia-deep-learning:url:8baf142be276b823a0c4b49e18d27dd8a92fd72e67a9ae88f9f03c644a1f7fef",
+        "published_at": "2025-12-11T19:19:57Z",
+        "source": "nvidia-deep-learning",
+        "source_url": "https://blogs.nvidia.com/blog/leading-models-nvidia"
+      },
+      "summary_chars": 354,
+      "summary_sha256": "sha256:4db2f747eb038834af498c397991afb005ce75d4bf51ea48dd8e29404701e425",
+      "title_chars": 55,
+      "title_sha256": "sha256:e7db1c853141427a9b5150a4269ef7e1a3a22a56a8bdb2606ffa99cefe49ff52"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "nvidia-deep-learning:url:9706f1c4881eb3a063d6b963fea161907e7b439e0e08aeeb263bfbb3de1663a7",
+        "published_at": "2025-09-14T01:00:21Z",
+        "source": "nvidia-deep-learning",
+        "source_url": "https://blogs.nvidia.com/blog/uk-llm-nemotron"
+      },
+      "summary_chars": 350,
+      "summary_sha256": "sha256:5a76b79c4fe7f9963a6e40cf448e78d2dfe5157a3eb9e7aff4fdd051fff264fb",
+      "title_chars": 80,
+      "title_sha256": "sha256:b19bda7908dba319a25590725c0a09a809415f953d9d5f8419c52a7f7db91d5e"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "nvidia-deep-learning:url:2bef3f3a504a53923d2f19b00bd5fc76502246bd6d3491c8a1ab940d8aa8b204",
+        "published_at": "2025-09-02T13:00:15Z",
+        "source": "nvidia-deep-learning",
+        "source_url": "https://blogs.nvidia.com/blog/humidity"
+      },
+      "summary_chars": 378,
+      "summary_sha256": "sha256:560ffe481657747277e90247d95797e559e938c32320f5f39b2d687aff47f354",
+      "title_chars": 115,
+      "title_sha256": "sha256:f6194b717aec45fb07d4020a94f4f144532a3e6026572ccc8567051c8bc44d58"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:ce10101578f0faac7337b82bea2f234b783e30f84852369f6246bf0c71b3422b",
+        "published_at": "2026-09-17T01:19:04Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/8.0.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:7dfdc572dc8b308dc31b6191eb102f6cccdaeee8fed003f492206ec4726e2a61"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:60f1daff5ce521484393650803ac03c58716d375052fe27a7187f34d134181c5",
+        "published_at": "2026-08-27T20:40:38Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.7.359"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:37fff2a0a2acbd391f73c636a10343ce74cba432493ef9123b0c9c7a285d07b2",
+      "title_chars": 48,
+      "title_sha256": "sha256:1fb39d693e883d03010dca6240ae7f432f1f8b310d154f7e0e8a34b245992f46"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:551fa3036e07f1757a6c7c9018290e03086853b964e04adfff04812bed911d52",
+        "published_at": "2026-08-26T01:51:21Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.7.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:eb178956999b720a6c1f321bece0794600ed43cfe7e7e2ceb0439e5519bfe1dd"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:be3d24995bbd6ca6aa3d4baf6b2a66b8b4352da3d5b44aabce748a366bc9fd9f",
+        "published_at": "2026-08-06T00:37:15Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.6.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:39892dc1b0e11c2890f2358a0b3cff364d30f49549f87cd55b47b87c27136055"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:b24f95375ca107a4833fe102477217017f613cfe4aa088cfb694fc48190e7829",
+        "published_at": "2026-07-09T03:13:09Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.5.4453"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:0d329f47d7b437be3613d393a1cdb2c93d7060692c02bce44bb5d4df21ebbcb2",
+      "title_chars": 49,
+      "title_sha256": "sha256:77072c2c2274708eba57cdfc6280e1474043c05d6c590e2a3920159112920ff6"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:6752d650d5e511889fa58dd1fb43be02a246addf0b0998e8d152cd1d52cc2338",
+        "published_at": "2026-07-08T21:23:28Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.5.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:9a6af7c698c0216572287c1a9b531e21b039e696459e4adb932e74a403c4abaf"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:14cf8ade29e44f034dbb4df6a48e017805cabbbb6948b201d2690ed95c51518f",
+        "published_at": "2026-06-25T00:34:47Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.4.2513"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:7452e5d3dc03d3369605fb36771b6f5be1df7e5ca5fdaa17d18ffbb81ecfb5ea",
+      "title_chars": 49,
+      "title_sha256": "sha256:e7575540fc1d4baad51764aee876ab108b1fe59e7b9857dc57614573ee96f413"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:3906e85f4fa273821a09df179855abbb24715d799c91fdea9f0f7d7b7766ab86",
+        "published_at": "2026-06-11T00:36:29Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.4.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:5b866f30384aa2fe0a07f4802b43b596a05d6d02d2f6f49cbcd752d52f9d6429"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:811efdb1ee2cbbba834840f441eab83f0321e52e15b53ab66bd3ed9c2224abd9",
+        "published_at": "2026-06-02T00:16:12Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.3.2527"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:fc167ab041868f04cde54442f0dc7a8d8e665c3335641169708eb7e0be314d05",
+      "title_chars": 49,
+      "title_sha256": "sha256:ebf1763ae9a84830623ac5c93b748a34060bb577feaa42fead7ded8c26b4c879"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:a0986aef83c1c1c59bcfb6e8fbdb3f93b79987b67426bb3d7cd760f6bebaf15b",
+        "published_at": "2026-05-18T20:54:07Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.3.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:fad2cac5ef7af4f461b7d1ae7764acfc4d5db8e5354e2959c062b868450a0749"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:8db6312a28ff26ffdf38a9cd99cd274dbe823da4d70bbbd8e0ca186caf968832",
+        "published_at": "2026-05-05T00:04:28Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.2.1943"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:e0de2a4bc99f7043a74ca2cf0297b7f1274dd37b2fa1a9c4b22f969c3da3c418",
+      "title_chars": 49,
+      "title_sha256": "sha256:e466d963fbc30b83b731ce478ad9b324d27a748eea5a5adec9caff847ed89075"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:f9c9cd164616775196c105cbc51270919786b909a5bdb6b254e6e5c7741af2b0",
+        "published_at": "2026-04-24T02:38:11Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.2.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:ddcf8fec3e07a3c3ffcfdf6643d328c2195b9cb645ef55d9f642ce6da5cf7e59"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:50fe1a419e748f4701b53aa239e90cfe0263edd1d3dbdd8f20ef2e08cb55b4fe",
+        "published_at": "2026-04-06T21:39:36Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.1.2426"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:0bf5935d0fa2d59770c50af262e0495fbdf38b4636350fa8e0f438f3457243b1",
+      "title_chars": 49,
+      "title_sha256": "sha256:bd8108bf26de2734bb699fa5a396478a563be3bebe46df22691840e9f3cd49e4"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:8ea20a06b3257cb5f7bf5776ea41612890c05743022b5f7d5d333ed033a59c5a",
+        "published_at": "2026-03-24T07:04:15Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.1.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:abb5271993a81a01152aeccffb4fe6db4e3f0c7050a84ed16336b9f7e4debd2a"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:1c1625dd270d3b3fd2e0a6a534bc2ce3a6977b6a9f5b05860e3848f9251e6b3f",
+        "published_at": "2026-03-13T16:58:30Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.0.2852"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:165d54257e6dc652badd41a1902e3e5683c0b12e1eb207d75dc446a798e6e063",
+      "title_chars": 49,
+      "title_sha256": "sha256:995d165d2cb78561afde28a5ef9b67d3d743554b64c7a46927f50acf0ec862a2"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:aa63a7cd766534cb5ea8b14044b30e27f39def93d9e9c5653a40252cd4de027d",
+        "published_at": "2026-03-09T23:01:23Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.0.2178"
+      },
+      "summary_chars": 56,
+      "summary_sha256": "sha256:165d54257e6dc652badd41a1902e3e5683c0b12e1eb207d75dc446a798e6e063",
+      "title_chars": 49,
+      "title_sha256": "sha256:ccd98f33104b45fbba1b42ffb70829aaab3f3daed2a782090ff5223b70daa568"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:2a9632ad37eb97861dfdd76a026b152025fca397187e44c1909bc33b7cb66f3e",
+        "published_at": "2026-02-25T19:52:21Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/7.0.0"
+      },
+      "summary_chars": 0,
+      "summary_sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title_chars": 46,
+      "title_sha256": "sha256:648e83c082fbd1528561968008d86b86014dbdc89501b23a2959a74d8fce3980"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:3a82a5d63ee60b6eb0fc79b2071940b4ce65cc9eb0cbb7f75468fc0c122491da",
+        "published_at": "2026-02-10T12:08:42Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/6.12.5040"
+      },
+      "summary_chars": 57,
+      "summary_sha256": "sha256:8250a3b76203485e3cd11b275a8d3cfd818eb0df525372527ad20e0ba133542b",
+      "title_chars": 50,
+      "title_sha256": "sha256:1bf7127e683fa91d3d19e2d58638debeeac5b6d711938c2f5a687b851b5b23c1"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:dbbdddb1c9afdae23d5a74c12186c36c7ed1af24db381c88e84e8e77ffed7cc5",
+        "published_at": "2026-01-29T20:23:21Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/6.12.3032"
+      },
+      "summary_chars": 57,
+      "summary_sha256": "sha256:8250a3b76203485e3cd11b275a8d3cfd818eb0df525372527ad20e0ba133542b",
+      "title_chars": 50,
+      "title_sha256": "sha256:af42940245ee2550bd82d249a3a75613b5657d9be7c90734d33e44aa297c19fb"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": false,
+        "admission_mode": "filtered",
+        "admission_policy": "ai_terms_v1",
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "sourcegraph-changelog:url:c19f92dee67196f5a5e434fe92d52566ed68ebfab5818529358e0227346707dd",
+        "published_at": "2026-01-27T02:19:44Z",
+        "source": "sourcegraph-changelog",
+        "source_url": "https://sourcegraph.com/changelog/releases/6.12.2541"
+      },
+      "summary_chars": 57,
+      "summary_sha256": "sha256:8250a3b76203485e3cd11b275a8d3cfd818eb0df525372527ad20e0ba133542b",
+      "title_chars": 50,
+      "title_sha256": "sha256:f801d59c678381a8515f3af86c0a1f4087b0371128f358e612c2fad0bfa2d7a2"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mlcommons:url:82c764b2e29df4c958f92e02ccb0fb0eaa83599635dcb63d078d97f844f5206e",
+        "published_at": "2026-10-08T18:05:44Z",
+        "source": "mlcommons",
+        "source_url": "https://mlcommons.org/2026/10/ai-risk-for-business-guide"
+      },
+      "summary_chars": 311,
+      "summary_sha256": "sha256:ff5171e82eda660c848652105c55a7da7ededb4b689df2a4281ac0eff78664df",
+      "title_chars": 139,
+      "title_sha256": "sha256:95cb479e1e961331d6a1b2580d1ac1b8fbfa269c2b554dfbcc60c179e16c2359"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mlcommons:url:1f33fd17ae9a946de28dc561b29e94cc71dbdb44040d2ee88cee3f7ddc282221",
+        "published_at": "2026-10-01T18:01:16Z",
+        "source": "mlcommons",
+        "source_url": "https://mlcommons.org/2026/10/agent-privacy-risk-taxonomy-v0-1"
+      },
+      "summary_chars": 299,
+      "summary_sha256": "sha256:483c3407f196383fb2cffafe8879c510a1e414710bd207c7a8d74376649c590a",
+      "title_chars": 83,
+      "title_sha256": "sha256:868e04a19342a1c149f320ffedffcd4eb2e604322a292b49910327f36249195b"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mlcommons:url:c3350a643117dde463dc934ecbd7f411e79554a0ce47a99d651e5806a4921598",
+        "published_at": "2026-10-01T14:50:00Z",
+        "source": "mlcommons",
+        "source_url": "https://mlcommons.org/2026/10/dlrmv4-training"
+      },
+      "summary_chars": 269,
+      "summary_sha256": "sha256:d2f95d18f78e0a2e330799591d76e7396dabe79bbfd7e086ee4395ead6eae52d",
+      "title_chars": 68,
+      "title_sha256": "sha256:33152a674f857a9cc9cb068e0bb485cda77ebab1448819c9c9636213d4263094"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mlcommons:url:253ae037ec0ab2fb674b47fe03d400fd27700c0738848f0cf4eb2141a936ce80",
+        "published_at": "2026-09-24T14:50:00Z",
+        "source": "mlcommons",
+        "source_url": "https://mlcommons.org/2026/09/mlperf-training-llm-post-training"
+      },
+      "summary_chars": 289,
+      "summary_sha256": "sha256:80a7dfedeb5b04d0ff75e83544425c830b738dd425a9f6352a622d7c024b2ad8",
+      "title_chars": 64,
+      "title_sha256": "sha256:540eed2a4a0e44df528679b9a8e2b72646c9c8774857a07c7a7a71864bd19a17"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "mlcommons:url:4fc9d4e9cdff20afb0c78812570efe292877d966bbf330d6ea341acaf0ebf854",
+        "published_at": "2026-09-23T14:11:00Z",
+        "source": "mlcommons",
+        "source_url": "https://mlcommons.org/2026/09/join-airis-biomedical-ai"
+      },
+      "summary_chars": 251,
+      "summary_sha256": "sha256:884d14b58073c22bf1e0c9e15476c745a0b442a5bdf8635be40753fabd3af480",
+      "title_chars": 92,
+      "title_sha256": "sha256:41cced91e52cf1666b3e8739948486b973079c52ff1e66ba7867fc14dd159584"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "langchain-releases:url:9503050a530eab40c78f684c757f2618c1e700461a6c0cfbefe5276d9cfbe49b",
+        "published_at": "2026-10-08T22:14:22Z",
+        "source": "langchain-releases",
+        "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4"
+      },
+      "summary_chars": 694,
+      "summary_sha256": "sha256:7ff2b7bcf936ecac9572ba21b07c9adee8c9efba175779b9c6004243b93be6c2",
+      "title_chars": 16,
+      "title_sha256": "sha256:8825fd5bf26f75d884b127aba4d94cb1055c5c47385e2ad77bb6f1d3f8e8791b"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "langchain-releases:url:7d118aeafab68e400dcb39a3e894b997ef6a523448c11849a946fbf59327779b",
+        "published_at": "2026-10-08T20:11:32Z",
+        "source": "langchain-releases",
+        "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.9"
+      },
+      "summary_chars": 118,
+      "summary_sha256": "sha256:6c4d0fd9032a73ff51ea6dc36d3d488acf05774d28a47b4753f85a6e8234b50c",
+      "title_chars": 21,
+      "title_sha256": "sha256:50d0d6a51f6ad856665317f14d294d5a738c11f7124d5b3dd66b3491cebbb608"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "langchain-releases:url:40a44871ce5df89b9d11d192d53399e6adb2a7fc519f0c9648d325fd7e7a7e10",
+        "published_at": "2026-10-08T16:07:53Z",
+        "source": "langchain-releases",
+        "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.0"
+      },
+      "summary_chars": 446,
+      "summary_sha256": "sha256:08b93aa7a5fb784669405386d617fcc29ee0b3580cf8d15bfdb38f82f38749dc",
+      "title_chars": 23,
+      "title_sha256": "sha256:a8a5c7b883acc94ca1dd8816db3dfa89c166314f8af756f4f158fbcba7b5b080"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "langchain-releases:url:c6c16ae06fb845935c17a345def59e79cdaecdfd61900fb526ba694f98ee421e",
+        "published_at": "2026-10-08T15:41:22Z",
+        "source": "langchain-releases",
+        "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.8"
+      },
+      "summary_chars": 131,
+      "summary_sha256": "sha256:920000087a50d7d73ab114faafac98b301dc1a0322134ec1fc3148280acc1a7d",
+      "title_chars": 21,
+      "title_sha256": "sha256:5a33c0a243f2b35b8943bc6424f7edae5d57a100052e3a292826efe36f3c7c4f"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "langchain-releases:url:3ffac33d065197d239c07c7e84f78ee4edab25183858e74e5d317c8dd64983ee",
+        "published_at": "2026-10-07T20:24:35Z",
+        "source": "langchain-releases",
+        "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.1"
+      },
+      "summary_chars": 384,
+      "summary_sha256": "sha256:1c896744739900e06300b9a2cdbc995620a6f2a87c4d50a610e03a0dbbad9047",
+      "title_chars": 26,
+      "title_sha256": "sha256:da9ab29077f471ec485d9e8fa932afa3e1768b0c96efada9d278c44b255652a9"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "vllm-releases:url:9668af85ed2e1acf35b791be9e7a32b9a72b354fe13dca2998ddc5313107c6fd",
+        "published_at": "2026-10-05T06:44:55Z",
+        "source": "vllm-releases",
+        "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
+      },
+      "summary_chars": 43652,
+      "summary_sha256": "sha256:9411833db069d9b507b20b96860fbc19aab410a089f9af7c914a3641821d735a",
+      "title_chars": 7,
+      "title_sha256": "sha256:485f2b2993d443c670fb0c441eedfc8a7748556def74530c75197343de6df452"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "vllm-releases:url:3762ff1d2e3077743459b4a4b0c86d251f9dbb8c8de965295dae58726c4aa26e",
+        "published_at": "2026-09-22T05:20:54Z",
+        "source": "vllm-releases",
+        "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0"
+      },
+      "summary_chars": 48514,
+      "summary_sha256": "sha256:c3c44b200f93dbd843f91cfb5cfbe11e63ca1499a4c7af056e4cdeaee10489aa",
+      "title_chars": 7,
+      "title_sha256": "sha256:cc3181736fce581a8af13b17d9f63d7d9b49083db66db72a0015e0f6a1ed4ac4"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "vllm-releases:url:448701fe99745f6407d1f9b23e42fccd2eb4024678bc0261d1b932b6823732fb",
+        "published_at": "2026-09-09T08:54:49Z",
+        "source": "vllm-releases",
+        "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+      },
+      "summary_chars": 34493,
+      "summary_sha256": "sha256:754fa68f6c6d89f2e3f8d4f5f1d7985dd9ec4dc6f7d30034f367e3dbacb6bfb3",
+      "title_chars": 7,
+      "title_sha256": "sha256:77adc0edd6e22d5eb6f99b2234d030cbb09df15d26cefbed73cd2a1c320aa4c9"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "vllm-releases:url:99ece13e787f34878e1aa51dbddbb5225faf52df17b97b47f26c7a12faad004a",
+        "published_at": "2026-08-26T09:46:30Z",
+        "source": "vllm-releases",
+        "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0"
+      },
+      "summary_chars": 24615,
+      "summary_sha256": "sha256:6b67c8f12dc8d40e4d39e3ae5de9e45486a939519a928d4de81fbf4f4525c11d",
+      "title_chars": 7,
+      "title_sha256": "sha256:cca970f08276ed327b2707f9d541f4a0fecfd41a0b837ee138d14e1c8c09092f"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "vllm-releases:url:79fa413a464f8b759667c321a324b6f100910149cf57884b2c326b17703be93b",
+        "published_at": "2026-08-11T10:47:49Z",
+        "source": "vllm-releases",
+        "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.1"
+      },
+      "summary_chars": 89,
+      "summary_sha256": "sha256:74cd31b5440a464ab4415705f2be00510d2a593189373a255fd837e05f69013a",
+      "title_chars": 7,
+      "title_sha256": "sha256:2085e8f319753fcf80a9ca011d57ac8b551f8f90e7b044ba5b9c57e66e369586"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "ollama-releases:url:37acfe428526cde8f1d9fac5c3c1ca73487cc6d2e887f82684a7926aa7e8be11",
+        "published_at": "2026-10-07T23:22:59Z",
+        "source": "ollama-releases",
+        "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.1"
+      },
+      "summary_chars": 1140,
+      "summary_sha256": "sha256:034f32c06378f7cdaa82f8e196a43c244993964050915b01ecf1bda72f777ec6",
+      "title_chars": 7,
+      "title_sha256": "sha256:6d34c12080472397fe198d2437531520bf434499f0752b76562103f828b29dad"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "ollama-releases:url:86745252420db89333393bf99d197ab1225c672bbc400d3c019cef86fb7d8734",
+        "published_at": "2026-09-29T20:14:22Z",
+        "source": "ollama-releases",
+        "source_url": "https://github.com/ollama/ollama/releases/tag/v0.35.1"
+      },
+      "summary_chars": 1276,
+      "summary_sha256": "sha256:cd8caf72173ba320a7482ca0f2aabc41b592f3079cfa993e9b97f47b0eab74ef",
+      "title_chars": 7,
+      "title_sha256": "sha256:deba189c3a957bbd09d98832d02558ae7b1676076cb8ff1da727ba28cface5d4"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "ollama-releases:url:872457bb1f6a4e1ad755dbb79e013467d95e7e9d6ce83087adc34414a4aa26e5",
+        "published_at": "2026-09-28T21:23:22Z",
+        "source": "ollama-releases",
+        "source_url": "https://github.com/ollama/ollama/releases/tag/v0.35.0"
+      },
+      "summary_chars": 1633,
+      "summary_sha256": "sha256:7bebf592bb206e1d56af49944ad491eaca32b16a72de2f75b141ba64744ec332",
+      "title_chars": 7,
+      "title_sha256": "sha256:c657986df9186235958a15d2abb0620fba605ae7b053625cc653cb51adcd6aae"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "ollama-releases:url:30a028d33d452e4f44f01fa393993fc012eec5ef1b1c720b2c8c4788704e1d1b",
+        "published_at": "2026-09-25T03:31:52Z",
+        "source": "ollama-releases",
+        "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.0"
+      },
+      "summary_chars": 555,
+      "summary_sha256": "sha256:11e58456d3b12d86ab1e6f67d01f4ae8420e70a4d9c227b530d198013ba629d3",
+      "title_chars": 7,
+      "title_sha256": "sha256:39bc5f3cd1058438de23fd75f9f9b971249e4d8c50f925fb470bb080bf683bea"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": "977c9a6b4be35e57f8d945eae7a84c65e5afa03f",
+        "id": "ollama-releases:url:ef6fcf6d714056936db6db7124c7ced7e60591ae71e2f228853f553c38ab02fc",
+        "published_at": "2026-09-23T02:24:43Z",
+        "source": "ollama-releases",
+        "source_url": "https://github.com/ollama/ollama/releases/tag/v0.34.4"
+      },
+      "summary_chars": 568,
+      "summary_sha256": "sha256:320ff1bb305c1fb77d4f1025747a5df396089cc14fd8b038f7cdcca80ebb4fd2",
+      "title_chars": 7,
+      "title_sha256": "sha256:a4d34d2afa8a0f14b0c3be9014e1dded58015345173ca5fc92f7b7ce5c34991c"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "baseline_only_replay": {
+    "passed": true,
+    "shadow_replayed": false
+  },
+  "hydrated_replay": {
+    "holdout_gold_llm_audit_match": true,
+    "shadow_replayed": false
+  },
+  "hydration_from_private_saved_feeds": {
+    "all_jsonl_hashes_match": true,
+    "datasets": [
+      "iteration1",
+      "iteration2",
+      "quarantine",
+      "llm_audit"
+    ]
+  },
+  "negative_case": {
+    "modified_historical_file_hash_rejected": true
+  },
+  "not_verified": [
+    "Official current RSS retrieval may not reproduce deleted or changed historical rows; only private immutable cache hydration was verified",
+    "Exact historical shadow cannot be reproduced from text-free public metadata alone",
+    "Root-cause ablations and independent human labeling of new examples were not performed"
+  ],
+  "private_original_replay": {
+    "frozen_full_and_unique_url_distribution_oov_match": true,
+    "holdout_gold_llm_audit_match": true,
+    "models": [
+      "baseline",
+      "iteration1",
+      "iteration2"
+    ],
+    "refit_max_probability_difference": 0
+  },
+  "protected_core_profile_bootstrap_gold_holdout_hashes_match": true,
+  "public_content": {
+    "absolute_host_paths_included": false,
+    "models_included": false,
+    "new_third_party_title_summary_text_included": false,
+    "raw_rss_included": false
+  },
+  "pytest": {
+    "failed": 0,
+    "passed": 26
+  }
+}

@@ -1,0 +1,4044 @@
+{
+  "frozen": [
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8555904381247861
+      },
+      "id": "openai-news:url:db7b9e6fe248e3146f87743abb423de6e3dc46759771b422f1331a63b0725822",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7479519911410057
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7632457541702768
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8608357496704477
+      },
+      "id": "openai-news:url:855092fba1df7e8a668bec1b409ac85f8b110a1f64384b826a3381f6d67156e4",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7772495741091091
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7932064694446483
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8659062475403373
+      },
+      "id": "openai-news:url:d9e485b409fe8517ac6e3a5ba39a5770caf1a72ddba21f80f7ddf66c5e1760f2",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7730324731821668
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7613357961103377
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8535274073948407
+      },
+      "id": "openai-news:url:661f64ddb5f472a2675ed75a0fb09828b0ce7323472abe119ea9528dee004ac6",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7646958314480741
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7533120112516908
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8532899578889758
+      },
+      "id": "openai-news:url:4e324623ab7ca6fee0e142410ae1fff634372bb9b83078fd1d25f73483da7134",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7383642817179845
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.757412751597334
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8570112216796341
+      },
+      "id": "google-ai:url:e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7487764517874714
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7567273359685474
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8620355537528226
+      },
+      "id": "google-ai:url:aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7831208369666912
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7783022180320767
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8598760560376035
+      },
+      "id": "google-ai:url:7ba7170e114ec367c0aea60b2aad34063147c275e6f3d6808f9994c5791df5e3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7546747082324438
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7147901521957348
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8501169605381715
+      },
+      "id": "google-ai:url:8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.748380827485063
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7593176304276112
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8629060862059703
+      },
+      "id": "google-ai:url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7924623925177621
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7926297773422427
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8457935809115719
+      },
+      "id": "google-deepmind:url:2ee55c894d54d6ef378cd7d1845a6619020ac025413730085d4544511aa3cd8a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7404044293672599
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7579828006900731
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8461435644243921
+      },
+      "id": "google-deepmind:url:b49099cde7e97e60f531fdab0739ace017515f672d5de4fd5e17e7dadf65f19d",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7451935381686383
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7423336948886969
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8471610370240997
+      },
+      "id": "google-deepmind:url:08aa8115cb5d9c8920990d12b97d16085506bd37a1c5f14f480292bcdf0b5484",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7329792953445663
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7542899784897269
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8532954457552562
+      },
+      "id": "google-deepmind:url:6add3dd62456569f19427e4518304eb7a3c8cee0553623d704af2a296d149679",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7651634916826373
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7728044609736876
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8593222096158006
+      },
+      "id": "google-deepmind:url:1043d9fe80283e6f409b90e0f5f76b98d960cc337ee42f5d79ea8cfadd9a93c0",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7816779364603239
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7885202990444454
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.844082495049541
+      },
+      "id": "hugging-face:url:88e871d5a8d26738db20168d7fe4b9e05a7b8640818c7b2a626052e0332f27b0",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7568654408828508
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7553023327122338
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8432460456982694
+      },
+      "id": "hugging-face:url:16b7810afb00bdc03cf91abd83f9b804b576e5ff42133c9ae8d1a12944f61774",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7429060410124366
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7517064949089942
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8460134705274582
+      },
+      "id": "hugging-face:url:67f5f61696a2949df2730f40424ad824b9d13bbf8b547c153b8cdb7135436103",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7431610861489067
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7535708093722415
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8545071972071183
+      },
+      "id": "hugging-face:url:bd1136d0fcfd6f1357de280adaee84cea07cc88c30626783f53af728070f9fc3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7643562478746273
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7560031980736334
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8582449671917465
+      },
+      "id": "hugging-face:url:e81b1dea7ce0fb42c97855621c52f6a49d0893d2f06b0ac1c6c329bdc3da8830",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.77550275614117
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7627843381314895
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8704303762338678
+      },
+      "id": "microsoft-ai:url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7704447692352135
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7515850439268842
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8670453060943346
+      },
+      "id": "microsoft-ai:url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7857303678569251
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7347105939065391
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.868480772537933
+      },
+      "id": "microsoft-ai:url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7769040485023101
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7609930143466613
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.867883127794469
+      },
+      "id": "microsoft-ai:url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7802232070037965
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7102908483707919
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8763610331780142
+      },
+      "id": "microsoft-ai:url:0dc30518000b5c15a76c8337555d49451c2258bf3eee6ed393902edd48354624",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7808506621825739
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7391460228052631
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8704303762338678
+      },
+      "id": "microsoft-cloud:url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7704447692352135
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7515850439268842
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8670453060943346
+      },
+      "id": "microsoft-cloud:url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7857303678569251
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7347105939065391
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.868480772537933
+      },
+      "id": "microsoft-cloud:url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7769040485023101
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7609930143466613
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.867883127794469
+      },
+      "id": "microsoft-cloud:url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7802232070037965
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7102908483707919
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8763610331780142
+      },
+      "id": "microsoft-cloud:url:0dc30518000b5c15a76c8337555d49451c2258bf3eee6ed393902edd48354624",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7808506621825739
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7391460228052631
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8754585783676921
+      },
+      "id": "microsoft-cloud:url:9407fd3b8ce4e82b2a5ca407f7f2040ebd426d249e83ab636ababda41a35ed2b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7835390702951953
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7640574953099837
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8621732081374954
+      },
+      "id": "microsoft-cloud:url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7644884577704031
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7236216367760216
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8707162401413157
+      },
+      "id": "microsoft-cloud:url:b4e8bc639f2fd6ef562e02aea2f8290be8281da14885a9a9063e9a00f1777b20",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7908738611784822
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7174808342807288
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8659441149676532
+      },
+      "id": "microsoft-cloud:url:725b173772a1bcee9e29d2dd8f76f21dba4b1c1cb7f1cc9af12cd1856b6d557a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7732414589287062
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7081429878000794
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8650818407753442
+      },
+      "id": "microsoft-cloud:url:a2ae9bea5eb13d3afd7777f07c125a6e5892aadeecd69fdfb8d99fc0edf8c4aa",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7742158473102587
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7535016697296955
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8446320821752812
+      },
+      "id": "mistral-ai:url:6f131bbed5e7925d040e498e9f355192a661ee34bb8a5418a070e852a4c72a41",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7463969393849215
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7554170306752729
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8550436506565885
+      },
+      "id": "mistral-ai:url:ee4dc087c20018324226a16e2a13651b155ce78c88fcc91e4606b45fe6d0efda",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7735671205258714
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7925611059706783
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8596100892366314
+      },
+      "id": "mistral-ai:url:70a5d3bd151a623147cfe7820f1bf2c669b232359783b71d5d7de7388a0229da",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7532934587495866
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.755144001576134
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8593069143310423
+      },
+      "id": "mistral-ai:url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7358496728164408
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7580279066839878
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8647895671068767
+      },
+      "id": "mistral-ai:url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7833007423903385
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7841658264506918
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8662511413649924
+      },
+      "id": "github-ai-ml:url:daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7754075653742799
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7360477325791747
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.861457095097134
+      },
+      "id": "github-ai-ml:url:d8885d98544ba54844d4d88a982939683be9bd5fe47c375a58e9133fb3bd611a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7736312409490943
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7728846597256018
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8619229202220134
+      },
+      "id": "github-ai-ml:url:3adf82e6716a48e97371c4978181d9427e807e6dc914088dee634342ea7570ad",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7510330587823546
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.723354340422418
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8694646779342621
+      },
+      "id": "github-ai-ml:url:7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.766356337309219
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7578164639669426
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8419774983239006
+      },
+      "id": "github-ai-ml:url:4135fa3a00799524e73b45e5e8a18ea8c11a9949e9197f51bf60e5f284bf0180",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7301851617719674
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.66157785271922
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8511620620831298
+      },
+      "id": "apple-ml-research:url:a9f660862b14122b754b81c8b73ed12b4ae45c1ac84de6206c010c00eb55daad",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7396219409113383
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7486392211310539
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.845483009767523
+      },
+      "id": "apple-ml-research:url:9855b0d96c10185bbf388a1e6db9fbd389aad75ec863da6015dd1cea41a15001",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7251790131251329
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7476980702562872
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8558238610253415
+      },
+      "id": "apple-ml-research:url:031c3906bd6f632eb5d29a6482ef98bf21b5ad43a5a9984cdf4c228b3f1aa7cd",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.746131854102307
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7312731225175336
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8516437565990618
+      },
+      "id": "apple-ml-research:url:bd7fa85e5bd0311f32d40a6179bd30f377e2b8a9ef9e065c98055aeabfcd1d5c",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7468056904665897
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7580159786628066
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8669912509275152
+      },
+      "id": "apple-ml-research:url:cc3d0ac48231448ce58666765641670f54b8dd433c8df85dffcc57804ac94ee3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.753590575202457
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7369571239468639
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8624895457203612
+      },
+      "id": "aws-machine-learning:url:aa69c76b276e52af31d3d754674d0fab328ff6d0b755232eb954e469fe5b2918",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.778608368296993
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7838411643790251
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8434028651945801
+      },
+      "id": "aws-machine-learning:url:575f2b8d33878f21ab301c9aaec61383a00be6912d89fa55822346091922b1c9",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.6903025156992406
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7578006543048021
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8179399223560125
+      },
+      "id": "aws-machine-learning:url:8303b0c207ffaa69706b939d2f979d73e542dedfbeeafc4fb817dbbeb3dd1f59",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7102854445478113
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7007559367666022
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8596538871846451
+      },
+      "id": "aws-machine-learning:url:28e7ba2670cd654fe2e58384083f22febe6c57823bcfd8c2be70dd69b7d617a8",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.74364121877128
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7578367586514951
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8673412179369486
+      },
+      "id": "aws-machine-learning:url:e8f53962f1d3b68d467146e9954df24ab4a6a71e94213243284a1bafed483184",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7718099339449609
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7628315022117516
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8631722762234008
+      },
+      "id": "nvidia-deep-learning:url:d950eaa58be54c935865c6384d9e610d543992aee137a1bdb729226dc018f350",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7883485350484593
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.793744337655867
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8606912369587771
+      },
+      "id": "nvidia-deep-learning:url:72401a2f0f4aeac5ed3874e4e67ed35af3fc390bd819598b09a849f52b40b5c8",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7726196459029819
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7428970750927093
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8667540346285849
+      },
+      "id": "nvidia-deep-learning:url:8baf142be276b823a0c4b49e18d27dd8a92fd72e67a9ae88f9f03c644a1f7fef",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7804828987337701
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7782744005399878
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8674120557890195
+      },
+      "id": "nvidia-deep-learning:url:9706f1c4881eb3a063d6b963fea161907e7b439e0e08aeeb263bfbb3de1663a7",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.792775567447953
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7946138171095641
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8498210975734218
+      },
+      "id": "nvidia-deep-learning:url:2bef3f3a504a53923d2f19b00bd5fc76502246bd6d3491c8a1ab940d8aa8b204",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.759816430437439
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7340629942661084
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:ce10101578f0faac7337b82bea2f234b783e30f84852369f6246bf0c71b3422b",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:60f1daff5ce521484393650803ac03c58716d375052fe27a7187f34d134181c5",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:551fa3036e07f1757a6c7c9018290e03086853b964e04adfff04812bed911d52",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:be3d24995bbd6ca6aa3d4baf6b2a66b8b4352da3d5b44aabce748a366bc9fd9f",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:b24f95375ca107a4833fe102477217017f613cfe4aa088cfb694fc48190e7829",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:6752d650d5e511889fa58dd1fb43be02a246addf0b0998e8d152cd1d52cc2338",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:14cf8ade29e44f034dbb4df6a48e017805cabbbb6948b201d2690ed95c51518f",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:3906e85f4fa273821a09df179855abbb24715d799c91fdea9f0f7d7b7766ab86",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:811efdb1ee2cbbba834840f441eab83f0321e52e15b53ab66bd3ed9c2224abd9",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:a0986aef83c1c1c59bcfb6e8fbdb3f93b79987b67426bb3d7cd760f6bebaf15b",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:8db6312a28ff26ffdf38a9cd99cd274dbe823da4d70bbbd8e0ca186caf968832",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:f9c9cd164616775196c105cbc51270919786b909a5bdb6b254e6e5c7741af2b0",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:50fe1a419e748f4701b53aa239e90cfe0263edd1d3dbdd8f20ef2e08cb55b4fe",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:8ea20a06b3257cb5f7bf5776ea41612890c05743022b5f7d5d333ed033a59c5a",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:1c1625dd270d3b3fd2e0a6a534bc2ce3a6977b6a9f5b05860e3848f9251e6b3f",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:aa63a7cd766534cb5ea8b14044b30e27f39def93d9e9c5653a40252cd4de027d",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:2a9632ad37eb97861dfdd76a026b152025fca397187e44c1909bc33b7cb66f3e",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:3a82a5d63ee60b6eb0fc79b2071940b4ce65cc9eb0cbb7f75468fc0c122491da",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:dbbdddb1c9afdae23d5a74c12186c36c7ed1af24db381c88e84e8e77ffed7cc5",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:c19f92dee67196f5a5e434fe92d52566ed68ebfab5818529358e0227346707dd",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8693772431127739
+      },
+      "id": "mlcommons:url:82c764b2e29df4c958f92e02ccb0fb0eaa83599635dcb63d078d97f844f5206e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7601485082107252
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7393056099439475
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8500787044367641
+      },
+      "id": "mlcommons:url:1f33fd17ae9a946de28dc561b29e94cc71dbdb44040d2ee88cee3f7ddc282221",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7401442950435702
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7526562194834533
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8669633502324172
+      },
+      "id": "mlcommons:url:c3350a643117dde463dc934ecbd7f411e79554a0ce47a99d651e5806a4921598",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.783396884697339
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7631323982957605
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8663552620442216
+      },
+      "id": "mlcommons:url:253ae037ec0ab2fb674b47fe03d400fd27700c0738848f0cf4eb2141a936ce80",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7870263608532289
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7858820234862113
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8678791383368115
+      },
+      "id": "mlcommons:url:4fc9d4e9cdff20afb0c78812570efe292877d966bbf330d6ea341acaf0ebf854",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7753211353769914
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7742168167951494
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.845959965736624
+      },
+      "id": "langchain-releases:url:7d118aeafab68e400dcb39a3e894b997ef6a523448c11849a946fbf59327779b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7572792007397856
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7605421381326767
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8571158116064033
+      },
+      "id": "langchain-releases:url:40a44871ce5df89b9d11d192d53399e6adb2a7fc519f0c9648d325fd7e7a7e10",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7645383604711823
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7567229197101409
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8487809495504565
+      },
+      "id": "langchain-releases:url:c6c16ae06fb845935c17a345def59e79cdaecdfd61900fb526ba694f98ee421e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7559099509137941
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7623901443977295
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8555745860539002
+      },
+      "id": "langchain-releases:url:3ffac33d065197d239c07c7e84f78ee4edab25183858e74e5d317c8dd64983ee",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7531841737616305
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7553907806909458
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8509506447679185
+      },
+      "id": "langchain-releases:url:7b8542d687a9973af788f7d23eaeedbc3812dd354c5667f2199115561ee2eaac",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7365147117207189
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7420902504347868
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8582874372767262
+      },
+      "id": "vllm-releases:url:9668af85ed2e1acf35b791be9e7a32b9a72b354fe13dca2998ddc5313107c6fd",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.758789988828188
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7582327975913236
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8610609224716962
+      },
+      "id": "vllm-releases:url:3762ff1d2e3077743459b4a4b0c86d251f9dbb8c8de965295dae58726c4aa26e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7621076238627255
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7618697110254018
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8543055363518904
+      },
+      "id": "vllm-releases:url:448701fe99745f6407d1f9b23e42fccd2eb4024678bc0261d1b932b6823732fb",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7537923145545807
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7561758887047123
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8546229865029497
+      },
+      "id": "vllm-releases:url:99ece13e787f34878e1aa51dbddbb5225faf52df17b97b47f26c7a12faad004a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7522776266718102
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7555533745529999
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8323987121086661
+      },
+      "id": "vllm-releases:url:79fa413a464f8b759667c321a324b6f100910149cf57884b2c326b17703be93b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7467028464709191
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7505572839082452
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8492427651213031
+      },
+      "id": "ollama-releases:url:37acfe428526cde8f1d9fac5c3c1ca73487cc6d2e887f82684a7926aa7e8be11",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7521534036933801
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7584246955514603
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8501632022044499
+      },
+      "id": "ollama-releases:url:86745252420db89333393bf99d197ab1225c672bbc400d3c019cef86fb7d8734",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7477132645583181
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.741519768981004
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.845523023044085
+      },
+      "id": "ollama-releases:url:872457bb1f6a4e1ad755dbb79e013467d95e7e9d6ce83087adc34414a4aa26e5",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.741770933185404
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7391859819004664
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8421586591329082
+      },
+      "id": "ollama-releases:url:30a028d33d452e4f44f01fa393993fc012eec5ef1b1c720b2c8c4788704e1d1b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7509819175539417
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7550943449853679
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8486264908091748
+      },
+      "id": "ollama-releases:url:ef6fcf6d714056936db6db7124c7ced7e60591ae71e2f228853f553c38ab02fc",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7579294295616787
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.751562813162294
+      },
+      "source": "ollama-releases"
+    }
+  ],
+  "gold": [
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8658075507241728
+      },
+      "id": "google-ai:url:332bec2b752a921dc0773efff01ad676064470aa9e86f80b5eb30a32d60686fb",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7745721315903958
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.746432176185912
+      },
+      "label": "not_relevant",
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8501169605381715
+      },
+      "id": "google-ai:url:8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.748380827485063
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7593176304276112
+      },
+      "label": "relevant",
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8285145155615838
+      },
+      "id": "aws-machine-learning:url:f47736df57dec501d1957ae2e6c6fb52a03e716415db73c09c5cc6297d0e9f87",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.6853788689200206
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7251965517021652
+      },
+      "label": "not_relevant",
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8419774983239006
+      },
+      "id": "github-ai-ml:url:4135fa3a00799524e73b45e5e8a18ea8c11a9949e9197f51bf60e5f284bf0180",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7301851617719674
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.66157785271922
+      },
+      "label": "relevant",
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8621732081374954
+      },
+      "id": "microsoft-cloud:url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7644884577704031
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7236216367760216
+      },
+      "label": "relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8670669203731277
+      },
+      "id": "microsoft-cloud:url:b4e8bc639f2fd6ef562e02aea2f8290be8281da14885a9a9063e9a00f1777b20",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.783668621696999
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7317404473985734
+      },
+      "label": "relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:1c1625dd270d3b3fd2e0a6a534bc2ce3a6977b6a9f5b05860e3848f9251e6b3f",
+      "iteration1": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "label": "not_relevant",
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:aa63a7cd766534cb5ea8b14044b30e27f39def93d9e9c5653a40252cd4de027d",
+      "iteration1": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "label": "not_relevant",
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:dbbdddb1c9afdae23d5a74c12186c36c7ed1af24db381c88e84e8e77ffed7cc5",
+      "iteration1": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "label": "not_relevant",
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:c19f92dee67196f5a5e434fe92d52566ed68ebfab5818529358e0227346707dd",
+      "iteration1": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "binary_prediction": "not_relevant",
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "label": "not_relevant",
+      "source": "sourcegraph-changelog"
+    }
+  ],
+  "iteration2_training": [
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "apple-ml-research:url:50ae7c32754eac7764b85638aa46276ce04304eb7048ac83ae5a1a511c5ecf56",
+      "label": "relevant",
+      "probability_relevant": 0.7813219304715435,
+      "source": "apple-ml-research"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "apple-ml-research:url:415e037d984fa04b5aa5927376b595ed068d458f95b58ac73c15f4cc40f31be5",
+      "label": "relevant",
+      "probability_relevant": 0.7822823125055753,
+      "source": "apple-ml-research"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "aws-machine-learning:url:95f314d9972fcd384b1f5504b60da9ec16098cd7e2786cba33337dfe9c55d3d4",
+      "label": "relevant",
+      "probability_relevant": 0.7877983621262437,
+      "source": "aws-machine-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "aws-machine-learning:url:809c19bea702503bd68aea35a8e949f66140fc69d7a619ddd83ae709fea96ea7",
+      "label": "relevant",
+      "probability_relevant": 0.7924507970325149,
+      "source": "aws-machine-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "aws-machine-learning:url:2a26e0bf4bcecd1520a435deb3774222f33a0175794eb75f5b1c4d20e46f5f47",
+      "label": "relevant",
+      "probability_relevant": 0.77949638020494,
+      "source": "aws-machine-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:b02dba448db72934509fe9b4f75bea3637f42dd1185ea0d7ddd2b1eea991710c",
+      "label": "relevant",
+      "probability_relevant": 0.7656398224042062,
+      "source": "github-ai-ml"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1",
+      "label": "relevant",
+      "probability_relevant": 0.7832950123959747,
+      "source": "github-ai-ml"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0",
+      "label": "relevant",
+      "probability_relevant": 0.7926297773422427,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:dfe2f7f06070ffbc61225b84e3f2b4412af71548f838585d1e2e1039faf175a9",
+      "label": "relevant",
+      "probability_relevant": 0.7933508487354718,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-deepmind:url:6aae488b1bb65e59bc913efd95de31ac9e1f04a87d1118ebcd77ee6cbdba90f6",
+      "label": "relevant",
+      "probability_relevant": 0.7799252439167405,
+      "source": "google-deepmind"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-deepmind:url:1043d9fe80283e6f409b90e0f5f76b98d960cc337ee42f5d79ea8cfadd9a93c0",
+      "label": "relevant",
+      "probability_relevant": 0.7885202990444454,
+      "source": "google-deepmind"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "hugging-face:url:689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90",
+      "label": "relevant",
+      "probability_relevant": 0.7630243048928805,
+      "source": "hugging-face"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "hugging-face:url:e9f63aa1f7aaa02f4024a14154a47668586b26d73f72e5b77e702319146aa96f",
+      "label": "relevant",
+      "probability_relevant": 0.7792206352983523,
+      "source": "hugging-face"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "langchain-releases:url:866a8e04c42b89dd2ca978aa830c13aa588510bad0d1ee6073d406898dd576a4",
+      "label": "relevant",
+      "probability_relevant": 0.7813220009482871,
+      "source": "langchain-releases"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "langchain-releases:url:b21a6659fc0a3c9188d238004d162db4e4bca5e50bb156bcd1bd54e41b8b4b28",
+      "label": "relevant",
+      "probability_relevant": 0.7840144388573134,
+      "source": "langchain-releases"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "mistral-ai:url:4d11ed62a144a3f4c2f6e00530d90722b7d8967436b129f93138ecb93c209d7e",
+      "label": "relevant",
+      "probability_relevant": 0.7796559422340301,
+      "source": "mistral-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "mistral-ai:url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f",
+      "label": "relevant",
+      "probability_relevant": 0.7841658264506918,
+      "source": "mistral-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "mlcommons:url:5e78358b6e49a01a4b989c9ca016fa9dfafca7db79134f16ef22dc9d4e8cccfc",
+      "label": "relevant",
+      "probability_relevant": 0.7696039589011919,
+      "source": "mlcommons"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "mlcommons:url:253ae037ec0ab2fb674b47fe03d400fd27700c0738848f0cf4eb2141a936ce80",
+      "label": "relevant",
+      "probability_relevant": 0.7858820234862113,
+      "source": "mlcommons"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "nvidia-deep-learning:url:d950eaa58be54c935865c6384d9e610d543992aee137a1bdb729226dc018f350",
+      "label": "relevant",
+      "probability_relevant": 0.793744337655867,
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "nvidia-deep-learning:url:9706f1c4881eb3a063d6b963fea161907e7b439e0e08aeeb263bfbb3de1663a7",
+      "label": "relevant",
+      "probability_relevant": 0.7946138171095641,
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "ollama-releases:url:ce724b91aa112d2d8736deb08f07777667ad801d889d25e1172aea2deda8d32d",
+      "label": "relevant",
+      "probability_relevant": 0.7740428510220587,
+      "source": "ollama-releases"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "openai-news:url:52b80abd4e046c041ffbe2a48399ded2b227e51686189386944c8dd9b0045fd6",
+      "label": "relevant",
+      "probability_relevant": 0.7800280092634825,
+      "source": "openai-news"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "vllm-releases:url:79fa413a464f8b759667c321a324b6f100910149cf57884b2c326b17703be93b",
+      "label": "relevant",
+      "probability_relevant": 0.7505572839082452,
+      "source": "vllm-releases"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:551fa3036e07f1757a6c7c9018290e03086853b964e04adfff04812bed911d52",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:be3d24995bbd6ca6aa3d4baf6b2a66b8b4352da3d5b44aabce748a366bc9fd9f",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:b24f95375ca107a4833fe102477217017f613cfe4aa088cfb694fc48190e7829",
+      "label": "not_relevant",
+      "probability_relevant": 0.2674429550266561,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:6752d650d5e511889fa58dd1fb43be02a246addf0b0998e8d152cd1d52cc2338",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:14cf8ade29e44f034dbb4df6a48e017805cabbbb6948b201d2690ed95c51518f",
+      "label": "not_relevant",
+      "probability_relevant": 0.2674429550266561,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:811efdb1ee2cbbba834840f441eab83f0321e52e15b53ab66bd3ed9c2224abd9",
+      "label": "not_relevant",
+      "probability_relevant": 0.2674429550266561,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:a0986aef83c1c1c59bcfb6e8fbdb3f93b79987b67426bb3d7cd760f6bebaf15b",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:8db6312a28ff26ffdf38a9cd99cd274dbe823da4d70bbbd8e0ca186caf968832",
+      "label": "not_relevant",
+      "probability_relevant": 0.2674429550266561,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:f9c9cd164616775196c105cbc51270919786b909a5bdb6b254e6e5c7741af2b0",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:50fe1a419e748f4701b53aa239e90cfe0263edd1d3dbdd8f20ef2e08cb55b4fe",
+      "label": "not_relevant",
+      "probability_relevant": 0.2674429550266561,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:8ea20a06b3257cb5f7bf5776ea41612890c05743022b5f7d5d333ed033a59c5a",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "not_relevant",
+      "classification": "not_relevant",
+      "id": "sourcegraph-changelog:url:2a9632ad37eb97861dfdd76a026b152025fca397187e44c1909bc33b7cb66f3e",
+      "label": "not_relevant",
+      "probability_relevant": 0.21224545172397422,
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:fd1baec08311b505543d5a8c71d0a693c44e2ce54fd7ece1e317669825fe6f4e",
+      "label": "not_relevant",
+      "probability_relevant": 0.6150053365209154,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:30a36306f538ac1af96f572883174082173478c732479a6c198f0eda11dd4fde",
+      "label": "not_relevant",
+      "probability_relevant": 0.6195050841792884,
+      "source": "github-ai-ml"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "aws-machine-learning:url:86270e4804bb2ac11cfff1ed3a54fa1fc8e02228d1ad8f7d898297128a59bbce",
+      "label": "not_relevant",
+      "probability_relevant": 0.612458483587241,
+      "source": "aws-machine-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:7a00acf92df0c96e97506b3bcbe8a85093a78e23b6fa651307e399c37ab92a3e",
+      "label": "relevant",
+      "probability_relevant": 0.7850789370670409,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:64730bcdfc3a35229b481acfce94fb07b15462de1b2e63893c551ff0e8190f0a",
+      "label": "relevant",
+      "probability_relevant": 0.7905363578080116,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:77adb66885449411a18b9aff250fee2a331f402f3913023bba76bcaaf9c7806e",
+      "label": "relevant",
+      "probability_relevant": 0.789683675984091,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "google-ai:url:a7db6e12c1ae453b9e9d3bf924c5f3a7af148e960f556ca8c2b7d5497640930b",
+      "label": "relevant",
+      "probability_relevant": 0.7906770913187119,
+      "source": "google-ai"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20",
+      "label": "relevant",
+      "probability_relevant": 0.7793112029829975,
+      "source": "github-ai-ml"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "aws-machine-learning:url:0893f87c887f7e22117cb3a76a92f844a2a6ca8470dfecaa8ba1863f906166e3",
+      "label": "relevant",
+      "probability_relevant": 0.7967748388585657,
+      "source": "aws-machine-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "aws-machine-learning:url:ce977c433c98399ab51c8a1c0e93720c23ab3c1e80436f86a6767085beda91d9",
+      "label": "relevant",
+      "probability_relevant": 0.7846486041203101,
+      "source": "aws-machine-learning"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:c6aca20b7ccd5a2b78bf4de24c5f58cf388d4e5baad51775366b4615ada27c8c",
+      "label": "not_relevant",
+      "probability_relevant": 0.6074550081525887,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:1d2c8945872e3acd574779a048fca3b16596dfee39d554d1338010f1568e9050",
+      "label": "not_relevant",
+      "probability_relevant": 0.5949450514416583,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:f3a3e24b04277e980f20f80aa6e9c69c354b1a72693c25c09967362660255726",
+      "label": "not_relevant",
+      "probability_relevant": 0.5926411542702156,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:60769e9a431d43ff2f0ee01896c7e19f685e562c727c9ebe484accd60ce2b705",
+      "label": "not_relevant",
+      "probability_relevant": 0.5873400796839844,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:a3615977a269492a0863e296b62d6cb845888b1860c75cb07837305d55eab9f9",
+      "label": "not_relevant",
+      "probability_relevant": 0.6069579003994012,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:eff5b35f2fa8a8c7830877b582b433715047cf981fa821952fbd0be2a9d3a2e6",
+      "label": "not_relevant",
+      "probability_relevant": 0.6131908840900533,
+      "source": "github-ai-ml"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:72482baacf4eb9e2a4c4cba64f70b82289a3f9142de2f0dde9c13e0c190415e5",
+      "label": "relevant",
+      "probability_relevant": 0.7735237947526197,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:5c246b0808e86863d2a669c402f2118083af0f167d3c12d5b55070f6531fa286",
+      "label": "relevant",
+      "probability_relevant": 0.7731942300197552,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:ff691f61a2d90bb7f093696fc61fd90f98daa91e8c74b438532546e2ad7c05ca",
+      "label": "relevant",
+      "probability_relevant": 0.7766333448938845,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:fdb0eb0b071d437a485b425b7701d5fffd03660b6036f24e4d75059751e3ba32",
+      "label": "relevant",
+      "probability_relevant": 0.7839870630771473,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "microsoft-cloud:url:a513c8c0a5d28d87ae88f7e0717048455d7001c1bb2b9993e9aa4039e15c30dd",
+      "label": "relevant",
+      "probability_relevant": 0.7793755579301193,
+      "source": "microsoft-cloud"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:2e0b2f76a5b7e197d60e3ce83a431c939c9a2ca13acf22174bab84925d3ec80f",
+      "label": "relevant",
+      "probability_relevant": 0.7915523095967837,
+      "source": "github-ai-ml"
+    },
+    {
+      "binary_prediction": "relevant",
+      "classification": "uncertain",
+      "id": "github-ai-ml:url:38e410c5f1c02f695a826a93c0c4ad750992b83e9fc75e5629a8c3a8da91b532",
+      "label": "relevant",
+      "probability_relevant": 0.7865337642422833,
+      "source": "github-ai-ml"
+    }
+  ],
+  "latest": [
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8555904381247861
+      },
+      "id": "openai-news:url:db7b9e6fe248e3146f87743abb423de6e3dc46759771b422f1331a63b0725822",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7479519911410057
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7632457541702768
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8608357496704477
+      },
+      "id": "openai-news:url:855092fba1df7e8a668bec1b409ac85f8b110a1f64384b826a3381f6d67156e4",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7772495741091091
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7932064694446483
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8659062475403373
+      },
+      "id": "openai-news:url:d9e485b409fe8517ac6e3a5ba39a5770caf1a72ddba21f80f7ddf66c5e1760f2",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7730324731821668
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7613357961103377
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8535274073948407
+      },
+      "id": "openai-news:url:661f64ddb5f472a2675ed75a0fb09828b0ce7323472abe119ea9528dee004ac6",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7646958314480741
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7533120112516908
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8532899578889758
+      },
+      "id": "openai-news:url:4e324623ab7ca6fee0e142410ae1fff634372bb9b83078fd1d25f73483da7134",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7383642817179845
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.757412751597334
+      },
+      "source": "openai-news"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8570112216796341
+      },
+      "id": "google-ai:url:e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7487764517874714
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7567273359685474
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8620355537528226
+      },
+      "id": "google-ai:url:aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7831208369666912
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7783022180320767
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8598760560376035
+      },
+      "id": "google-ai:url:7ba7170e114ec367c0aea60b2aad34063147c275e6f3d6808f9994c5791df5e3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7546747082324438
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7147901521957348
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8501169605381715
+      },
+      "id": "google-ai:url:8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.748380827485063
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7593176304276112
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8629060862059703
+      },
+      "id": "google-ai:url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7924623925177621
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7926297773422427
+      },
+      "source": "google-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8457935809115719
+      },
+      "id": "google-deepmind:url:2ee55c894d54d6ef378cd7d1845a6619020ac025413730085d4544511aa3cd8a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7404044293672599
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7579828006900731
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8461435644243921
+      },
+      "id": "google-deepmind:url:b49099cde7e97e60f531fdab0739ace017515f672d5de4fd5e17e7dadf65f19d",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7451935381686383
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7423336948886969
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8471610370240997
+      },
+      "id": "google-deepmind:url:08aa8115cb5d9c8920990d12b97d16085506bd37a1c5f14f480292bcdf0b5484",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7329792953445663
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7542899784897269
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8532954457552562
+      },
+      "id": "google-deepmind:url:6add3dd62456569f19427e4518304eb7a3c8cee0553623d704af2a296d149679",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7651634916826373
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7728044609736876
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8593222096158006
+      },
+      "id": "google-deepmind:url:1043d9fe80283e6f409b90e0f5f76b98d960cc337ee42f5d79ea8cfadd9a93c0",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7816779364603239
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7885202990444454
+      },
+      "source": "google-deepmind"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8534480535020043
+      },
+      "id": "hugging-face:url:ffd2818196374b7e8d985c5ba0d85a7cf6f6fd71833912309c34424b62f62e05",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7511249319956244
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7439238297273318
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.844082495049541
+      },
+      "id": "hugging-face:url:88e871d5a8d26738db20168d7fe4b9e05a7b8640818c7b2a626052e0332f27b0",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7568654408828508
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7553023327122338
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8432460456982694
+      },
+      "id": "hugging-face:url:16b7810afb00bdc03cf91abd83f9b804b576e5ff42133c9ae8d1a12944f61774",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7429060410124366
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7517064949089942
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8460134705274582
+      },
+      "id": "hugging-face:url:67f5f61696a2949df2730f40424ad824b9d13bbf8b547c153b8cdb7135436103",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7431610861489067
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7535708093722415
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8545071972071183
+      },
+      "id": "hugging-face:url:bd1136d0fcfd6f1357de280adaee84cea07cc88c30626783f53af728070f9fc3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7643562478746273
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7560031980736334
+      },
+      "source": "hugging-face"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8704303762338678
+      },
+      "id": "microsoft-ai:url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7704447692352135
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7515850439268842
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8670453060943346
+      },
+      "id": "microsoft-ai:url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7857303678569251
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7347105939065391
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.868480772537933
+      },
+      "id": "microsoft-ai:url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7769040485023101
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7609930143466613
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.867883127794469
+      },
+      "id": "microsoft-ai:url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7802232070037965
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7102908483707919
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8763610331780142
+      },
+      "id": "microsoft-ai:url:0dc30518000b5c15a76c8337555d49451c2258bf3eee6ed393902edd48354624",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7808506621825739
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7391460228052631
+      },
+      "source": "microsoft-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8704303762338678
+      },
+      "id": "microsoft-cloud:url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7704447692352135
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7515850439268842
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8670453060943346
+      },
+      "id": "microsoft-cloud:url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7857303678569251
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7347105939065391
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.868480772537933
+      },
+      "id": "microsoft-cloud:url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7769040485023101
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7609930143466613
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.867883127794469
+      },
+      "id": "microsoft-cloud:url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7802232070037965
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7102908483707919
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8763610331780142
+      },
+      "id": "microsoft-cloud:url:0dc30518000b5c15a76c8337555d49451c2258bf3eee6ed393902edd48354624",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7808506621825739
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7391460228052631
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8754585783676921
+      },
+      "id": "microsoft-cloud:url:9407fd3b8ce4e82b2a5ca407f7f2040ebd426d249e83ab636ababda41a35ed2b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7835390702951953
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7640574953099837
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8621732081374954
+      },
+      "id": "microsoft-cloud:url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7644884577704031
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7236216367760216
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8707162401413157
+      },
+      "id": "microsoft-cloud:url:b4e8bc639f2fd6ef562e02aea2f8290be8281da14885a9a9063e9a00f1777b20",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7908738611784822
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7174808342807288
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8659441149676532
+      },
+      "id": "microsoft-cloud:url:725b173772a1bcee9e29d2dd8f76f21dba4b1c1cb7f1cc9af12cd1856b6d557a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7732414589287062
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7081429878000794
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8650818407753442
+      },
+      "id": "microsoft-cloud:url:a2ae9bea5eb13d3afd7777f07c125a6e5892aadeecd69fdfb8d99fc0edf8c4aa",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7742158473102587
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7535016697296955
+      },
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8446320821752812
+      },
+      "id": "mistral-ai:url:6f131bbed5e7925d040e498e9f355192a661ee34bb8a5418a070e852a4c72a41",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7463969393849215
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7554170306752729
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8550436506565885
+      },
+      "id": "mistral-ai:url:ee4dc087c20018324226a16e2a13651b155ce78c88fcc91e4606b45fe6d0efda",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7735671205258714
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7925611059706783
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8596100892366314
+      },
+      "id": "mistral-ai:url:70a5d3bd151a623147cfe7820f1bf2c669b232359783b71d5d7de7388a0229da",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7532934587495866
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.755144001576134
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8593069143310423
+      },
+      "id": "mistral-ai:url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7358496728164408
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7580279066839878
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8647895671068767
+      },
+      "id": "mistral-ai:url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7833007423903385
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7841658264506918
+      },
+      "source": "mistral-ai"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8662511413649924
+      },
+      "id": "github-ai-ml:url:daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7754075653742799
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7360477325791747
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.861457095097134
+      },
+      "id": "github-ai-ml:url:d8885d98544ba54844d4d88a982939683be9bd5fe47c375a58e9133fb3bd611a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7736312409490943
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7728846597256018
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8619229202220134
+      },
+      "id": "github-ai-ml:url:3adf82e6716a48e97371c4978181d9427e807e6dc914088dee634342ea7570ad",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7510330587823546
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.723354340422418
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8694646779342621
+      },
+      "id": "github-ai-ml:url:7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.766356337309219
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7578164639669426
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8419774983239006
+      },
+      "id": "github-ai-ml:url:4135fa3a00799524e73b45e5e8a18ea8c11a9949e9197f51bf60e5f284bf0180",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7301851617719674
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.66157785271922
+      },
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8511620620831298
+      },
+      "id": "apple-ml-research:url:a9f660862b14122b754b81c8b73ed12b4ae45c1ac84de6206c010c00eb55daad",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7396219409113383
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7486392211310539
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.845483009767523
+      },
+      "id": "apple-ml-research:url:9855b0d96c10185bbf388a1e6db9fbd389aad75ec863da6015dd1cea41a15001",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7251790131251329
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7476980702562872
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8558238610253415
+      },
+      "id": "apple-ml-research:url:031c3906bd6f632eb5d29a6482ef98bf21b5ad43a5a9984cdf4c228b3f1aa7cd",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.746131854102307
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7312731225175336
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8516437565990618
+      },
+      "id": "apple-ml-research:url:bd7fa85e5bd0311f32d40a6179bd30f377e2b8a9ef9e065c98055aeabfcd1d5c",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7468056904665897
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7580159786628066
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8669912509275152
+      },
+      "id": "apple-ml-research:url:cc3d0ac48231448ce58666765641670f54b8dd433c8df85dffcc57804ac94ee3",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.753590575202457
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7369571239468639
+      },
+      "source": "apple-ml-research"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8624895457203612
+      },
+      "id": "aws-machine-learning:url:aa69c76b276e52af31d3d754674d0fab328ff6d0b755232eb954e469fe5b2918",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.778608368296993
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7838411643790251
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8434028651945801
+      },
+      "id": "aws-machine-learning:url:575f2b8d33878f21ab301c9aaec61383a00be6912d89fa55822346091922b1c9",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.6903025156992406
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7578006543048021
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8179399223560125
+      },
+      "id": "aws-machine-learning:url:8303b0c207ffaa69706b939d2f979d73e542dedfbeeafc4fb817dbbeb3dd1f59",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7102854445478113
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7007559367666022
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8596538871846451
+      },
+      "id": "aws-machine-learning:url:28e7ba2670cd654fe2e58384083f22febe6c57823bcfd8c2be70dd69b7d617a8",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.74364121877128
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7578367586514951
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8673412179369486
+      },
+      "id": "aws-machine-learning:url:e8f53962f1d3b68d467146e9954df24ab4a6a71e94213243284a1bafed483184",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7718099339449609
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7628315022117516
+      },
+      "source": "aws-machine-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8631722762234008
+      },
+      "id": "nvidia-deep-learning:url:d950eaa58be54c935865c6384d9e610d543992aee137a1bdb729226dc018f350",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7883485350484593
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.793744337655867
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8606912369587771
+      },
+      "id": "nvidia-deep-learning:url:72401a2f0f4aeac5ed3874e4e67ed35af3fc390bd819598b09a849f52b40b5c8",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7726196459029819
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7428970750927093
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8667540346285849
+      },
+      "id": "nvidia-deep-learning:url:8baf142be276b823a0c4b49e18d27dd8a92fd72e67a9ae88f9f03c644a1f7fef",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7804828987337701
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7782744005399878
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8674120557890195
+      },
+      "id": "nvidia-deep-learning:url:9706f1c4881eb3a063d6b963fea161907e7b439e0e08aeeb263bfbb3de1663a7",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.792775567447953
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7946138171095641
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8498210975734218
+      },
+      "id": "nvidia-deep-learning:url:2bef3f3a504a53923d2f19b00bd5fc76502246bd6d3491c8a1ab940d8aa8b204",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.759816430437439
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7340629942661084
+      },
+      "source": "nvidia-deep-learning"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:ce10101578f0faac7337b82bea2f234b783e30f84852369f6246bf0c71b3422b",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:60f1daff5ce521484393650803ac03c58716d375052fe27a7187f34d134181c5",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:551fa3036e07f1757a6c7c9018290e03086853b964e04adfff04812bed911d52",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:be3d24995bbd6ca6aa3d4baf6b2a66b8b4352da3d5b44aabce748a366bc9fd9f",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:b24f95375ca107a4833fe102477217017f613cfe4aa088cfb694fc48190e7829",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:6752d650d5e511889fa58dd1fb43be02a246addf0b0998e8d152cd1d52cc2338",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:14cf8ade29e44f034dbb4df6a48e017805cabbbb6948b201d2690ed95c51518f",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:3906e85f4fa273821a09df179855abbb24715d799c91fdea9f0f7d7b7766ab86",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:811efdb1ee2cbbba834840f441eab83f0321e52e15b53ab66bd3ed9c2224abd9",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:a0986aef83c1c1c59bcfb6e8fbdb3f93b79987b67426bb3d7cd760f6bebaf15b",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:8db6312a28ff26ffdf38a9cd99cd274dbe823da4d70bbbd8e0ca186caf968832",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:f9c9cd164616775196c105cbc51270919786b909a5bdb6b254e6e5c7741af2b0",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.3215094966496492
+      },
+      "id": "sourcegraph-changelog:url:50fe1a419e748f4701b53aa239e90cfe0263edd1d3dbdd8f20ef2e08cb55b4fe",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2656370397815199
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2674429550266561
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:8ea20a06b3257cb5f7bf5776ea41612890c05743022b5f7d5d333ed033a59c5a",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:1c1625dd270d3b3fd2e0a6a534bc2ce3a6977b6a9f5b05860e3848f9251e6b3f",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:aa63a7cd766534cb5ea8b14044b30e27f39def93d9e9c5653a40252cd4de027d",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.25033432788196697
+      },
+      "id": "sourcegraph-changelog:url:2a9632ad37eb97861dfdd76a026b152025fca397187e44c1909bc33b7cb66f3e",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21140034576375719
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.21224545172397422
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:3a82a5d63ee60b6eb0fc79b2071940b4ce65cc9eb0cbb7f75468fc0c122491da",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:dbbdddb1c9afdae23d5a74c12186c36c7ed1af24db381c88e84e8e77ffed7cc5",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.27565242645501964
+      },
+      "id": "sourcegraph-changelog:url:c19f92dee67196f5a5e434fe92d52566ed68ebfab5818529358e0227346707dd",
+      "iteration1": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.2343723934298787
+      },
+      "iteration2": {
+        "classification": "not_relevant",
+        "probability_relevant": 0.23658336522686838
+      },
+      "source": "sourcegraph-changelog"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8693772431127739
+      },
+      "id": "mlcommons:url:82c764b2e29df4c958f92e02ccb0fb0eaa83599635dcb63d078d97f844f5206e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7601485082107252
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7393056099439475
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8500787044367641
+      },
+      "id": "mlcommons:url:1f33fd17ae9a946de28dc561b29e94cc71dbdb44040d2ee88cee3f7ddc282221",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7401442950435702
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7526562194834533
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8669633502324172
+      },
+      "id": "mlcommons:url:c3350a643117dde463dc934ecbd7f411e79554a0ce47a99d651e5806a4921598",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.783396884697339
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7631323982957605
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8663552620442216
+      },
+      "id": "mlcommons:url:253ae037ec0ab2fb674b47fe03d400fd27700c0738848f0cf4eb2141a936ce80",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7870263608532289
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7858820234862113
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8678791383368115
+      },
+      "id": "mlcommons:url:4fc9d4e9cdff20afb0c78812570efe292877d966bbf330d6ea341acaf0ebf854",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7753211353769914
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7742168167951494
+      },
+      "source": "mlcommons"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8539058977817686
+      },
+      "id": "langchain-releases:url:9503050a530eab40c78f684c757f2618c1e700461a6c0cfbefe5276d9cfbe49b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7480936202537208
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7321762704230291
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.845959965736624
+      },
+      "id": "langchain-releases:url:7d118aeafab68e400dcb39a3e894b997ef6a523448c11849a946fbf59327779b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7572792007397856
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7605421381326767
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8571158116064033
+      },
+      "id": "langchain-releases:url:40a44871ce5df89b9d11d192d53399e6adb2a7fc519f0c9648d325fd7e7a7e10",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7645383604711823
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7567229197101409
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8487809495504565
+      },
+      "id": "langchain-releases:url:c6c16ae06fb845935c17a345def59e79cdaecdfd61900fb526ba694f98ee421e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7559099509137941
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7623901443977295
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8555745860539002
+      },
+      "id": "langchain-releases:url:3ffac33d065197d239c07c7e84f78ee4edab25183858e74e5d317c8dd64983ee",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7531841737616305
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7553907806909458
+      },
+      "source": "langchain-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8582874372767262
+      },
+      "id": "vllm-releases:url:9668af85ed2e1acf35b791be9e7a32b9a72b354fe13dca2998ddc5313107c6fd",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.758789988828188
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7582327975913236
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8610609224716962
+      },
+      "id": "vllm-releases:url:3762ff1d2e3077743459b4a4b0c86d251f9dbb8c8de965295dae58726c4aa26e",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7621076238627255
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7618697110254018
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8543055363518904
+      },
+      "id": "vllm-releases:url:448701fe99745f6407d1f9b23e42fccd2eb4024678bc0261d1b932b6823732fb",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7537923145545807
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7561758887047123
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8546229865029497
+      },
+      "id": "vllm-releases:url:99ece13e787f34878e1aa51dbddbb5225faf52df17b97b47f26c7a12faad004a",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7522776266718102
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7555533745529999
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8323987121086661
+      },
+      "id": "vllm-releases:url:79fa413a464f8b759667c321a324b6f100910149cf57884b2c326b17703be93b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7467028464709191
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7505572839082452
+      },
+      "source": "vllm-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8492427651213031
+      },
+      "id": "ollama-releases:url:37acfe428526cde8f1d9fac5c3c1ca73487cc6d2e887f82684a7926aa7e8be11",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7521534036933801
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7584246955514603
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8501632022044499
+      },
+      "id": "ollama-releases:url:86745252420db89333393bf99d197ab1225c672bbc400d3c019cef86fb7d8734",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7477132645583181
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.741519768981004
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.845523023044085
+      },
+      "id": "ollama-releases:url:872457bb1f6a4e1ad755dbb79e013467d95e7e9d6ce83087adc34414a4aa26e5",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.741770933185404
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7391859819004664
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8421586591329082
+      },
+      "id": "ollama-releases:url:30a028d33d452e4f44f01fa393993fc012eec5ef1b1c720b2c8c4788704e1d1b",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7509819175539417
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7550943449853679
+      },
+      "source": "ollama-releases"
+    },
+    {
+      "baseline": {
+        "classification": "relevant",
+        "probability_relevant": 0.8486264908091748
+      },
+      "id": "ollama-releases:url:ef6fcf6d714056936db6db7124c7ced7e60591ae71e2f228853f553c38ab02fc",
+      "iteration1": {
+        "classification": "uncertain",
+        "probability_relevant": 0.7579294295616787
+      },
+      "iteration2": {
+        "classification": "uncertain",
+        "probability_relevant": 0.751562813162294
+      },
+      "source": "ollama-releases"
+    }
+  ],
+  "llm_audit": [
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8636398379211928
+      },
+      "id": "microsoft-cloud:url:2fafd5d13414828e8327c0d2af8312792fb3ffa8674b9b141df6ee025aa5cea2",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7778454858355405
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7240778278571828
+      },
+      "label": "not_relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8681166254561883
+      },
+      "id": "microsoft-cloud:url:3eac2c693377d2e5a13927087532753654e6446d728ab959646a41e4170cf751",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7706721760001041
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.6921157426160098
+      },
+      "label": "not_relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8569421049678774
+      },
+      "id": "microsoft-cloud:url:97a4567f5592d082f9ed7bc0c1e7f7a4d39621d62e03971ab1fe56cb93ceb747",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7422274430216355
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.6962109695626928
+      },
+      "label": "relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8611664834872566
+      },
+      "id": "microsoft-cloud:url:49188e7290e8889d70a585184c808b4a257422a2d151d046562c2aab3e82e03a",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7656153887125656
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7258136819575584
+      },
+      "label": "relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8659104295920103
+      },
+      "id": "microsoft-cloud:url:5471bac0ce283ac9b20d5b5ae87d74f9512d76c004be7f0213ba0e43873f4214",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7725160037738402
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7445073744275454
+      },
+      "label": "relevant",
+      "source": "microsoft-cloud"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8704319168021873
+      },
+      "id": "github-ai-ml:url:8ff72939b90ab1db14c48bccfe46c02f797db880f285c323967b125c407d44c3",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7758049709931772
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7719193520109205
+      },
+      "label": "relevant",
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8628591758613908
+      },
+      "id": "github-ai-ml:url:9a46f2911191f8db7628c8e79398163235594daac28c857e71506b87880704f7",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7681840306608976
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7406753589000004
+      },
+      "label": "relevant",
+      "source": "github-ai-ml"
+    },
+    {
+      "baseline": {
+        "binary_prediction": "relevant",
+        "classification": "relevant",
+        "probability_relevant": 0.8620998839920236
+      },
+      "id": "github-ai-ml:url:9f1f8f8f0d07a60b603d6dbc5a2a148bced1d1ba84061efda9d8ce114287d584",
+      "iteration1": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7573813859408621
+      },
+      "iteration2": {
+        "binary_prediction": "relevant",
+        "classification": "uncertain",
+        "probability_relevant": 0.7594130216074143
+      },
+      "label": "relevant",
+      "source": "github-ai-ml"
+    }
+  ]
+}

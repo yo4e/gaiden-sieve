@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    {
+      "C": 1,
+      "name": "c1",
+      "weights": "uniform"
+    },
+    {
+      "C": 10,
+      "name": "c10",
+      "weights": "uniform"
+    },
+    {
+      "C": 1,
+      "name": "family_c1",
+      "weights": "inverse identical analyzer family size; preserve total weight separately for each label"
+    }
+  ],
+  "evaluation_roles": {
+    "existing_holdout": "weak historical only",
+    "human_gold": "known audit; no candidate selection",
+    "new_validation": "lock independent same-source R/N RSS examples before any new scores; provisional assistant labels, not human accuracy",
+    "old_llm_audit": "previously inspected; known audit",
+    "training": "resubstitution diagnosis"
+  },
+  "fixed": [
+    "all 59 original labels and texts",
+    "one fitted TF-IDF vocabulary and IDF",
+    "seed 42",
+    "threshold 0.80/0.40",
+    "gold/holdout originals"
+  ],
+  "selection_policy": "bounded three conditions; no gold-based grid search or post-score data changes; no automatic adoption",
+  "training_hash": "sha256:291d65aa8fac6aaf53812e4ac584b448fe8d2c258a9ef646c2f5b2acc76e2b18"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "entries": 10,
+    "page": 9,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=9",
+    "retrieved_at": "2026-10-09T01:09:34.627569+00:00",
+    "sha256": "62055ab5941839d0c5ad5881e25ec915314a26599fbeb2c403e3af4cccc037d3",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=9"
+  },
+  {
+    "entries": 10,
+    "page": 10,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=10",
+    "retrieved_at": "2026-10-09T01:09:35.682885+00:00",
+    "sha256": "5313d61325fdcad0b62c50f68571ee842df65b9c72764a51bddebd1abdaeb2bc",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=10"
+  },
+  {
+    "entries": 10,
+    "page": 11,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=11",
+    "retrieved_at": "2026-10-09T01:09:36.652080+00:00",
+    "sha256": "86ed509ccd38c2fc75798c292002f5ac4087d3b366df8aced97967c039a82982",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=11"
+  },
+  {
+    "entries": 10,
+    "page": 12,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=12",
+    "retrieved_at": "2026-10-09T01:09:37.495512+00:00",
+    "sha256": "7627a1f4851040abd2696dc85d12df0854e13340e45b8dac2db97cd468df83da",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=12"
+  },
+  {
+    "entries": 10,
+    "page": 13,
+    "resolved_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=13",
+    "retrieved_at": "2026-10-09T01:11:00.762160+00:00",
+    "sha256": "64e6bd9dac964b30aba4f14f5ab3ed949f2ea612bfde095b072ed4615ca1e1f1",
+    "source": "microsoft-cloud",
+    "status": 200,
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=13"
+  },
+  {
+    "entries": 10,
+    "page": 14,
+    "resolved_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=14",
+    "retrieved_at": "2026-10-09T01:11:02.349907+00:00",
+    "sha256": "b6e32c45e019a5b5094ec86b852b757908408d9183d3f524d51bc42b114b467a",
+    "source": "microsoft-cloud",
+    "status": 200,
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=14"
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "actual_url_leak_pairs_across_oof_folds": 0,
+  "fixed_group_count": 49,
+  "folds": [
+    {
+      "fold": 0,
+      "old_fixed_assignment_equal": true,
+      "saved_assignment_equal": true,
+      "test_ids": [
+        "apple-ml-research:url:415e037d984fa04b5aa5927376b595ed068d458f95b58ac73c15f4cc40f31be5",
+        "aws-machine-learning:url:2a26e0bf4bcecd1520a435deb3774222f33a0175794eb75f5b1c4d20e46f5f47",
+        "github-ai-ml:url:2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1",
+        "google-ai:url:dfe2f7f06070ffbc61225b84e3f2b4412af71548f838585d1e2e1039faf175a9",
+        "hugging-face:url:689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90",
+        "langchain-releases:url:866a8e04c42b89dd2ca978aa830c13aa588510bad0d1ee6073d406898dd576a4",
+        "langchain-releases:url:b21a6659fc0a3c9188d238004d162db4e4bca5e50bb156bcd1bd54e41b8b4b28",
+        "mlcommons:url:253ae037ec0ab2fb674b47fe03d400fd27700c0738848f0cf4eb2141a936ce80",
+        "nvidia-deep-learning:url:d950eaa58be54c935865c6384d9e610d543992aee137a1bdb729226dc018f350",
+        "vllm-releases:url:79fa413a464f8b759667c321a324b6f100910149cf57884b2c326b17703be93b",
+        "sourcegraph-changelog:url:551fa3036e07f1757a6c7c9018290e03086853b964e04adfff04812bed911d52",
+        "sourcegraph-changelog:url:be3d24995bbd6ca6aa3d4baf6b2a66b8b4352da3d5b44aabce748a366bc9fd9f",
+        "sourcegraph-changelog:url:6752d650d5e511889fa58dd1fb43be02a246addf0b0998e8d152cd1d52cc2338",
+        "sourcegraph-changelog:url:a0986aef83c1c1c59bcfb6e8fbdb3f93b79987b67426bb3d7cd760f6bebaf15b",
+        "sourcegraph-changelog:url:f9c9cd164616775196c105cbc51270919786b909a5bdb6b254e6e5c7741af2b0",
+        "sourcegraph-changelog:url:8ea20a06b3257cb5f7bf5776ea41612890c05743022b5f7d5d333ed033a59c5a",
+        "sourcegraph-changelog:url:2a9632ad37eb97861dfdd76a026b152025fca397187e44c1909bc33b7cb66f3e",
+        "microsoft-cloud:url:72482baacf4eb9e2a4c4cba64f70b82289a3f9142de2f0dde9c13e0c190415e5",
+        "microsoft-cloud:url:5c246b0808e86863d2a669c402f2118083af0f167d3c12d5b55070f6531fa286",
+        "microsoft-cloud:url:fdb0eb0b071d437a485b425b7701d5fffd03660b6036f24e4d75059751e3ba32"
+      ],
+      "url_overlap_count": 0
+    },
+    {
+      "fold": 1,
+      "old_fixed_assignment_equal": true,
+      "saved_assignment_equal": true,
+      "test_ids": [
+        "apple-ml-research:url:50ae7c32754eac7764b85638aa46276ce04304eb7048ac83ae5a1a511c5ecf56",
+        "aws-machine-learning:url:95f314d9972fcd384b1f5504b60da9ec16098cd7e2786cba33337dfe9c55d3d4",
+        "aws-machine-learning:url:809c19bea702503bd68aea35a8e949f66140fc69d7a619ddd83ae709fea96ea7",
+        "google-ai:url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0",
+        "google-deepmind:url:6aae488b1bb65e59bc913efd95de31ac9e1f04a87d1118ebcd77ee6cbdba90f6",
+        "hugging-face:url:e9f63aa1f7aaa02f4024a14154a47668586b26d73f72e5b77e702319146aa96f",
+        "mlcommons:url:5e78358b6e49a01a4b989c9ca016fa9dfafca7db79134f16ef22dc9d4e8cccfc",
+        "ollama-releases:url:ce724b91aa112d2d8736deb08f07777667ad801d889d25e1172aea2deda8d32d",
+        "google-ai:url:fd1baec08311b505543d5a8c71d0a693c44e2ce54fd7ece1e317669825fe6f4e",
+        "github-ai-ml:url:30a36306f538ac1af96f572883174082173478c732479a6c198f0eda11dd4fde",
+        "aws-machine-learning:url:86270e4804bb2ac11cfff1ed3a54fa1fc8e02228d1ad8f7d898297128a59bbce",
+        "aws-machine-learning:url:0893f87c887f7e22117cb3a76a92f844a2a6ca8470dfecaa8ba1863f906166e3",
+        "aws-machine-learning:url:ce977c433c98399ab51c8a1c0e93720c23ab3c1e80436f86a6767085beda91d9",
+        "microsoft-cloud:url:c6aca20b7ccd5a2b78bf4de24c5f58cf388d4e5baad51775366b4615ada27c8c",
+        "microsoft-cloud:url:60769e9a431d43ff2f0ee01896c7e19f685e562c727c9ebe484accd60ce2b705",
+        "microsoft-cloud:url:a3615977a269492a0863e296b62d6cb845888b1860c75cb07837305d55eab9f9",
+        "github-ai-ml:url:eff5b35f2fa8a8c7830877b582b433715047cf981fa821952fbd0be2a9d3a2e6",
+        "microsoft-cloud:url:a513c8c0a5d28d87ae88f7e0717048455d7001c1bb2b9993e9aa4039e15c30dd",
+        "github-ai-ml:url:2e0b2f76a5b7e197d60e3ce83a431c939c9a2ca13acf22174bab84925d3ec80f",
+        "github-ai-ml:url:38e410c5f1c02f695a826a93c0c4ad750992b83e9fc75e5629a8c3a8da91b532"
+      ],
+      "url_overlap_count": 0
+    },
+    {
+      "fold": 2,
+      "old_fixed_assignment_equal": true,
+      "saved_assignment_equal": true,
+      "test_ids": [
+        "github-ai-ml:url:b02dba448db72934509fe9b4f75bea3637f42dd1185ea0d7ddd2b1eea991710c",
+        "google-deepmind:url:1043d9fe80283e6f409b90e0f5f76b98d960cc337ee42f5d79ea8cfadd9a93c0",
+        "mistral-ai:url:4d11ed62a144a3f4c2f6e00530d90722b7d8967436b129f93138ecb93c209d7e",
+        "mistral-ai:url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f",
+        "nvidia-deep-learning:url:9706f1c4881eb3a063d6b963fea161907e7b439e0e08aeeb263bfbb3de1663a7",
+        "openai-news:url:52b80abd4e046c041ffbe2a48399ded2b227e51686189386944c8dd9b0045fd6",
+        "sourcegraph-changelog:url:b24f95375ca107a4833fe102477217017f613cfe4aa088cfb694fc48190e7829",
+        "sourcegraph-changelog:url:14cf8ade29e44f034dbb4df6a48e017805cabbbb6948b201d2690ed95c51518f",
+        "sourcegraph-changelog:url:811efdb1ee2cbbba834840f441eab83f0321e52e15b53ab66bd3ed9c2224abd9",
+        "sourcegraph-changelog:url:8db6312a28ff26ffdf38a9cd99cd274dbe823da4d70bbbd8e0ca186caf968832",
+        "sourcegraph-changelog:url:50fe1a419e748f4701b53aa239e90cfe0263edd1d3dbdd8f20ef2e08cb55b4fe",
+        "google-ai:url:7a00acf92df0c96e97506b3bcbe8a85093a78e23b6fa651307e399c37ab92a3e",
+        "google-ai:url:64730bcdfc3a35229b481acfce94fb07b15462de1b2e63893c551ff0e8190f0a",
+        "google-ai:url:77adb66885449411a18b9aff250fee2a331f402f3913023bba76bcaaf9c7806e",
+        "google-ai:url:a7db6e12c1ae453b9e9d3bf924c5f3a7af148e960f556ca8c2b7d5497640930b",
+        "github-ai-ml:url:71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20",
+        "microsoft-cloud:url:1d2c8945872e3acd574779a048fca3b16596dfee39d554d1338010f1568e9050",
+        "microsoft-cloud:url:f3a3e24b04277e980f20f80aa6e9c69c354b1a72693c25c09967362660255726",
+        "microsoft-cloud:url:ff691f61a2d90bb7f093696fc61fd90f98daa91e8c74b438532546e2ad7c05ca"
+      ],
+      "url_overlap_count": 0
+    }
+  ],
+  "limitations": [
+    "audit is original59 OOF URL identity; not all semantic/template/time leakage",
+    "lack of impact in original59 does not invalidate synthetic regression bug",
+    "no model retraining or metrics recomputation"
+  ],
+  "model_fit_performed": false,
+  "normalized_url_unique": 59,
+  "old_group_count": 49,
+  "pair_membership_changes": 0,
+  "protected_files_unchanged": true,
+  "rows": 59,
+  "same_url_pairs": [],
+  "training_hash": "sha256:291d65aa8fac6aaf53812e4ac584b448fe8d2c258a9ef646c2f5b2acc76e2b18",
+  "url_present": 59
+}
