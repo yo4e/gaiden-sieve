@@ -4,6 +4,8 @@
 
 学習者向けの短い説明は [learning-notes.md](learning-notes.md)、実作成した独立評価候補と最小確認は [independent-evaluation-plan.md](independent-evaluation-plan.md)。
 
+承認済み2組4件の初回採点は [approved-small-evaluation.md](approved-small-evaluation.md)。助手提案への方針承認であり独立blind精度ではないことを明記している。
+
 対象: [Issue #13](https://github.com/yo4e/gaiden-sieve/issues/13)。まずこの文書、次に [results.json](results.json)、[prediction-comparison.json](prediction-comparison.json)、既存 [DESIGN.md](../../DESIGN.md)、[train.py](../../src/gaiden_sieve/train.py)、[data.py](../../src/gaiden_sieve/data.py)、[drift.py](../../src/gaiden_sieve/drift.py) を読む。
 
 ## 固定した条件
