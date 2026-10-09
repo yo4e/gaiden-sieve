@@ -1,0 +1,62 @@
+[
+  {
+    "entries": 10,
+    "page": 15,
+    "resolved_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=15",
+    "retrieved_at": "2026-10-09T02:07:48.799793+00:00",
+    "sha256": "46cbb61da9a2a49b761528a20e76431b570215d8362da402ed1f7b22ac670eff",
+    "source": "microsoft-cloud",
+    "status": 200,
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=15"
+  },
+  {
+    "entries": 10,
+    "page": 16,
+    "resolved_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=16",
+    "retrieved_at": "2026-10-09T02:07:50.345998+00:00",
+    "sha256": "3d3235c9b8771b85ff36736e69e8dec5c81b22bc7412022d0b7f07f1ea8f2866",
+    "source": "microsoft-cloud",
+    "status": 200,
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=16"
+  },
+  {
+    "entries": 10,
+    "page": 17,
+    "resolved_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=17",
+    "retrieved_at": "2026-10-09T02:07:51.625675+00:00",
+    "sha256": "7e669a7d8be6b3af1de857826ac1e1a52c0222bca82fc4d3012dbe8575ded88c",
+    "source": "microsoft-cloud",
+    "status": 200,
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=17"
+  },
+  {
+    "entries": 10,
+    "page": 13,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=13",
+    "retrieved_at": "2026-10-09T02:07:53.056144+00:00",
+    "sha256": "89341a871819c14adec349e1d3d0af9caff77cbc7e2398b53fa82554867c0034",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=13"
+  },
+  {
+    "entries": 10,
+    "page": 14,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=14",
+    "retrieved_at": "2026-10-09T02:07:54.409642+00:00",
+    "sha256": "87198cf30a01c33627a8cb33b34ec62574c811c22673e053f71cab5d094c768a",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=14"
+  },
+  {
+    "entries": 10,
+    "page": 15,
+    "resolved_url": "https://github.blog/ai-and-ml/feed/?paged=15",
+    "retrieved_at": "2026-10-09T02:07:55.500330+00:00",
+    "sha256": "591cad64d73c449de5cc0bcd0421deb51440e4a00179543d82545abad460eea9",
+    "source": "github-ai-ml",
+    "status": 200,
+    "url": "https://github.blog/ai-and-ml/feed/?paged=15"
+  }
+]

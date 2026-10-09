@@ -6,6 +6,8 @@
 
 承認済み2組4件の初回採点は [approved-small-evaluation.md](approved-small-evaluation.md)。助手提案への方針承認であり独立blind精度ではないことを明記している。
 
+次の固定2条件による単語/文字部分表現の比較は [representation-comparison.md](representation-comparison.md)。新規6件の暫定ラベルとgroup OOFの限界を区別し、採用しない結論を保存した。
+
 対象: [Issue #13](https://github.com/yo4e/gaiden-sieve/issues/13)。まずこの文書、次に [results.json](results.json)、[prediction-comparison.json](prediction-comparison.json)、既存 [DESIGN.md](../../DESIGN.md)、[train.py](../../src/gaiden_sieve/train.py)、[data.py](../../src/gaiden_sieve/data.py)、[drift.py](../../src/gaiden_sieve/drift.py) を読む。
 
 ## 固定した条件

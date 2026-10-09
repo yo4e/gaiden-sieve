@@ -1,0 +1,44 @@
+{
+  "locked_before_scoring_at_utc": "2026-10-09T02:08:20.312456+00:00",
+  "training_hash": "sha256:291d65aa8fac6aaf53812e4ac584b448fe8d2c258a9ef646c2f5b2acc76e2b18",
+  "conditions": [
+    {
+      "name": "word12_c1",
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "C": 1
+    },
+    {
+      "name": "charwb35_c1",
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "C": 1
+    }
+  ],
+  "fixed": [
+    "original 59 texts and labels",
+    "LogisticRegression max_iter1000 seed42",
+    "uniform sample weights",
+    "operational threshold .80/.40",
+    "existing gold/holdout unchanged",
+    "no post-score data edits"
+  ],
+  "primary_diagnostic": "3-fold StratifiedGroupKFold shuffle seed42 on training only; identity/normalized-version/near-template connected groups fixed without scores; out-of-fold metrics and source breakdown, not independent human accuracy",
+  "new_probe_policy": "official RSS only; seek up to R2/N2 within Microsoft and GitHub without inspecting scores; exclude all protected/previously scored or selected candidate groups; if clear negatives are insufficient, disclose shortfall, never force labels",
+  "evaluation_roles": {
+    "training": "resubstitution diagnostic",
+    "group_oof": "group-disjoint internal provisional-label generalization diagnostic",
+    "new_probe": "RSS-only assistant provisional labels locked before model scores",
+    "known_gold": "known audit; not parameter selection",
+    "approved_ms4": "known nonblind owner-policy-approved audit",
+    "historical_rss100": "unlabeled observation; frozen snapshot, not new current input"
+  },
+  "decision_policy": "bounded two representations only, no additional ranges/C grid search or selection against known gold/MS4; no automatic adoption; do not interpret lower feature-OOV as semantic accuracy",
+  "time_limitations": "historical group splits are not chronological future holdout; no future articles available for Oct16 cohort"
+}
