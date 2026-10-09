@@ -2,6 +2,8 @@
 
 **2回の局所データ追加では改善を確認できなかった。3回目の同じ追加反復は止める。** このディレクトリは、別モデルが「特徴の拾い方」「少量・偏ったデータ」「評価の前提」を独立に疑い、次の実験を設計するための引き継ぎである。
 
+学習者向けの短い説明は [learning-notes.md](learning-notes.md)、実作成した独立評価候補と最小確認は [independent-evaluation-plan.md](independent-evaluation-plan.md)。
+
 対象: [Issue #13](https://github.com/yo4e/gaiden-sieve/issues/13)。まずこの文書、次に [results.json](results.json)、[prediction-comparison.json](prediction-comparison.json)、既存 [DESIGN.md](../../DESIGN.md)、[train.py](../../src/gaiden_sieve/train.py)、[data.py](../../src/gaiden_sieve/data.py)、[drift.py](../../src/gaiden_sieve/drift.py) を読む。
 
 ## 固定した条件

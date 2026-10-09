@@ -4,6 +4,10 @@ GAIDEN SIEVE は、RSS/Atom の記事を媒体ごとの編集方針に照らし�
 
 このリポジトリの主目的は、分類精度だけを追うことではありません。教師データ、学習コード、モデル、評価、promotion、監視までを一つの運用として扱う **MLOps の最小ループ**を、実物を追いながら学べる形で作ります。設計の正本は [`DESIGN.md`](DESIGN.md) です。
 
+## 実験から学ぶ
+
+[配信元で覚えていないか？ 小さな記事分類器で学んだこと](experiments/issue13/learning-notes.md)では、36→51→59記事の実験、順位と判定境界の違い、評価の落とし穴、次に確認する2組の記事を、初めて読む人向けにつなげて説明しています。詳しい診断・数値・再現手順へも辿れます。
+
 ## 現在の実装範囲: Phase 4B.1
 
 Phase 3 では、Phase 2 の **追跡・評価・明示昇格できる model lifecycle** を土台に、CI、再現性チェック、JSONL batch classification、簡単な drift report、uncertain queue までをつなぎます。production promotion は引き続き人間が明示的に行います。

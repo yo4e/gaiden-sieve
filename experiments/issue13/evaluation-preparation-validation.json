@@ -1,0 +1,13 @@
+{
+  "all_candidates": 8,
+  "core_and_expansion_protected_group_overlap": 0,
+  "core_count": 4,
+  "exact_repeat_results": true,
+  "human_confirmed_count": 0,
+  "locked_input_hash_guard": true,
+  "model_scoring": false,
+  "model_training": false,
+  "protected_files_unchanged": true,
+  "public_text_boundary_check": true,
+  "tests_passed": 54
+}
