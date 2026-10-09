@@ -1,0 +1,109 @@
+{
+  "count": 4,
+  "file_sha256": "sha256:7875e1662affe3bc4131d4a2e4a43f13a66cdf0b8234d58a6cd67cbc162e3fa0",
+  "labels_locked_before_scoring": true,
+  "limitations": [
+    "single source Microsoft Cloud",
+    "n=4",
+    "assistant RSS-only labels; not human gold",
+    "older feed pages; not current temporal holdout"
+  ],
+  "rows": [
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "prospective_same_source_small_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=9",
+        "id": "microsoft-cloud:url:68943075448a1a99e877b56a9343114e4a4b687eaa221ae52c4c808a13f1cfd7",
+        "label": "relevant",
+        "label_reason": "RSS explicitly describes generative AI in scientific discovery",
+        "label_source": "llm",
+        "page": 9,
+        "published_at": "2025-07-14T16:00:00Z",
+        "raw_feed_sha256": "40f4032b53952e8c4479d4067f75cac03929d46d77fe1b6f55961ec0398d4ac5",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T00:55:16.158933+00:00",
+        "review_status": "provisional_llm",
+        "source": "microsoft-cloud",
+        "source_url": "https://news.microsoft.com/source/features/ai/ai-for-science-5-ways-its-helping-solve-big-challenges-from-the-lab-to-the-field"
+      },
+      "summary_sha256": "sha256:74dbf2f4bc9b1f3e906229cc6a5d15d05ef3b64fa19cc305bfc192956a471c12",
+      "title_sha256": "sha256:20dbcfcb5a2432c7a641ed5fa7567837635a95cec191fc32f9bd8bfdc21dfcbd"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "prospective_same_source_small_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=10",
+        "id": "microsoft-cloud:url:0b7059b4a56e592c15d8c04ec7c890773d65a1b5d6560db8e4b0c8d50c703d7d",
+        "label": "relevant",
+        "label_reason": "RSS explicitly describes AI agents at Build",
+        "label_source": "llm",
+        "page": 10,
+        "published_at": "2025-05-19T16:00:00Z",
+        "raw_feed_sha256": "75bc584ea18132697827d4d59edfe68e00842397bc1ae02623539d3a87d1e2bd",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T00:55:19.113955+00:00",
+        "review_status": "provisional_llm",
+        "source": "microsoft-cloud",
+        "source_url": "https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web"
+      },
+      "summary_sha256": "sha256:4aad6cf9827c6d39cf70f9f9721ba6999efaf3dcd7bc5a9a9e189e2970675360",
+      "title_sha256": "sha256:bb9d41f20cedb80ab1c82e5ec2427ee0daf50e669201958f3ecb45481a31d526"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "prospective_same_source_small_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=11",
+        "id": "microsoft-cloud:url:a7507177402c0c6ac31646b3585cf410108d7400c931bdbda724673697a00eae",
+        "label": "not_relevant",
+        "label_reason": "RSS describes zero-waste milestone; no AI mechanism in available evidence",
+        "label_source": "llm",
+        "page": 11,
+        "published_at": "2025-04-17T12:00:00Z",
+        "raw_feed_sha256": "002e5071fb4997681176f422685c39b230877530415516cc4174fbe804e83687",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T00:55:20.398842+00:00",
+        "review_status": "provisional_llm",
+        "source": "microsoft-cloud",
+        "source_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/04/17/sustainable-by-design-innovating-for-zero-waste"
+      },
+      "summary_sha256": "sha256:0e9736b0d1889531da2787a2638dd16b3d7b7f7f2417130ab1da61336395f874",
+      "title_sha256": "sha256:d8d75cb515407550c9b2fbfc3909e92bdeaf4f1752b0aba8006efd0fc8c971da"
+    },
+    {
+      "record_metadata": {
+        "admission_accepted": true,
+        "admission_mode": "all",
+        "admission_policy": null,
+        "ai_gaiden_commit": null,
+        "evaluation_role": "prospective_same_source_small_probe",
+        "feed_url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/?paged=12",
+        "id": "microsoft-cloud:url:ae2ad5ca0f463aad86f015222c751e03f8dc8bb2df44e444fb11d5cd9803e002",
+        "label": "not_relevant",
+        "label_reason": "RSS describes company founding anniversary; no AI mechanism in available evidence",
+        "label_source": "llm",
+        "page": 12,
+        "published_at": "2025-04-04T16:00:00Z",
+        "raw_feed_sha256": "31f36a9cda993c9878bcc4afc099adda2b9268a8a54c2bd31787ea1a044b5330",
+        "retrieval_role": "candidate_pool_only",
+        "retrieved_at": "2026-10-09T00:55:22.471582+00:00",
+        "review_status": "provisional_llm",
+        "source": "microsoft-cloud",
+        "source_url": "https://blogs.microsoft.com/blog/2025/04/04/celebrating-microsofts-50-years"
+      },
+      "summary_sha256": "sha256:9574e15cbfcc13803487ceef9b636afa5047b3f2d2d8059247818c367553e034",
+      "title_sha256": "sha256:13cc2c0438b38ba5c55d4c05929be3723520be5f0466d1701eb32c8732db047e"
+    }
+  ]
+}

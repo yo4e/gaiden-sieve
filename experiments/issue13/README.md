@@ -18,7 +18,7 @@
 | human gold | 10件、人間R4/N6、学習から分離、監査用でgateの代替ではない |
 | environment | Python3.12.13、scikit-learn1.9.1、joblib1.6.0。他は[requirements.txt](requirements.txt) |
 
-profile、gold、gold-review、holdout、既存bootstrapとcoreのhashは [protected-file-hashes.json](protected-file-hashes.json)。本PRではこれらを変更していない。model/threshold/gate/promotion policyの変更、Phase4C、本番接続、外部AIサービスへの送信はしていない。
+profile、gold、gold-review、holdout、既存bootstrapとcoreのhashは [protected-file-hashes.json](protected-file-hashes.json)。本PRではこれらを変更していない。運用model/threshold/gate/promotion policyの変更、Phase4C、本番接続、外部AIサービスへの送信はしていない。追加診断では局所的なC値・重みの比較だけを行い、採用はしていない。
 
 ## 何を試したか
 
@@ -59,6 +59,8 @@ iteration2で取り直した最新RSSは2件（Hugging Face / LangChain）が入
 
 ### 観測済み
 
+**訂正:** 教師59件は正例min .750557 > 負例max .619505、AUC1.0で順位分離している。以下のN9件がbinary Rという事実は、固定境界での失敗を表し、順位を学べていない証拠ではない。追加の局所診断は [causal-diagnosis.md](causal-diagnosis.md) と [causal-results.json](causal-results.json) を参照。
+
 - iteration2の教師上でも非SourcegraphのN9件が全てbinary Rのまま。P(R)約0.587–0.620、thresholdでは全てU。教師上のconfusionはTP38/FP9/TN12/FN0で、TN12はSourcegraphだけ。この値はresubstitution診断であり汎化成績ではない。
 - 補助監査のN2件はP(R)0.7241/0.6921。真のRと暫定ラベルしたAI bakery例は0.6962。正負のrankingが重なり、単にthresholdを下げればきれいに分かれる状態ではない。
 - 現行featureはtitle+summaryのみ。source shortcutの疑いはsource名フィールドへの直接依存ではなく、本文内のsource固有語彙・定型文・データ構成に関する仮説。
@@ -66,13 +68,13 @@ iteration2で取り直した最新RSSは2件（Hugging Face / LangChain）が入
 
 ### 原因として未検証
 
-Sourcegraph近似テンプレートの反復、少数・広範な語彙の各記事、OOV約0.79、既定正則化、クラス比率、RSSの疎いcaption、bootstrapラベルの意味的整合性。どれが支配的かのablationや因果的検証はしていない。別モデルなら改善するとの証拠もない。
+Sourcegraph近似テンプレートの反復、少数・広範な語彙の各記事、OOV約0.79、既定正則化、クラス比率、RSSの疎いcaption、bootstrapラベルの意味的整合性。当初の2回ではどれが支配的かのablationはしていない。その後のC値と同一analyzer-family重みの局所比較は [causal-diagnosis.md](causal-diagnosis.md) に追記した。別モデルなら改善するとの証拠もない。
 
 ### 次のモデルへの依頼
 
 1. まずデータ境界・metric定義・score処理を独立に点検する。公開された暫定ラベルを無批判にgold扱いしない。
 2. 上の仮説を切り分ける最小の診断計画を提案する。少数追加で同じ観測を繰り返すことは避ける。templateの実効重複、source内対比、時間/source/内容クラスによる評価分割を疑う。
-3. 現行方式の教師上の分離不足と、評価集合の弱さを別々に説明する。
+3. 現行方式の教師上の順位分離と、固定境界での判定・評価集合の弱さを別々に説明する。
 4. モデル/特徴量/正則化/thresholdの変更、追加の学習・データ取得、外部AI送信、本番接続は、本引き継ぎの診断開始権限と混同しない。必要な次の実験は目的と条件を示して別判断へ戻す。
 
 山田さんへ15件/23件全件の確認を戻すことは前提にしない。資料で扱える例は助手が整理し、隔離例の編集方針が実験に必要になった時だけ狭い政策判断や少数のspot checkを求める。
