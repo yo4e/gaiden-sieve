@@ -1,0 +1,192 @@
+{
+  "commit": "59166ad4c2a70a54355e0c34dcfd3ea9f91b5e24",
+  "source_blob_checks": {
+    "support.py": "fd3a88c2f8a7158528b8fbc9dc08cd8d58283ea9",
+    "evaluation_design.py": "03af183cb1bb2272ba57322e8fbb299934ea847f"
+  },
+  "new_probe": {
+    "word": {
+      "n": 6,
+      "tp": 3,
+      "fp": 3,
+      "tn": 0,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "distribution": {
+        "R": 0,
+        "U": 6,
+        "N": 0
+      },
+      "operational_precision": null,
+      "operational_recall": 0.0,
+      "retained_recall": 1.0,
+      "auc": 1.0,
+      "pairs": 9,
+      "wins": 9,
+      "ties": 0,
+      "microsoft_auc": {
+        "auc": 1.0,
+        "pairs": 4,
+        "wins": 4,
+        "ties": 0
+      },
+      "github_auc": {
+        "auc": 1.0,
+        "pairs": 1,
+        "wins": 1,
+        "ties": 0
+      },
+      "paired_correct": 3,
+      "pair_gaps": [
+        0.008840928003856718,
+        0.048154921342040025,
+        0.02267131005537415
+      ],
+      "micro_oov": 0.5631067961165048
+    },
+    "char": {
+      "n": 6,
+      "tp": 3,
+      "fp": 3,
+      "tn": 0,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "distribution": {
+        "R": 0,
+        "U": 6,
+        "N": 0
+      },
+      "operational_precision": null,
+      "operational_recall": 0.0,
+      "retained_recall": 1.0,
+      "auc": 0.7777777777777778,
+      "pairs": 9,
+      "wins": 7,
+      "ties": 0,
+      "microsoft_auc": {
+        "auc": 0.5,
+        "pairs": 4,
+        "wins": 2,
+        "ties": 0
+      },
+      "github_auc": {
+        "auc": 1.0,
+        "pairs": 1,
+        "wins": 1,
+        "ties": 0
+      },
+      "paired_correct": 2,
+      "pair_gaps": [
+        -0.011881146116308416,
+        0.03911634419960264,
+        0.05972525692916997
+      ],
+      "micro_oov": 0.21608159392789375
+    }
+  },
+  "approved_ms4": {
+    "n": 4,
+    "tp": 2,
+    "fp": 2,
+    "tn": 0,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1.0,
+    "distribution": {
+      "R": 0,
+      "U": 4,
+      "N": 0
+    },
+    "operational_precision": null,
+    "operational_recall": 0.0,
+    "retained_recall": 1.0,
+    "auc": 1.0,
+    "pairs": 4,
+    "wins": 4,
+    "ties": 0,
+    "pair_gaps": [
+      0.04843213960155224,
+      0.04819315564001525
+    ],
+    "micro_oov": 0.5900383141762452
+  },
+  "known_gold_char": {
+    "n": 10,
+    "tp": 4,
+    "fp": 2,
+    "tn": 4,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "distribution": {
+      "R": 0,
+      "U": 6,
+      "N": 4
+    },
+    "operational_precision": null,
+    "operational_recall": 0.0,
+    "retained_recall": 1.0,
+    "auc": 0.7083333333333334,
+    "pairs": 24,
+    "wins": 17,
+    "ties": 0
+  },
+  "grouping_synthetic_checks": {
+    "with_url_groups": 1,
+    "oof_projected_groups": 2,
+    "identical_text_still_detected": true,
+    "cross_time_group_purged": true,
+    "actual_59_row_url_leakage": "not_tested"
+  },
+  "fold_counts": [
+    {
+      "fold": 0,
+      "positive": 13,
+      "sourcegraph_negative": 7,
+      "other_negative": 0
+    },
+    {
+      "fold": 1,
+      "positive": 13,
+      "sourcegraph_negative": 0,
+      "other_negative": 7
+    },
+    {
+      "fold": 2,
+      "positive": 12,
+      "sourcegraph_negative": 5,
+      "other_negative": 2
+    }
+  ],
+  "within_fold_auc_from_published_fold_summaries": {
+    "word": {
+      "same_fold_pairs": 266,
+      "pair_credit_including_half_ties": 230,
+      "pair_weighted_auc": 0.8646616541353384,
+      "macro_fold_auc": 0.8681318681318682
+    },
+    "char": {
+      "same_fold_pairs": 266,
+      "pair_credit_including_half_ties": 232,
+      "pair_weighted_auc": 0.8721804511278195,
+      "macro_fold_auc": 0.8754578754578755
+    }
+  },
+  "source_rule_binary_from_counts": {
+    "tp": 38,
+    "fp": 9,
+    "tn": 12,
+    "fn": 0,
+    "precision": 0.8085106382978723,
+    "recall": 1.0,
+    "f1": 0.8941176470588236
+  },
+  "limitations": [
+    "No model fit, artifact load or full pytest run",
+    "Numeric input subset transcribed from fixed-commit connector reads",
+    "Full historical source inputs and current sklearn environment are not identical",
+    "Synthetic grouping failure is not proof of leakage in original data"
+  ]
+}
