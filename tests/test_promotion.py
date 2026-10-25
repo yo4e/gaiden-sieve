@@ -1,10 +1,14 @@
 from dataclasses import replace
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone, tzinfo
 from pathlib import Path
 
 import pytest
 
-from gaiden_sieve.artifacts import load_production, production_model_path
+from gaiden_sieve.artifacts import (
+    load_production,
+    production_metadata_path,
+    production_model_path,
+)
 from gaiden_sieve.classify import predict_one
 from gaiden_sieve.data import load_labeled_jsonl
 from gaiden_sieve.profile import load_profile
@@ -66,3 +70,54 @@ def test_passing_candidate_promotes_and_production_classifies(tmp_path: Path) ->
     assert loaded_metadata["source_candidate"] == metadata["model_version"]
     assert 0.0 <= prediction.probability_relevant <= 1.0
     assert prediction.classification in {"relevant", "uncertain", "not_relevant"}
+
+
+class _NoOffsetTimezone(tzinfo):
+    def utcoffset(self, dt):
+        return None
+
+
+@pytest.mark.parametrize("existing_production", [False, True])
+@pytest.mark.parametrize(
+    "timestamp",
+    [datetime(2026, 9, 15, 9, 0), datetime(2026, 9, 15, 9, 0, tzinfo=_NoOffsetTimezone())],
+    ids=["no-timezone", "no-offset"],
+)
+def test_invalid_promotion_time_leaves_production_untouched(
+    tmp_path: Path, existing_production: bool, timestamp: datetime
+) -> None:
+    profile, metadata = _candidate(tmp_path)
+    model_path = production_model_path(tmp_path, profile.profile)
+    metadata_path = production_metadata_path(tmp_path, profile.profile)
+    if existing_production:
+        # 本番資産の代わりに、変更検出用のダミーファイルを一時ディレクトリへ置く。
+        model_path.parent.mkdir(parents=True)
+        model_path.write_bytes(b"previous production model")
+        metadata_path.write_bytes(b'{"model_version": "previous"}\n')
+    before = {p.relative_to(tmp_path): p.read_bytes() for p in tmp_path.rglob("*") if p.is_file()}
+
+    with pytest.raises(PromotionRejected, match="promoted_at must include a timezone"):
+        promote_candidate(
+            profile=profile,
+            artifacts_dir=tmp_path,
+            model_version=str(metadata["model_version"]),
+            promoted_at=timestamp,
+        )
+
+    after = {p.relative_to(tmp_path): p.read_bytes() for p in tmp_path.rglob("*") if p.is_file()}
+    assert after == before
+    if not existing_production:
+        assert not model_path.parent.exists()
+
+
+def test_promotion_time_is_normalized_to_utc(tmp_path: Path) -> None:
+    profile, metadata = _candidate(tmp_path)
+    production = promote_candidate(
+        profile=profile,
+        artifacts_dir=tmp_path,
+        model_version=str(metadata["model_version"]),
+        promoted_at=datetime(2026, 9, 15, 9, 0, tzinfo=timezone(timedelta(hours=9))),
+    )
+    _, loaded_metadata = load_production(artifacts_dir=tmp_path, profile=profile.profile)
+    assert production["promoted_at"] == "2026-09-15T00:00:00Z"
+    assert loaded_metadata == production

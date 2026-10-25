@@ -55,6 +55,12 @@ def promote_candidate(
             f"recall={metrics.recall:.3f} (required {profile.recall_gate:.3f})"
         )
 
+    # 入力の不備で拒否する場合は、production のモデルと metadata を一切変更しない。
+    timestamp = promoted_at or datetime.now(timezone.utc)
+    if timestamp.tzinfo is None or timestamp.utcoffset() is None:
+        raise PromotionRejected("promoted_at must include a timezone")
+    promoted_at_utc = timestamp.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+
     source = candidate_model_path(artifacts_dir, profile.profile, model_version)
     destination = production_model_path(artifacts_dir, profile.profile)
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -62,19 +68,13 @@ def promote_candidate(
     shutil.copy2(source, temporary)
     os.replace(temporary, destination)
 
-    timestamp = promoted_at or datetime.now(timezone.utc)
-    if timestamp.tzinfo is None:
-        raise PromotionRejected("promoted_at must include a timezone")
-
     production_metadata = dict(metadata)
     production_metadata.update(
         {
             "stage": "production",
             "source_candidate": model_version,
             "quality_gate": asdict(gate),
-            "promoted_at": timestamp.astimezone(timezone.utc)
-            .isoformat()
-            .replace("+00:00", "Z"),
+            "promoted_at": promoted_at_utc,
             "model_artifact_hash": sha256_file(destination),
         }
     )
